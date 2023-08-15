@@ -6634,11 +6634,12 @@ center#name-container {
   display: flex !important;
 }
 /* 这里的2是代表导航栏的第二个元素，即有子菜单的元素，可以按自己需求修改 */
+/* 导航栏位置 */
 .menus_items .menus_item:nth-child(2) .menus_item_child {
   left: -90px;
 }
 .menus_items .menus_item:nth-child(3) .menus_item_child {
-  left: -45px;
+  left: -90px;
 }
 .menus_items .menus_item:nth-child(4) .menus_item_child {
   left: -100px;
@@ -8978,7 +8979,7 @@ i.fas.fa-cog.right_side {
     top: 20px;
   }
   100% {
-    top: 20px;
+    top: 30px;
   }
 }
 

@@ -4671,6 +4671,7 @@ function checkForm() {
   const checkboxes = document.querySelectorAll('.link-check input[type="checkbox"]');
   let allChecked = true;
   let addBtn = document.getElementById("addBtn");
+  let flinkApply = document.getElementById("flinkApply");
 
   // 遍历所有复选框，检查是否都被选中
   checkboxes.forEach((checkbox) => {
@@ -4681,8 +4682,10 @@ function checkForm() {
 
   if (allChecked) {
     addBtn.style.display="flex";
+    flinkApply.style.display="block";
   } else {
     addBtn.style.display="none";
+    flinkApply.style.display="none";
   }
 }
 
@@ -4690,6 +4693,54 @@ function checkForm() {
 
 //----------------------------------------------------------------
 
+/* 友链申请 */
+function TestUrl(url) {
+  var Expression=/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+  var objExp=new RegExp(Expression);
+  if(objExp.test(url) != true){
+      return false;
+  }
+  return true;
+}
+function askFriend (event){
+  let check = $("#friend-check").is(":checked");
+  let name = $("#friend-name").val();
+  let url = $("#friend-link").val();
+  let image = $("#friend-icon").val();
+  let des = $("#friend-des").val();
+  if(!check){
+      alert("Please check \"I am not submitting nonsense information\"");
+      return;
+  }
+  if(!(name&&url&&image&&des)){
+      alert("The information is incomplete! ");
+      return;
+  }
+  if (!(TestUrl(url))){
+      alert("URL format error! Need to include HTTP protocol header! ");
+      return;
+  }
+  if (!(TestUrl(image))){
+      alert("The format of the slice URL is wrong! It needs to contain the HTTP protocol header! ");
+      return;
+  }
+  event.target.classList.add('is-loading');
+  $.ajax({
+      type: 'POST',
+      dataType: "json",
+      data: {
+          "name": name,
+          "url": url,
+          "image": image,
+          "description": des,
+      },
+      url: 'https://qexo.iuoyt.com/pub/ask_friend/',
+      success: function (data) {
+          alert(data.msg);
+      }
+  })
+}
+/* 友链申请end */
 
 //----------------------------------------------------------------
 
