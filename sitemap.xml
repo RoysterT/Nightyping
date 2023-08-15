@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.iuoyt.com/?tp=/links/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.iuoyt.com/?tp=/tags/index.html</loc>
     
     <lastmod>2023-08-15</lastmod>
@@ -20,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://blog.iuoyt.com/?tp=/rests/games/index.html</loc>
+    <loc>https://blog.iuoyt.com/?tp=/pages/rests/games/index.html</loc>
     
     <lastmod>2023-08-15</lastmod>
     
@@ -29,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://blog.iuoyt.com/?tp=/rests/jike/index.html</loc>
+    <loc>https://blog.iuoyt.com/?tp=/pages/rests/jike/index.html</loc>
     
     <lastmod>2023-08-15</lastmod>
     
@@ -38,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://blog.iuoyt.com/?tp=/rests/talks/index.html</loc>
+    <loc>https://blog.iuoyt.com/?tp=/pages/rests/talks/index.html</loc>
     
     <lastmod>2023-08-15</lastmod>
     
@@ -47,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://blog.iuoyt.com/?tp=/site/articles/index.html</loc>
+    <loc>https://blog.iuoyt.com/?tp=/pages/site/articles/index.html</loc>
     
     <lastmod>2023-08-15</lastmod>
     
@@ -56,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://blog.iuoyt.com/?tp=/social/links/index.html</loc>
+    <loc>https://blog.iuoyt.com/?tp=/pages/social/links/index.html</loc>
     
     <lastmod>2023-08-15</lastmod>
     
@@ -65,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://blog.iuoyt.com/?tp=/social/message-board/index.html</loc>
+    <loc>https://blog.iuoyt.com/?tp=/pages/social/message-board/index%20copy.html</loc>
     
     <lastmod>2023-08-15</lastmod>
     
@@ -74,7 +65,304 @@
   </url>
   
   <url>
-    <loc>https://blog.iuoyt.com/?tp=/social/moments/index.html</loc>
+    <loc>https://blog.iuoyt.com/?tp=/pages/social/message-board/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/social/moments/index%20copy.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/social/moments/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/photos/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/videos/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/photos/2021/06/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/photos/smc/1-1/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/photos/smc/1-2/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/photos/smc/2/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/about/census/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/about/me/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/about/site/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/about/update-records/en.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/about/update-records/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/about/update-records/zh.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/gallery/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/navigation/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/gallery/illustration/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/gallery/site-bg/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/index%20copy.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/flyp/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/gba/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/pbd/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/photos/2020/06-08/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/photos/2020/09-1/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/photos/2020/09-2/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/photos/2020/10/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/photos/2020/11-1/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/photos/2020/11-2/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/photos/2020/12/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/photos/2021/01/index.html</loc>
+    
+    <lastmod>2023-08-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.iuoyt.com/?tp=/pages/box/sitv/v2/photos/2021/02-05/index.html</loc>
     
     <lastmod>2023-08-15</lastmod>
     
@@ -84,231 +372,6 @@
   
   <url>
     <loc>https://blog.iuoyt.com/?tp=/categories/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/photos/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/videos/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/photos/2020/12/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/photos/2021/01/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/photos/2021/02-05/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/photos/2021/06/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/photos/smc/1-1/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/photos/smc/1-2/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/photos/smc/2/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/gallery/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/navigation/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/gallery/illustration/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/gallery/site-bg/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/index%20copy.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/flyp/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/gba/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/pbd/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/photos/2020/06-08/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/photos/2020/09-2/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/photos/2020/09-1/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/photos/2020/10/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/photos/2020/11-1/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/box/sitv/v2/photos/2020/11-2/index.html</loc>
     
     <lastmod>2023-08-15</lastmod>
     
@@ -390,60 +453,6 @@
   
   <url>
     <loc>https://blog.iuoyt.com/?tp=/archives/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/about/census/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/about/me/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/about/site/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/about/update-records/en.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/about/update-records/index.html</loc>
-    
-    <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.iuoyt.com/?tp=/about/update-records/zh.html</loc>
     
     <lastmod>2023-08-15</lastmod>
     
