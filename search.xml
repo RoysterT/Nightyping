@@ -4,13 +4,25 @@
   
     
     <entry>
-      <title>title</title>
+      <title>后台管理推文测试</title>
       <link href="/posts/2b36786b.html"/>
       <url>/posts/2b36786b.html</url>
       
-        <content type="html"><![CDATA[<h2 id="说明">说明</h2><p>这是一篇测试文章，用于测试后台管理界面文章推送功能。</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="说明">说明</h2><p>这是一篇测试文章，用于测试后台管理界面文章推送功能。</p><p>lalalalala第二次测试，终于成功了？</p>]]></content>
       
       
+      <categories>
+          
+          <category> test </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> test </tag>
+            
+        </tags>
       
     </entry>
     
