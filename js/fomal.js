@@ -4744,6 +4744,38 @@ function askFriend (event){
 
 //----------------------------------------------------------------
 
+/* 判断友链是否需要重新获取，已弃用 */
+function isLinkLoaded() {
+  var currentPath = window.location.pathname;
+
+  // 判断当前路径是否满足条件
+  if (currentPath === "/pages/social/links/") {
+    var found = false; // 用于标记是否找到元素
+    var intervalId = setInterval(function () {
+      var qexo_links = document.querySelectorAll("#qexo-friends .flink-list-item");
+      if (qexo_links.length > 0) {
+        found = true;
+        var noLinkTips = document.getElementById("no-link-tips");
+        noLinkTips.style.display = "none";
+        clearInterval(intervalId);
+        return;
+      }
+    }, 100);
+
+    // 设置一个 3 秒的超时，若超过时间则刷新页面
+    setTimeout(function () {
+      loadQexoFriends("qexo-friends", "https://qexo.iuoyt.com");
+      // clearInterval(intervalId);
+      // if (!found) {
+      //   location.reload();
+      // }
+    }, 3000);
+  }
+}
+/* 判断友链是否需要重新获取end */
+
+//----------------------------------------------------------------
+
 /*  */
 
 /* end */
