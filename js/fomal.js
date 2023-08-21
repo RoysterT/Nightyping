@@ -4072,10 +4072,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://oss.iuoyt.com/bgimg/bg_002.jpg);
-    --darkmode-bg:url(https://oss.iuoyt.com/bgimg/bg_009.webp);
-    --mobileday-bg: url(https://oss.iuoyt.com/bgimg/bg_002.jpg);
-    --mobilenight-bg: url(https://oss.iuoyt.com/bgimg/bg_009.webp);
+    --default-bg: url(https://oss.iuoyt.com/img/bg/pc_day.webp);
+    --darkmode-bg:url(https://oss.iuoyt.com/img/bg/pc_night.webp);
+    --mobileday-bg: url(https://oss.iuoyt.com/img/bg/mobile_day.webp);
+    --mobilenight-bg: url(https://oss.iuoyt.com/img/bg/mobile_night.webp);
   }`;
 }
 // 切换背景主函数
