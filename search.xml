@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Linux下的帮助命令</title>
+      <link href="/posts/8039f3ce.html"/>
+      <url>/posts/8039f3ce.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="内建命令与外部命令">内建命令与外部命令</h2><h3 id="内建命令">内建命令</h3><ul><li>内建命令是shell的一部分，包含一些比较简单的系统命令，通常在Linux系统加载运行时就会被驻留在内存系统中，因此执行速度比外部命令快。</li></ul><h3 id="外部命令">外部命令</h3><ul><li>外部命令是Linux系统中的实用程序部分，因为功能较为强大，其包含的程序量也会很大，所以不能随着系统启动被加载到内存中。</li></ul><h3 id="查看命令的类型">查看命令的类型</h3><ul><li><p>使用<code>type</code>命令可以查看其为内建或是外部命令：</p>  <figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> &lt;命令&gt;</span><br></pre></td></tr></table></figure><p><img src="https://oss.iuoyt.com/img/posts/image-20231027193923068.png" alt="image-20231027193923068"></p></li><li><p>通常会得到如下结果：</p><table><thead><tr><th style="text-align:center">结果</th><th style="text-align:center">类别</th></tr></thead><tbody><tr><td style="text-align:center"><code>xxx is a shell builtin</code></td><td style="text-align:center">内建命令</td></tr><tr><td style="text-align:center"><code>xxx is /usr/bin/xxx</code></td><td style="text-align:center">外部命令</td></tr><tr><td style="text-align:center"><code>xxx is an alias for xx --xxx</code></td><td style="text-align:center">命令别名</td></tr></tbody></table></li></ul><h2 id="帮助命令的使用">帮助命令的使用</h2><h3 id="help命令">help命令</h3><ul><li><p>help命令是用于显示shell内建命令的简要帮助信息，因此无法得到外部命令或者命令别名的相关帮助，比如输入<code>help ls</code>命令则会得到“无匹配帮助主题”的提示。</p><p><img src="https://oss.iuoyt.com/img/posts/image-20231027194155526.png" alt="image-20231027194155526"></p></li><li><p>而对于外部命令，通常带有一个获取帮助的参数<code>--help</code>，输入以获取该命令的帮助文档：</p>  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> --<span class="built_in">help</span></span><br></pre></td></tr></table></figure></li></ul><h3 id="man命令">man命令</h3><ul><li><p><code>man</code>命令得到的内容比<code>help</code>更多更详细，而且<code>man</code>没有内建命令与外部命令的区分。<code>man</code>命令是显示系统手册页中的内容，通常为对命令的解释信息和相关描述。</p></li><li><p>使用<code>man</code>命令得到的内容第一行会显示出该命令在文档中所处的章节位置，如使用<code>man ls</code>，则会显示<code>LS(1)</code>，其中<code>LS</code>为手册名称，<code>(1)</code>表示位于该手册的第几章节。在<code>man</code>手册中一共有如下章节：</p><blockquote><table><thead><tr><th style="text-align:center">章节数</th><th style="text-align:center">说明</th></tr></thead><tbody><tr><td style="text-align:center"><code>1</code></td><td style="text-align:center">Standard commands （标准命令）</td></tr><tr><td style="text-align:center"><code>2</code></td><td style="text-align:center">System calls （系统调用）</td></tr><tr><td style="text-align:center"><code>3</code></td><td style="text-align:center">Library functions （库函数）</td></tr><tr><td style="text-align:center"><code>4</code></td><td style="text-align:center">Special devices （设备说明）</td></tr><tr><td style="text-align:center"><code>5</code></td><td style="text-align:center">File formats （文件格式）</td></tr><tr><td style="text-align:center"><code>6</code></td><td style="text-align:center">Games and toys （游戏和娱乐）</td></tr><tr><td style="text-align:center"><code>7</code></td><td style="text-align:center">Miscellaneous （杂项）</td></tr><tr><td style="text-align:center"><code>8</code></td><td style="text-align:center">Administrative Commands （管理员命令）</td></tr><tr><td style="text-align:center"><code>9</code></td><td style="text-align:center">其他（Linux特定的）， 用来存放内核例行程序的文档</td></tr></tbody></table></blockquote></li></ul><h3 id="info命令">info命令</h3><ul><li><p>如果环境中没有<code>info</code>命令，那么可以自行手动安装：</p>  <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装 info</span></span><br><span class="line">sudo apt-<span class="built_in">get</span> update</span><br><span class="line">sudo apt-<span class="built_in">get</span> install <span class="built_in">info</span></span><br><span class="line"><span class="comment"># 查看 ls 命令的 info</span></span><br><span class="line"><span class="built_in">info</span> ls</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux文件打包与解压缩</title>
       <link href="/posts/c67b19b2.html"/>
       <url>/posts/c67b19b2.html</url>
