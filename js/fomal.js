@@ -981,8 +981,8 @@ if (document.body.clientWidth > 992) {
         zoom: 0.9,
         borderRadius: 5 + "px",
         right: 55.6 + "px",
-        nekoImg: "https://bu.dusays.com/2022/07/20/62d812db74be9.png",
-        hoverMsg: "夏天啦~",
+        nekoImg: "https://oss.iuoyt.com/resource/elements/kitty.png",
+        hoverMsg: "秋天啦~",
         color: "var(--theme-color)",
         during: 500,
         blog_body: "body",
@@ -4072,10 +4072,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://oss.iuoyt.com/bgimg/bg_002.jpg);
-    --darkmode-bg:url(https://oss.iuoyt.com/bgimg/bg_009.webp);
-    --mobileday-bg: url(https://oss.iuoyt.com/bgimg/bg_002.jpg);
-    --mobilenight-bg: url(https://oss.iuoyt.com/bgimg/bg_009.webp);
+    --default-bg: url(https://oss.iuoyt.com/img/bg/pc_day.webp);
+    --darkmode-bg:url(https://oss.iuoyt.com/img/bg/pc_night.webp);
+    --mobileday-bg: url(https://oss.iuoyt.com/img/bg/mobile_day.webp);
+    --mobilenight-bg: url(https://oss.iuoyt.com/img/bg/mobile_night.webp);
   }`;
 }
 // 切换背景主函数
@@ -4671,6 +4671,7 @@ function checkForm() {
   const checkboxes = document.querySelectorAll('.link-check input[type="checkbox"]');
   let allChecked = true;
   let addBtn = document.getElementById("addBtn");
+  let flinkApply = document.getElementById("flinkApply");
 
   // 遍历所有复选框，检查是否都被选中
   checkboxes.forEach((checkbox) => {
@@ -4681,8 +4682,10 @@ function checkForm() {
 
   if (allChecked) {
     addBtn.style.display="flex";
+    flinkApply.style.display="block";
   } else {
     addBtn.style.display="none";
+    flinkApply.style.display="none";
   }
 }
 
@@ -4690,6 +4693,86 @@ function checkForm() {
 
 //----------------------------------------------------------------
 
+/* 友链申请 */
+function TestUrl(url) {
+  var Expression=/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+  var objExp=new RegExp(Expression);
+  if(objExp.test(url) != true){
+      return false;
+  }
+  return true;
+}
+function askFriend (event){
+  let check = $("#friend-check").is(":checked");
+  let name = $("#friend-name").val();
+  let url = $("#friend-link").val();
+  let image = $("#friend-icon").val();
+  let des = $("#friend-des").val();
+  if(!check){
+      alert("Please check \"I am not submitting nonsense information\"");
+      return;
+  }
+  if(!(name&&url&&image&&des)){
+      alert("The information is incomplete! ");
+      return;
+  }
+  if (!(TestUrl(url))){
+      alert("URL format error! Need to include HTTP protocol header! ");
+      return;
+  }
+  if (!(TestUrl(image))){
+      alert("The format of the slice URL is wrong! It needs to contain the HTTP protocol header! ");
+      return;
+  }
+  event.target.classList.add('is-loading');
+  $.ajax({
+      type: 'POST',
+      dataType: "json",
+      data: {
+          "name": name,
+          "url": url,
+          "image": image,
+          "description": des,
+      },
+      url: 'https://qexo.iuoyt.com/pub/ask_friend/',
+      success: function (data) {
+          alert(data.msg);
+      }
+  })
+}
+/* 友链申请end */
+
+//----------------------------------------------------------------
+
+/* 判断友链是否需要重新获取，已弃用 */
+function isLinkLoaded() {
+  var currentPath = window.location.pathname;
+
+  // 判断当前路径是否满足条件
+  if (currentPath === "/pages/social/links/") {
+    var found = false; // 用于标记是否找到元素
+    var intervalId = setInterval(function () {
+      var qexo_links = document.querySelectorAll("#qexo-friends .flink-list-item");
+      if (qexo_links.length > 0) {
+        found = true;
+        var noLinkTips = document.getElementById("no-link-tips");
+        noLinkTips.style.display = "none";
+        clearInterval(intervalId);
+        return;
+      }
+    }, 100);
+
+    // 设置一个 3 秒的超时，若超过时间则刷新页面
+    setTimeout(function () {
+      loadQexoFriends("qexo-friends", "https://qexo.iuoyt.com");
+      // clearInterval(intervalId);
+      // if (!found) {
+      //   location.reload();
+      // }
+    }, 3000);
+  }
+}
+/* 判断友链是否需要重新获取end */
 
 //----------------------------------------------------------------
 
