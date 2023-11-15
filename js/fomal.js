@@ -3897,13 +3897,13 @@ function toggleRightside() {
 }
 
 // 天气开关
-if (localStorage.getItem("weather")) {
+if (!localStorage.getItem("weather")) {
   localStorage.setItem("weather", "-50px");
 }
-// document.getElementById("he-plugin-simple").style.top = localStorage.getItem("weather");
-document
-  .getElementById("he-plugin-simple")
-  .setAttribute("style", "top:" + localStorage.getItem("weather"));
+document.getElementById("he-plugin-simple").style.top = localStorage.getItem("weather");
+// document
+//   .getElementById("he-plugin-simple")
+//   .setAttribute("style", "top:" + localStorage.getItem("weather"));
 function setWeather() {
   if (document.getElementById("weatherSet").checked) {
     document.getElementById("he-plugin-simple").style.top = "10px";
@@ -4436,11 +4436,11 @@ function createWinbox() {
   } else if (localStorage.getItem("sakuraItem") == "maple") {
     document.getElementById("sakuraItemSet").checked = true;
   }
-  // if (localStorage.getItem("weather") == "10px") {
-  //   document.getElementById("weatherSet").checked = true;
-  // } else if (localStorage.getItem("weather") == "-50px") {
-  //   document.getElementById("weatherSet").checked = false;
-  // }
+  if (localStorage.getItem("weather") == "10px") {
+    document.getElementById("weatherSet").checked = true;
+  } else if (localStorage.getItem("weather") == "-50px") {
+    document.getElementById("weatherSet").checked = false;
+  }
   document.getElementById("weatherSet").checked = false;
   if (localStorage.getItem("fpson") == "1") {
     document.getElementById("fpson").checked = true;
