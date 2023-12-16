@@ -982,7 +982,7 @@ if (document.body.clientWidth > 992) {
         borderRadius: 5 + "px",
         right: 55.6 + "px",
         nekoImg: "https://oss.iuoyt.com/resource/elements/kitty.png",
-        hoverMsg: "秋天啦~",
+        hoverMsg: "冬天啦~",
         color: "var(--theme-color)",
         during: 500,
         blog_body: "body",
@@ -3724,7 +3724,7 @@ function clearItem() {
 
 // 设置字体
 if (localStorage.getItem("font") == undefined) {
-  localStorage.setItem("font", "LXGW");
+  localStorage.setItem("font", "ZhuZiAWan");
 }
 setFont(localStorage.getItem("font"));
 function setFont(n) {
@@ -3761,7 +3761,7 @@ function setFontBorder() {
 
 // 设置主题色
 if (localStorage.getItem("themeColor") == undefined) {
-  localStorage.setItem("themeColor", "green");
+  localStorage.setItem("themeColor", "blue");
 }
 setColor(localStorage.getItem("themeColor"));
 function setColor(c) {
@@ -3805,7 +3805,7 @@ function setUniverse() {
 
 // 雪花开关
 if (localStorage.getItem("snow") == undefined) {
-  localStorage.setItem("snow", "none");
+  localStorage.setItem("snow", "block");
 }
 document.getElementById("snow").style.display = localStorage.getItem("snow");
 function setSnow() {
@@ -3916,7 +3916,7 @@ function setWeather() {
 
 // 透明度调节滑块
 if (localStorage.getItem("transNum") == undefined) {
-  localStorage.setItem("transNum", 95);
+  localStorage.setItem("transNum", 75);
 }
 var curTransNum = localStorage.getItem("transNum");
 var curTransMini = curTransNum * 0.95;
