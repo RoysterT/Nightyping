@@ -1,0 +1,1232 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><div id="myscoll"></div><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>《Android移动开发基础案例教程》（第2版）课后习题答案 | 🌙Nightyping</title><meta name="keywords" content="Android移动开发"><meta name="author" content="Royster"><meta name="copyright" content="Royster"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="《Android移动开发基础案例教程》（第2版）课后习题答案">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《Android移动开发基础案例教程》（第2版）课后习题答案">
+<meta property="og:url" content="https://www.iuoyt.com/posts/b8eb778b.html">
+<meta property="og:site_name" content="🌙Nightyping">
+<meta property="og:description" content="《Android移动开发基础案例教程》（第2版）课后习题答案">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oss.iuoyt.com/img/default_cover/051.webp">
+<meta property="article:published_time" content="2023-12-20T09:44:01.000Z">
+<meta property="article:modified_time" content="2023-12-20T10:14:25.741Z">
+<meta property="article:author" content="Royster">
+<meta property="article:tag" content="Android移动开发">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oss.iuoyt.com/img/default_cover/051.webp"><link rel="shortcut icon" href="https://oss.iuoyt.com/icon/favicon-rs32.ico"><link rel="canonical" href="https://www.iuoyt.com/posts/b8eb778b.html"><link rel="preconnect" href="//fastly.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/font-awesome_v6_css_all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f07e4c247a33bb8cc369f37137ab5dcb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"距离文章发表已经过去了","messageNext":"天，文章的部分内容可能已经过期，请注意辨别！"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.js',
+      css: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '《Android移动开发基础案例教程》（第2版）课后习题答案',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-12-20 18:14:25'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = url => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      link.onload = () => resolve()
+      link.onerror = () => reject()
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/index.css"><meta name="baidu-site-verification" content="codeva-qcq47P1S9d" /><meta name="msvalidate.01" content="AF2B266618C7BF3480CA8442E359FC9D" /><meta name="google-site-verification" content="rQ6Jyb3J-HrgV7Xdz_4ktcVoWktwNRcMRGIVf6HPDIw" /><style id="themeColor"></style><style id="rightSide"></style><style id="transPercent"></style><style id="blurNum"></style><style id="settingStyle"></style><span id="fps"></span><span id="blogVer">Patch Ver v0.4.9_beta</span><style id="defineBg"></style><style id="menu_shadow"></style><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script><script>LA.init({id:"3FI49W6PtxRahPCr",ck:"3FI49W6PtxRahPCr"})</script><meta name="referrer" content="no-referrer"/><script src="https://oss.iuoyt.com/resource/javascript/echarts.min.js"></script><script src="https://oss.iuoyt.com/resource/javascript/china.js"></script><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/katex.min.css"><script defer src="https://oss.iuoyt.com/resource/javascript/katex.min.js"></script><script defer src="https://oss.iuoyt.com/resource/javascript/auto-render.min.js"></script><script type="text/javascript" src="https://player.dogecloud.com/js/loader"></script><link rel="stylesheet" href="/css/essay_page/essay_page.css"><script async data-pjax src="/js/jike/jike.js"></script><script async data-pjax src="/js/jike/waterfall.js"></script><script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script><script src="/js/weather.js"></script><script src="/js/qexo_friends.js"></script><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://oss.iuoyt.com/resource/javascript/carousel-touch.js"></script><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="🌙Nightyping" type="application/atom+xml">
+</head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/resource/elements/avatar.webp" onerror="onerror=null;src='/assets/r1.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">26</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiaofangzi"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-bowenzhuti"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-biaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiawucha"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/rests/jike/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xianxingmotianlun">                   </use></svg><span class="menu_word" style="font-size:17px"> 即刻</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/rests/talks/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xianxingmotianlun">                   </use></svg><span class="menu_word" style="font-size:17px"> 说说</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/rests/games/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-a-tupianyihuifu-30">                   </use></svg><span class="menu_word" style="font-size:17px"> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-gongjuxiang"></use></svg><span class="menu_word" style="font-size:17px"> 百宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/box/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban-">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/box/navigation/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhishipai">                   </use></svg><span class="menu_word" style="font-size:17px"> 网站导航</span></a></li><li><a class="site-page child faa-parent animated-hover" target="_blank" rel="noopener" href="https://pan.iuoyt.com/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yunduan">                   </use></svg><span class="menu_word" style="font-size:17px"> 云盘</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/box/sitv/v2/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-TV">                   </use></svg><span class="menu_word" style="font-size:17px"> SITV</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/social/moments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pengyouquan">                   </use></svg><span class="menu_word" style="font-size:17px"> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/social/message-board/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyanmoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/social/links/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuchengguanli-copy">                   </use></svg><span class="menu_word" style="font-size:17px"> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guanyu"></use></svg><span class="menu_word" style="font-size:17px"> 关于</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/about/census/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhuzhuangtu">                   </use></svg><span class="menu_word" style="font-size:17px"> 数据</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/about/site/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-bokezhuanjia">                   </use></svg><span class="menu_word" style="font-size:17px"> 网站</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/about/me/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-iconzhengli-">                   </use></svg><span class="menu_word" style="font-size:17px"> 我</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/about/update-records/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-he_22caozuojilu">                   </use></svg><span class="menu_word" style="font-size:17px"> 日志</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">🌙Nightyping</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiaofangzi"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-bowenzhuti"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-biaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiawucha"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/rests/jike/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xianxingmotianlun">                   </use></svg><span class="menu_word" style="font-size:17px"> 即刻</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/rests/talks/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xianxingmotianlun">                   </use></svg><span class="menu_word" style="font-size:17px"> 说说</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/rests/games/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-a-tupianyihuifu-30">                   </use></svg><span class="menu_word" style="font-size:17px"> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-gongjuxiang"></use></svg><span class="menu_word" style="font-size:17px"> 百宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/box/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban-">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/box/navigation/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhishipai">                   </use></svg><span class="menu_word" style="font-size:17px"> 网站导航</span></a></li><li><a class="site-page child faa-parent animated-hover" target="_blank" rel="noopener" href="https://pan.iuoyt.com/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yunduan">                   </use></svg><span class="menu_word" style="font-size:17px"> 云盘</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/box/sitv/v2/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-TV">                   </use></svg><span class="menu_word" style="font-size:17px"> SITV</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/social/moments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pengyouquan">                   </use></svg><span class="menu_word" style="font-size:17px"> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/social/message-board/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyanmoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/social/links/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuchengguanli-copy">                   </use></svg><span class="menu_word" style="font-size:17px"> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guanyu"></use></svg><span class="menu_word" style="font-size:17px"> 关于</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/about/census/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhuzhuangtu">                   </use></svg><span class="menu_word" style="font-size:17px"> 数据</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/about/site/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-bokezhuanjia">                   </use></svg><span class="menu_word" style="font-size:17px"> 网站</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/about/me/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-iconzhengli-">                   </use></svg><span class="menu_word" style="font-size:17px"> 我</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/about/update-records/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-he_22caozuojilu">                   </use></svg><span class="menu_word" style="font-size:17px"> 日志</span></a></li></ul></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()">PAGE_NAME</a></center><div id="nav-right"><div id="he-plugin-simple"><div id="none_space"></div></div><div id="search-button" style="margin-right: 5px"><a class="search faa-parent animated-hover" title="检索站内任何你想要的信息"><svg class="faa-tada icon" style="height:24px;width:24px;fill:currentColor;position:relative;top:6px" aria-hidden="true"><use xlink:href="#icon-37search"></use></svg><span> 搜索</span></a></div><a class="meihua faa-parent animated-hover" onclick="toggleWinbox()" title="美化设置-自定义你的风格" id="meihua-button"><svg class="faa-tada icon" style="height:24px;width:24px;fill:currentColor;position:relative;top:6px" aria-hidden="true"><use xlink:href="#icon-zhuti"></use></svg></a><a class="sun_moon faa-parent animated-hover" onclick="switchNightMode()" title="浅色和深色模式转换" id="nightmode-button"><svg class="faa-tada" style="height:25px;width:25px;fill:currentColor;position:relative;top:7px" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon">       </use></svg></a><div id="toggle-menu"><a><i class="fas fa-bars fa-fw"></i></a></div></div></div></nav><div id="post-info"><h1 class="post-title">《Android移动开发基础案例教程》（第2版）课后习题答案</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><svg class="meta_icon post-meta-icon" style="width:30px;height:30px;position:relative;top:10px"><use xlink:href="#icon-rili"></use></svg><span class="post-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2023-12-20T09:44:01.000Z" title="发表于 2023-12-20 17:44:01">2023-12-20</time><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:18px;height:18px;position:relative;top:5px"><use xlink:href="#icon-gengxin1"></use></svg><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-12-20T10:14:25.741Z" title="更新于 2023-12-20 18:14:25">2023-12-20</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><svg class="meta_icon post-meta-icon" style="width:25px;height:25px;position:relative;top:8px"><use xlink:href="#icon-charuword"></use></svg><span class="post-meta-label">字数总计:</span><span class="word-count">7660</span><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:20px;height:20px;position:relative;top:5px"><use xlink:href="#icon-shizhong"></use></svg><span class="post-meta-label">阅读时长:</span><span>24分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="《Android移动开发基础案例教程》（第2版）课后习题答案"><svg class="meta_icon post-meta-icon" style="width:25px;height:25px;position:relative;top:5px"><use xlink:href="#icon-eye"></use></svg><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="第1章Android基础入门">第1章Android基础入门</h2>
+<h3 id="填空题">填空题</h3>
+<ol>
+<li>Dalvik虚拟机中的Dx工具会把部分class文件转换成<u><strong><code>dex</code></strong></u>文件</li>
+<li>如果希望在XML布局文件中调用颜色资源文件，可以使用<u><strong><code>@color</code></strong></u>调用</li>
+<li>Android程序入口的Activity是在<u><strong><code>AndroidManifest.xml</code></strong></u>文件中注册的</li>
+<li>Android中查看应用程序日志的工具是<u><strong><code>LogCat</code></strong></u></li>
+</ol>
+<h3 id="判断题">判断题</h3>
+<ol>
+<li>Dalvik虚拟机是Google公司设计的用于Android平台的虚拟机（ √ ）</li>
+<li>Android应用程序的主要语言是Java。（ √ ）</li>
+<li>Android采用分层结构，分别是应用程序层、应用程序框架层、核心类库和Linux内核（ √ ）</li>
+<li>第三代移动通信技术（3G）包括TD-LTE和FDD-LTE两种制式（ × ）</li>
+<li>Android程序中，<code>Log.e()</code>用于输出警告级别的日志信息（ × ）</li>
+<li>每个Dalvik虚拟机实例都是一个独立的进程空间，并且每个进程之间不可以通信（ × ）</li>
+</ol>
+<h3 id="选择题">选择题</h3>
+<ol>
+<li>
+<p>Dalvik虚拟机是基于（    ）的架构<br>
+A.栈<br>
+B.堆<br>
+C.寄存器<br>
+D.存储器<br>
+<strong>答案：C</strong></p>
+</li>
+<li>
+<p>Android程序中的主题和样式资源，通常放在哪个目录下（    ）<br>
+A.res/drawable<br>
+B.res/layout<br>
+C.res/values<br>
+D.res/assets<br>
+<strong>答案：C</strong></p>
+</li>
+<li>
+<p>下列关于AndroidManifest.xml文件的说法中，错误的是（    ）<br>
+A.它是整个程序的配置文件<br>
+B.可以在该文件中配置程序所需的权限<br>
+C.可以在该文件中注册程序用到的组件<br>
+D.该文件可以设置UI布局<br>
+<strong>答案：D</strong></p>
+</li>
+<li>
+<p>Dalvik虚拟机属于Android体系结构中的哪一层（    ）<br>
+A.应用程序层<br>
+B.应用程序框架层<br>
+C.核心类库层<br>
+D.Linux内核层<br>
+<strong>答案：C</strong></p>
+</li>
+<li>
+<p>Android中短信、联系人管理、浏览器等属于Android体系结构中的哪一层（    ）<br>
+A.应用程序层<br>
+B.应用程序框架层<br>
+C.核心类库层<br>
+D.Linux内核层<br>
+<strong>答案：A</strong></p>
+</li>
+</ol>
+<h3 id="简答题">简答题</h3>
+<ol>
+<li>
+<p>简述如何搭建Android开发环境。<br>
+答：Android开发环境的搭建分为几个关键步骤：</p>
+<ul>
+<li>下载并安装AndroidStudio工具，进行相关配置设置，包括安装路径和工具设置。</li>
+<li>创建模拟器，选择合适的模拟设备，下载所需的AndroidSDKSystemImage并创建模拟设备。</li>
+<li>下载所需的SDK版本和SDKTools工具，可以在AndroidStudio中的DefaultSettings中进行下载和设置。</li>
+</ul>
+</li>
+<li>
+<p>简述Android源代码的编译过程。<br>
+答：Android源代码编译过程包括以下步骤：</p>
+<ul>
+<li>Java源文件经过JDK编译器编译为class文件。</li>
+<li>Dalvik虚拟机中的Dx工具将部分class文件转换为dex文件。</li>
+<li>dex文件在Dalvik虚拟机中进一步优化成odex文件。</li>
+</ul>
+</li>
+<li>
+<p>简述Android系统架构包含的层次以及各层的特点。<br>
+答：Android系统架构分为四个层次：</p>
+<ul>
+<li>应用程序层（Applications）：包含手机中安装的应用程序集合。</li>
+<li>应用程序框架层（ApplicationFramework）：提供构建应用程序所需的API，例如活动管理器。</li>
+<li>核心类库（Libraries）：包含系统库和Android运行环境。</li>
+<li>Linux内核（LinuxKernel）：提供底层驱动，如显示驱动和音频驱动，与设备硬件交互。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第2章Android常见界面布局">第2章Android常见界面布局</h2>
+<h3 id="填空题-2">填空题</h3>
+<ol>
+<li>Android的常见布局都直接或者间接地继承自<u><strong><code>ViewGroup</code></strong></u>类</li>
+<li>Android中的TableLayout继承自<u><strong><code>LinearLayout</code></strong></u></li>
+<li>TableLayout可以通过<u><strong><code>TableRow</code></strong></u>控制表格的行数</li>
+<li><u><strong><code>RelativeLayout</code></strong></u>布局通过相对定位的方式指定子控件的位置</li>
+<li>在R.java文件中，<code>android:id</code>属性会自动生成对应的<u><strong><code>int</code></strong></u>类型的值</li>
+</ol>
+<h3 id="判断题-2">判断题</h3>
+<ol>
+<li>ViewGroup是盛装界面控件的容器（ √ ）</li>
+<li>如果在FrameLayout中放入3个所有属性都相同的按钮，那么能够在屏幕上显示的是第1个被添加的按钮（ × ）</li>
+<li>Android中的布局文件通常放在<code>res/layout</code>文件夹中（ √ ）</li>
+<li>TableLayout继承自LinearLayout，因此它完全支持LinearLayout所支持的属性（ √ ）</li>
+<li>LinearLayout中的<code>android:layout_weight</code>属性用于设置布局内控件所占的权重（ √ ）</li>
+</ol>
+<h3 id="选择题-2">选择题</h3>
+<ol>
+<li>
+<p>下列属性中，用于设置LinearLayout方向的是（    ）<br>
+A.<code>orientation</code><br>
+B.<code>gravity</code><br>
+C.<code>layout_gravity</code><br>
+D.<code>padding</code><br>
+<strong>答案：A</strong></p>
+</li>
+<li>
+<p>下列选项中，不属于Android布局的是（    ）<br>
+A.FrameLayout<br>
+B.LinearLayout<br>
+C.Button<br>
+D.RelativeLayout<br>
+<strong>答案：C</strong></p>
+</li>
+<li>
+<p>FrameLayout是将其中的组件放在自己的哪个位置（    ）<br>
+A.左上角<br>
+B.右上角<br>
+C.左下角<br>
+D.右下角<br>
+<strong>答案：A</strong></p>
+</li>
+<li>
+<p>对于XML布局文件，android：layout_width属性的值不可以是什么（    ）<br>
+A.<code>match_parent</code><br>
+B.<code>fill_parent</code><br>
+C.<code>wrap_content</code><br>
+D.<code>match_content</code><br>
+<strong>答案：D</strong></p>
+</li>
+<li>
+<p>下列关于RelativeLayout的描述，正确的是（    ）<br>
+A.RelativeLayout表示绝对布局，可以自定义控件的x、y的位置<br>
+B.RelativeLayout表示帧布局，可以实现标签切换的功能<br>
+C.RelativeLayout表示相对布局，其中控件的位置都是相对位置<br>
+D.RelativeLayout表示表格布局，需要配合TableRow布局一起使用<br>
+<strong>答案：C</strong></p>
+</li>
+</ol>
+<h3 id="简答题-2">简答题</h3>
+<ol>
+<li>列举Android中的常用布局，并简述它们各自的特点<br>
+Android中有五种常用布局，分别为RelativeLayout（相对布局）、LinearLayout（线性布局）、FrameLayout（帧布局）、TableLayout（表格布局）、ConstraintLayout（约束布局），他们的特点具体如下：
+<ul>
+<li><strong>RelativeLayout（相对布局）</strong>：该布局是通过相对位置的方式指定该布局内子控件的位置。</li>
+<li><strong>LinearLayout（线性布局）</strong>：该布局可通过<code>android:orientation</code>属性指定该布局内的子控件水平和竖直排列。</li>
+<li><strong>TableLayout（表格布局）</strong>：采用行、列的形式来管理控件。他通常搭配TableRow布局使用，一个TableRow代表一行，在TableRow中添加的控件代表一列。</li>
+<li><strong>FrameLayout（帧布局）</strong>：该布局会在屏幕上创建一块空白区域，添加到该区域中的每个子控件占一帧，这些帧会一个一个叠加在一起，后加入的控件会叠加在上一个控件上层。默认情况下，帧布局中的所有控件会与左上角对齐。</li>
+<li><strong>ConstraintLayout（约束布局）</strong>：该布局是Android2.2新添加的布局，他适用于可视化的方式编写界面布局，他有相对定位、居中定位和倾向、Chain等性质。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第3章Android常见界面控件">第3章Android常见界面控件</h2>
+<h3 id="判断题-3">判断题</h3>
+<ol>
+<li>Android的控件样式，其每一个XML属性都对应一个Java方法。（ √ ）</li>
+<li>当指定RadioButton控件的<code>android:checked</code>属性为true时，表示该控件为未选中状态。（ × ）</li>
+<li>AlertDialog对话框能够直接通过new关键字创建对象。（ × ）</li>
+<li>Toast是Android提供的轻量级信息提醒机制，用于向用户提示即时消息。（ √ ）</li>
+<li>ListView控件中的数据是通过数据适配器加载的。（ √ ）</li>
+</ol>
+<h3 id="选择题-3">选择题</h3>
+<ol>
+<li>
+<p>在XML布局文件中定义了一个Button控件，决定Button控件上显示的文字的属性是（    ）。<br>
+A.<code>android:value</code><br>
+B.<code>android:text</code><br>
+C.<code>android:id</code><br>
+D.<code>android:textvalue</code><br>
+<strong>答案：B</strong></p>
+</li>
+<li>
+<p>下列选项中，哪个用于设置TextView控件中文字的大小？（    ）<br>
+A.<code>android:textSize=&quot;18&quot;</code><br>
+B.<code>android:size=&quot;18&quot;</code><br>
+C.<code>android:textSize='18sp'</code><br>
+D.<code>android:size=&quot;18sp&quot;</code><br>
+<strong>答案：C</strong></p>
+</li>
+<li>
+<p>使用EditText控件时，当文本内容为空时，如果想做一些提示，那么可以使用的属性是（    ）。<br>
+A.<code>android:text</code><br>
+B.<code>android:background</code><br>
+C.<code>android:inputType</code><br>
+D.<code>android:hint</code><br>
+<strong>答案：D</strong></p>
+</li>
+<li>
+<p>为了让一个ImageView控件显示一张图片，可以设置的属性是（    ）。<br>
+A.<code>android:src</code><br>
+B.<code>android:background</code><br>
+C.<code>android:img</code><br>
+D.<code>android:value</code><br>
+<strong>答案：A</strong></p>
+</li>
+<li>
+<p>下列关于ListView控件的说法中，正确的是（    ）。<br>
+A.ListView控件的条目不能设置点击事件<br>
+B.ListView控件不设置数据适配器也能显示数据内容<br>
+C.当数据超出能显示的范围时，ListView自动具有可滚动的特性<br>
+D.一共有100条数据，若ListView控件当前能显示10条，则产生了100个View控件<br>
+<strong>答案：C</strong></p>
+</li>
+<li>
+<p>CheckBox控件被选中的监听事件通常使用以下哪个方法？（    ）<br>
+A.<code>setOnClickListener</code><br>
+B.<code>setOnCheckedChangeListener</code><br>
+C.<code>setOnMenuItemSelectedListener</code><br>
+D.<code>setOnCheckedListener</code><br>
+<strong>答案：B</strong></p>
+</li>
+<li>
+<p>当使用EditText控件时，能够将文本框设置为多行显示的属性是（    ）<br>
+A.<code>android:lines</code><br>
+B.<code>android:layout_height</code><br>
+C.<code>android:textcolor</code><br>
+D.<code>android:textsize</code><br>
+<strong>答案：A</strong></p>
+</li>
+<li>
+<p>下列关于AlertDialog对话框的描述，错误的是（    ）。<br>
+A.使用new关键字创建AlertDialog对话框的实例<br>
+B.对话框的显示需要调用<code>show()</code>方法<br>
+C.<code>setPositiveButton()</code>方法是用来设置确定按钮的<br>
+D.<code>setNegativeButton()</code>方法是用来设置取消按钮的<br>
+<strong>答案：A</strong></p>
+</li>
+</ol>
+<h3 id="简答题-3">简答题</h3>
+<ol>
+<li>
+<p>简述ListView与RecyclerView的区别<br>
+答：ListView与RecyclerView的区别包括：</p>
+<ul>
+<li><strong>展示效果</strong>：RecyclerView通过LayoutManager支持更多的布局方式，如横向、竖向列表、瀑布流、GridView等；ListView只能实现竖直的列表效果。</li>
+<li><strong>适配器</strong>：RecyclerView使用<code>RecyclerView.Adapter</code>，将<code>getView()</code>方法拆分为<code>onCreateViewHolder()</code>和<code>onBindViewHolder()</code>，强制使用ViewHolder，使代码规范化，性能更优。</li>
+<li><strong>复用效果</strong>：RecyclerView自动管理Item对象的复用，ListView需要手动处理convertView的复用。</li>
+<li><strong>动画效果</strong>：RecyclerView可通过<code>setItemAnimator()</code>方法添加Item动画效果，ListView不支持直接为Item添加动画效果。</li>
+</ul>
+</li>
+<li>
+<p>简述实现Button按钮的点击事件的方式有哪几种？<br>
+答：实现Button点击事件的方式有三种：</p>
+<ul>
+<li>在布局文件中指定onClick属性的方式设置点击事件。</li>
+<li>使用匿名内部类的方式设置点击事件。</li>
+<li>通过为Activity实现OnClickListener接口的方式设置点击事件。</li>
+</ul>
+</li>
+<li>
+<p>简述AlertDialog对话框的创建过程<br>
+答：AlertDialog对话框创建步骤如下：</p>
+<ul>
+<li>调用AlertDialog的静态内部类Builder创建AlertDialog.Builder的对象。</li>
+<li>调用AlertDialog.Builder的<code>setTitle()</code>和<code>setIcon()</code>方法分别设置AlertDialog对话框的标题名称和图标。</li>
+<li>调用AlertDialog.Builder的<code>setMessage()</code>、<code>setSingleChoiceItems()</code>或者<code>setMultiChoiceItems()</code>方法设置AlertDialog对话框的内容为简单文本、单选列表或者为多选列表。</li>
+<li>调用AlertDialog.Builder的<code>setPositiveButton()</code>和<code>setNegativeButton()</code>方法设置AlertDialog对话框的确定和取消按钮。</li>
+<li>调用AlertDialog.Builder的<code>create()</code>方法创建AlertDialog对象。</li>
+<li>调用AlertDialog对象的<code>show()</code>方法显示该对话框。</li>
+<li>调用AlertDialog对象的<code>dismiss()</code>方法取消该对话框。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第4章程序活动单元Activity">第4章程序活动单元Activity</h2>
+<h3 id="填空题-3">填空题</h3>
+<ol>
+<li>Activity的启动模式包括standard、singleTop、singleTask和<u><strong><code>singleInstance</code></strong></u></li>
+<li>启动一个新的Activity并且获取这个Activity的返回数据，需要重写<u><strong><code>startActivityForResult()</code></strong></u>方法。</li>
+<li>发送隐式Intent后，Android会使用<u><strong><code>IntentFilter</code></strong></u>匹配相应的组件。</li>
+<li>在清单文件中Activity添加&lt;intent-filter&gt;标签时，必须添加的属性名为<u><strong><code>&lt;categoryandroid:name=&quot;android.intent.category.DEFAULT&quot;/&gt;</code></strong></u>，否则隐式Intent无法开启该Activity。</li>
+<li>Activity的<u><strong><code>finish()</code></strong></u>方法用于关闭当前的Activity。</li>
+</ol>
+<h3 id="判断题-4">判断题</h3>
+<ol>
+<li>如果Activity不设置启动模式，则默认为standard。（ √ ）</li>
+<li>Fragment与Activity的生命周期方法是一致的。（ × ）</li>
+<li>如果想要关闭当前的Activity，可以调用Activity提供的<code>finish()</code>方法。（ √ ）</li>
+<li>&lt;intent-filter&gt;标签中间只能包含一个action属性。（ × ）</li>
+<li>默认情况下，Activity的启动模式是standard。（ √ ）</li>
+</ol>
+<h3 id="选择题-4">选择题</h3>
+<ol>
+<li>
+<p>下列选项中，不属于Android四大组件的是（    ）。<br>
+A.Service<br>
+B.Activity<br>
+C.Handler<br>
+D.ContentProvider<br>
+<strong>答案：C</strong></p>
+</li>
+<li>
+<p>下列关于Android中Activity管理方式的描述中，正确的是（    ）。<br>
+A.Android以堆的形式管理Activity<br>
+B.Android以栈的形式管理Activity<br>
+C.Android以树的形式管理Activity<br>
+D.Android以链表的形式管理Activity<br>
+<strong>答案：B</strong></p>
+</li>
+<li>
+<p>下列选项中，哪个不是Activity生命周期方法？（    ）<br>
+A.<code>onCreate()</code><br>
+B.<code>startActivity()</code><br>
+C.<code>onStart()</code><br>
+D.<code>onResume()</code><br>
+<strong>答案：B</strong></p>
+</li>
+<li>
+<p>下列方法中，哪个是启动Activity的方法？（    ）<br>
+A.<code>startActivity()</code><br>
+B.<code>goToActivity()</code><br>
+C.<code>startActivityForResult()</code><br>
+D.以上都是<br>
+<strong>答案：A</strong></p>
+</li>
+<li>
+<p>下列关于Intent的描述中，正确的是（    ）。<br>
+A.Intent不能够实现应用程序间的数据共享<br>
+B.Intent可以实现界面的切换，还可以在不同组件间直接进行数据传递<br>
+C.使用显式Intent可以不指定要跳转的目标组件<br>
+D.隐式Intent不会明确指出需要激活的目标组件，所以无法实现组件之间的数据跳转<br>
+<strong>答案：B</strong></p>
+</li>
+</ol>
+<h3 id="简答题-4">简答题</h3>
+<ol>
+<li>
+<p>简述Activity的生命周期方法及什么时候被调用。<br>
+答：Activity一共有7个方法，这些方法和调用的时机具体如下：</p>
+<ul>
+<li><code>onCreate()</code>：Activity创建时调用，通常做一些初始化设置。</li>
+<li><code>onStart()</code>：Activity即将可见时调用。</li>
+<li><code>onResume()</code>：Activity获取焦点时调用。</li>
+<li><code>onPause()</code>：当前Activity被其他Activity覆盖或屏幕锁屏时调用。</li>
+<li><code>onStop()</code>：Activity对用户不可见时调用。</li>
+<li><code>onDestroy()</code>：Activity销毁时调用。</li>
+<li><code>onRestart()</code>：Activity从停止状态到再次启动时调用。</li>
+</ul>
+</li>
+<li>
+<p>简述Activity的四种启动模式及其特点。<br>
+答：Activity的四种启动模式分别为standard、singleTop、singleTask和singleInstance，这些模式的特点具体如下：</p>
+<ul>
+<li>standard：每启动一个Activity就会在栈顶创建一个新的实例。</li>
+<li>singleTop：当被启动的Activity位于栈顶时，复用该Activity实例。</li>
+<li>singleTask：当被启动的Activity在栈中存在实例时，会直接复用此Activity实例，并把当前Activity上面的所有实例弹出栈。</li>
+<li>singleInstance：会启动一个新的任务栈来管理该Activity。</li>
+</ul>
+</li>
+<li>
+<p>简述Activity、Intent、IntentFilter的作用。<br>
+答：</p>
+<ul>
+<li>Activity表示活动，是一个负责与用户交互的组件，每个Android应用中都会用Activity来显示界面以及处理界面上一些控件的事件。</li>
+<li>Intent表示意图，是程序中各组件间进行交互的一种方式，它不仅可以指定当前组件要执行的动作，还可以在不同组件之间进行数据传递。</li>
+<li>IntentFilter为过滤器，当发送一个隐式Intent后，Android系统会将它与程序中的每一个组件的过滤器进行匹配，匹配属性有action、data、category，需要这三个属性都匹配成功才能唤起相应的组件。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第5章数据存储">第5章数据存储</h2>
+<h3 id="判断题-5">判断题</h3>
+<ol>
+<li>SQLite是Android自带的一个轻量级的数据库，支持基本SQL语法。（ √ ）</li>
+<li>Android中的文件存储方式，分为内部存储方式和外部存储方式。（ √ ）</li>
+<li>使用<code>openFileOutput()</code>方法打开应用程序的输出流时，只需要指定文件名。（ × ）</li>
+<li>当AndroidSDK版本低于2.3时，应用程序想要操作SD卡数据，必须在清单文件中添加权限。（ √ ）</li>
+<li>SQLiteDatabase类的<code>update()</code>方法用于删除数据库表中的数据。（ × ）</li>
+<li>SQLite数据库的事务操作满足原子性、一致性、隔离性和持续性。（ √ ）</li>
+</ol>
+<h3 id="选择题-5">选择题</h3>
+<ol>
+<li>
+<p>下列关于SharedPreferences存取文件的描述中，错误的是（    ）<br>
+A.属于移动存储解决方式<br>
+B.SharedPreferences处理的就是键值对<br>
+C.读取xml的路径是<code>/sdcard/shared_prefs</code><br>
+D.文本的保存格式是xml<br>
+<strong>答案：C</strong></p>
+</li>
+<li>
+<p>下列选项中，不属于<code>getSharedPreferences()</code>方法的文件操作模式参数是（    ）。<br>
+A.Context.MODE_PRIVATE<br>
+B.Context.MODE_PUBLIC<br>
+C.Context.MODE_WORLD_READABLE<br>
+D.Context.MODE_WORLD_WRITEABLE<br>
+<strong>答案：B</strong></p>
+</li>
+<li>
+<p>下列方法中，（    ）是SharedPreferences获取其编辑器的方法。<br>
+A.<code>getEdit()</code><br>
+B.<code>edit()</code><br>
+C.<code>setEdit()</code><br>
+D.<code>getAll</code><br>
+<strong>答案：B</strong></p>
+</li>
+<li>
+<p>Android对数据库的表进行查询操作时，会使用SQLiteDatabase类中的（    ）方法。<br>
+A.<code>insert()</code><br>
+B.<code>execSQL()</code><br>
+C.<code>query()</code><br>
+D.<code>update()</code><br>
+<strong>答案：C</strong></p>
+</li>
+<li>
+<p>下列关于SQLite数据库的描述中，错误的是（    ）。<br>
+A.SqliteOpenHelper类有创建数据库和更新数据库版本的功能<br>
+B.SqliteDatabase类是用来操作数据库的<br>
+C.每次调用SqliteDatabase类的<code>getWritableDatabase()</code>方法时，都会执行SqliteOpenHelper类的<code>onCreate()</code>方法<br>
+D.当数据库版本发生变化时，会调用SqliteOpenHelper类的<code>onUpgrade()</code>方法更新数据库<br>
+<strong>答案：C</strong></p>
+</li>
+<li>
+<p>下列初始化SharedPreferences的代码中，正确的是（    ）。<br>
+A.<code>SharedPreferencessp=newSharedPreferences();</code><br>
+B.<code>SharedPreferencessp=SharedPreferences.getDefault();</code><br>
+C.<code>SharedPreferencessp=SharedPreferences.Factory();</code><br>
+D.<code>SharedPreferencessp=getSharedPreferences();</code><br>
+<strong>答案：D</strong></p>
+</li>
+</ol>
+<h3 id="简答题-5">简答题</h3>
+<ol>
+<li>
+<p>简述数据库事务的4个基本要素。<br>
+答：事务的操作比较严格，他必须满足ACID，ACID是指数据库事务正确执行的四个基本要素的缩写，这些要素包括原子性（Atomicity）、一致性（Consistency）、隔离性（Isolation）、持久性（Durability），接下来针对这四个基本要素进行详细解释。</p>
+<ul>
+<li><strong>原子性</strong>：表示事务是一个不可再分割的工作单位，事务中的操作要么全部成功，要么全部失败回滚。</li>
+<li><strong>一致性</strong>：表示事务开始之前和结束之后，数据库的完整性没有被破坏。也就是说数据库事务不能破坏关系数据的完整性以及业务逻辑上的一致性。</li>
+<li><strong>隔离性</strong>：表示并发的事务是相互隔离的，也就是一个事务内部的操作都必须封锁起来，不会被其他事务影响到。</li>
+<li><strong>持久性</strong>：表示事务一旦提交后，该事务对数据做的更改便持久保存在数据库中，并不会被回滚，即使出现了断电等事故，也不会影响数据库中的数据。</li>
+</ul>
+</li>
+<li>
+<p>简述Android数据存储的方式。<br>
+答：Android平台提供的五种数据存储方式，分别为文件存储、SharedPreferences、SQLite数据库、ContentProvider和网络存储，这些存储方式的特点如下。</p>
+<ul>
+<li>文件存储：Android提供了openFileInput()和openFileOutput()方法来读取设备上的文件，其读取方式与Java中I/O程序是完全一样的。</li>
+<li>SharedPreferences：这是Android提供的用来存储一些简单的配置信息的一种机制，他采用了XML格式将数据存储到设备中。通常情况下，我们使用SharedPreferences存储一些应用程序的各种配置信息，如用户名、密码等。</li>
+<li>SQLite数据库：SQLite是Android自带的一个轻量级的数据库，他运算速度快，占用资源少，还支持基本SQL语法，一般使用他作为复杂数据的存储引擎，可以存储用户信息等。</li>
+<li>ContentProvider：Android四大组件之一，主要用于应用程序之间的数据交换，他可以将自己的数据共享给其他应用程序使用。</li>
+<li>网络存储：需要与Android网络数据包打交道，将数据存储到服务器上，通过网络提供的存储空间来存储/获取数据信息。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第6章内容提供者和内容观察者">第6章内容提供者和内容观察者</h2>
+<h3 id="判断题-6">判断题</h3>
+<ol>
+<li>Uri主要由3部分组成，分别是scheme、authority和path。（ √ ）</li>
+<li>内容观察者用于观察指定Uri代表的数据的变化。（ √ ）</li>
+<li>内容提供者的主要功能是实现跨程序共享数据的功能。（ √ ）</li>
+<li>在Android中，当通过内容解析者读取手机通讯录数据库的内容时，不需要加入读取手机通讯录的权限。（ × ）</li>
+<li>Android的UriMatcher类用于匹配Uri。（ √ ）</li>
+</ol>
+<h3 id="选择题-6">选择题</h3>
+<ol>
+<li>
+<p>如果一个应用程序想要访问另外一个应用程序的数据库，那么需要通过（    ）实现。<br>
+A.BroadcastReceiver<br>
+B.Activity<br>
+C.ContentProvider<br>
+D.AIDL<br>
+<strong>答案：C</strong></p>
+</li>
+<li>
+<p>下列方法中，哪个方法能够得到ContentProvider的实例对象？（    ）<br>
+A.<code>newContentResolver()</code><br>
+B.<code>getContentResolver()</code><br>
+C.<code>newInstance()</code><br>
+D.<code>ContentUris.newInstance()</code><br>
+<strong>答案：B</strong></p>
+</li>
+<li>
+<p>自定义内容观察者时，需要继承的类是（    ）。<br>
+A.BaseObserver<br>
+B.ContentObserver<br>
+C.BasicObserver<br>
+D.DefalutObserver<br>
+<strong>答案：B</strong></p>
+</li>
+<li>
+<p>查询手机系统短信时，内容提供者对应的Uri为（    ）。<br>
+A.<code>Contacts.Photos.CONTENT_URI</code><br>
+B.<code>Contacts.People.CONTENT_URI</code><br>
+C.<code>“content://sms/”</code><br>
+D.<code>Media.EXTERNAL_CONTENT_URI</code><br>
+<strong>答案：C</strong></p>
+</li>
+<li>
+<p>下列关于ContentProvider的描述，错误的是（    ）。<br>
+A.ContentProvider是一个抽象类，只有继承后才能使用<br>
+B.ContentProvider只有在AndroidManifest.xml文件中注册后才能运行<br>
+C.ContentProvider为其他应用程序提供了统一的访问数据库的方式<br>
+D.以上说法都不对<br>
+<strong>答案：D</strong></p>
+</li>
+</ol>
+<h3 id="简答题-6">简答题</h3>
+<ol>
+<li>
+<p>简述内容提供者的工作原理。<br>
+答：假设B程序需要操作A程序数据库中的数据，一般需要A程序使用ContentProvider暴露数据，才能被其他程序操作。B程序通过ContentResolver操作A程序暴露出来的数据，而A程序会将操作结果返回给ContentResolver，然后ContentResolver再将操作结果返回给B程序。</p>
+</li>
+<li>
+<p>简述内容观察者的工作原理。<br>
+答：使用ContentObserver观察A程序的数据时，首先要在A程序的ContentProvider中调用ContentResolver的<code>notifyChange()</code>方法。调用此方法后，当B程序操作A程序中的数据时，A程序会向“消息中心”发送数据变化的消息，此时C程序会观察到“消息中心”的数据有变化，会触发ContentObserver的<code>onChange()</code>方法。</p>
+</li>
+</ol>
+<h2 id="第7章广播机制">第7章广播机制</h2>
+<h3 id="填空题-4">填空题</h3>
+<ol>
+<li><u><strong><code>BroadcastReceiver</code></strong></u>用来监听来自系统或者应用程序的广播。</li>
+<li>广播接收者的注册方式有两种，分别是<u><strong><code>动态注册</code></strong></u>和<u><strong><code>静态注册</code></strong></u>。</li>
+</ol>
+<h3 id="判断题-7">判断题</h3>
+<ol>
+<li>Broadcast表示广播，它是一种运用在应用程序之间传递消息的机制。（ √ ）</li>
+<li>在清单文件注册广播接收者时，可在＜intent-filter＞标签中使用priority属性设置优先级别，属性值越大，优先级越高。（ √ ）</li>
+<li>有序广播的广播效率比无序广播更高。（ × ）</li>
+<li>动态注册的广播接收者的生命周期依赖于注册广播的组件。（ √ ）</li>
+<li>Android中广播接收者必须在清单文件里面注册。（ × ）</li>
+</ol>
+<h3 id="选择题-7">选择题</h3>
+<ol>
+<li>
+<p>下列选项中关于广播类型的说法，错误的是（    ）。（多选）<br>
+A.Android中的广播类型分为有序广播和无序广播<br>
+B.无序广播按照一定的优先级进行接收<br>
+C.无序广播可以被拦截，可以被修改数据<br>
+D.有序广播按照一定的优先级进行发送<br>
+<strong>答案：BC</strong></p>
+</li>
+<li>
+<p>广播机制作为Android组件间的通信方式，使用的场景有哪些？（    ）（多选）<br>
+A.在同一个App内部的同一组件内进行消息通信<br>
+B.在不同App的组件之间进行消息通信<br>
+C.在同一个App内部的不同组件之间进行消息通信（单个进程）<br>
+D.在同一个App具有多个进程的不同组件之间进行消息通信<br>
+<strong>答案：ABCD</strong></p>
+</li>
+</ol>
+<h3 id="简答题-7">简答题</h3>
+<ol>
+<li>
+<p>广播机制的实现过程<br>
+答：Android中的广播使用观察者模式，实现过程如下：</p>
+<ul>
+<li>广播接收者通过Binder机制在AMS（ActivityManagerService）中进行注册。</li>
+<li>广播发送者通过Binder机制向AMS发送广播。</li>
+<li>AMS查找符合条件的广播接收者，将广播发送到相应的消息循环队列中。</li>
+<li>执行消息循环时，获取到发送的广播，回调广播接收者的<code>onReceive()</code>方法并进行相关处理。</li>
+<li>简述有序广播和无序广播的区别</li>
+</ul>
+</li>
+<li>
+<p>有序广播和无序广播的区别<br>
+答：区别包括：</p>
+<ul>
+<li>发送广播方法不同：有序广播使用<code>sendOrderedBroadcast()</code>，而无序广播使用<code>sendBroadcast()</code>。</li>
+<li>广播接收者执行顺序：
+<ul>
+<li>有序广播的接收者按照优先级顺序执行，高优先级先执行。</li>
+<li>无序广播是完全异步执行，接收和执行的顺序不确定。</li>
+</ul>
+</li>
+<li>拦截广播：有序广播的接收者可以拦截广播，而无序广播不能被拦截。</li>
+<li>效率：有序广播的效率相对较低，因为需要按照优先级顺序执行。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第8章服务">第8章服务</h2>
+<h3 id="填空题-5">填空题</h3>
+<p>1．如果想要停止bindService()方法启动的服务，需要调用<u><strong><code>unBindService()</code></strong></u>方法。<br>
+2．Android服务的通信方式分为<u><strong><code>本地服务</code></strong></u>和<u><strong><code>远程服务</code></strong></u>。<br>
+3．远程服务通过<u><strong><code>AIDL</code></strong></u>实现服务的通信。</p>
+<h3 id="判断题-8">判断题</h3>
+<p>1．服务运行在子线程中。（ × ）<br>
+2．不管使用哪种方式启动服务，它的生命周期都是一样的。（ × ）<br>
+3．使用服务的通信方式进行通信时，必须保证服务是以绑定的方式开启的，否则无法通信。（ × ）<br>
+4．一个组件只能绑定一个服务。（ × ）<br>
+5．远程服务和本地服务都运行在同一个进程中。（ × ）</p>
+<h3 id="选择题-8">选择题</h3>
+<ol>
+<li>
+<p>如果通过bindService方式开启服务，那么服务的生命周期是（    ）<br>
+A.<code>onCreate()</code>→<code>onStart()</code>→<code>onBind()</code>→<code>onDestroy()</code><br>
+B.<code>onCreate()</code>→<code>onBind()</code>→<code>onDestroy()</code><br>
+C.<code>onCreate()</code>→<code>onBind()</code>→<code>onUnBind()</code>→<code>onDestroy()</code><br>
+D.<code>onCreate()</code>→<code>onStart()</code>→<code>onBind()</code>→<code>onUnBind()</code>→<code>onDestroy()</code><br>
+<strong>答案：C</strong></p>
+</li>
+<li>
+<p>下列关于服务的描述中，错误的是（    ）<br>
+A.服务没有用户可见的界面，不能与用户交互<br>
+B.服务可以通过<code>Context.startService()</code>来启动<br>
+C.服务可以通过<code>Context.bindService()</code>来启动<br>
+D.服务无须在清单文件中进行配置<br>
+<strong>答案：D</strong></p>
+</li>
+<li>
+<p>下列关于服务的方法描述，错误的是（    ）<br>
+A.<code>onCreate()</code>表示第一次创建服务时执行的方法<br>
+B.调用<code>startService()</code>方法启动服务时执行的方法是<code>onStartCommand()</code><br>
+C.调用<code>bindService()</code>方法启动服务时执行的方法是<code>onBind()</code><br>
+D.调用<code>startService()</code>方法断开服务绑定时执行的方法是<code>onUnbind()</code><br>
+<strong>答案：D</strong></p>
+</li>
+</ol>
+<h3 id="简答题-8">简答题</h3>
+<ol>
+<li>
+<p>简述服务的两种启动方式的区别。<br>
+答：Service的启动方式分别可以调用<code>startService()</code>、<code>bindService()</code>方法，这两个启动方式的区别如下所示：</p>
+<ul>
+<li>生命周期不同：<br>
+<code>startService()</code>：使用该方法开启Service时，执行的生命周期方法依次为<code>onCreate()</code>、<code>onStartCommand()</code>、<code>onDestroy()</code>。<br>
+<code>bindService()</code>：使用该方法开启Service时，执行的生命周期方法依次为：<code>onCreate()</code>、<code>onBind()</code>、<code>onUnbind()</code>、<code>onDestroy()</code>。</li>
+<li>停止服务的方法不同：<br>
+<code>startService()</code>：调用<code>stopSelf()</code>、<code>stopService()</code>方法停止服务。<br>
+<code>bindService()</code>：调用<code>unbindService()</code>方法停止服务。</li>
+<li>组件的关联不同：<br>
+<code>startService()</code>：当一个组件通过此方法开启服务时，服务与开启该组件没有关联，即使开启服务的组件被销毁，服务依旧运行。<br>
+<code>bindService()</code>：当一个组件通过此方法开启服务时，服务会与该组件绑定，组件一旦被销毁，该服务也会被销毁。</li>
+</ul>
+</li>
+<li>
+<p>简述服务的生命周期。<br>
+答：使用不同的方式启动服务，其生命周期会不同。</p>
+<ul>
+<li>开启服务的方法分别为<code>startService()</code>、<code>bindService()</code>。<br>
+当通过<code>startService()</code>方法启动服务时，执行的生命周期方法依次为<code>onCreate()</code>、<code>onStartCommand()</code>、<code>onDestroy()</code>。<br>
+当通过<code>bindService()</code>方法启动服务时，执行的生命周期方法依次为<code>onCreate()</code>、<code>onBind()</code>、<code>onUnbind()</code>、<code>onDestroy()</code>。</li>
+<li>其生命周期方法的具体含义如下：<br>
+<code>onCreate()</code>：第一次创建服务时执行的方法。<br>
+<code>onStartCommand()</code>：调用<code>startService()</code>方法启动服务时执行的方法。<br>
+<code>onBind()</code>：调用<code>bindService()</code>方法启动服务时执行的方法。<br>
+<code>onUnbind()</code>：调用<code>unBindService()</code>方法断开服务绑定时执行的方法。<br>
+<code>onDestroy()</code>：服务被销毁时执行的方法。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第9章网络编程">第9章网络编程</h2>
+<h3 id="填空题-6">填空题</h3>
+<ol>
+<li>HttpURLConnection继承自<u><strong><code>URLConnection</code></strong></u>类。</li>
+<li>Android默认提供的内置浏览器使用的是<u><strong><code>WebKit</code></strong></u>引擎。</li>
+<li>在Android的解析JSON数据的org.json包中，最重要的两个类是<u><strong><code>JSONObject</code></strong></u>和JSONArray。</li>
+</ol>
+<h3 id="判断题-9">判断题</h3>
+<ol>
+<li>HttpURLConnection用于发送HTTP请求和获取HTTP响应。（ √ ）</li>
+<li>Android中的WebView控件是专门用于浏览网页的，其使用方法与其他控件一样。（ √ ）</li>
+<li>在Android中要访问网络，必须在AndroidManifest.xml中注册网络访问权限。（ √ ）</li>
+<li>HttpURLConnection是抽象类，不能直接实例化对象，需要使用URL的openConnection0方法获得。（ √ ）</li>
+<li>使用HttpURLConnection进行HTTP网络通信时，GET请求方式只能发送大小在1024字节内的数据。（ √ ）</li>
+</ol>
+<h3 id="选择题-9">选择题</h3>
+<ol>
+<li>
+<p>Android针对HTTP实现网络通信的方式主要包括（    ）。（多选）<br>
+A.使用HttpURLConnection实现<br>
+B.使用ServiceConnection实现<br>
+C.使用HttpClient实现<br>
+D.使用HttpConnection实现<br>
+<strong>答案：ABCD</strong></p>
+</li>
+<li>
+<p>Android中HttpURLConnection的输入／输出流操作被统一封装成了（    ）。（多选）<br>
+A.HttpGet<br>
+B.HttpPost<br>
+C.HttpReques<br>
+D.HttpResponse<br>
+<strong>答案：ABD</strong></p>
+</li>
+</ol>
+<h3 id="简答题-9">简答题</h3>
+<ol>
+<li>简述使用HttpURLConnection访问网络的步骤。<br>
+答：使用HttpURLConnection访问网络的步骤如下：
+<ul>
+<li>创建URL对象。</li>
+<li>调用URL对象的<code>openConnection()</code>方法获取HttpURLConnection对象。</li>
+<li>调用<code>setRequestMethod()</code>方法设置http请求的方式。</li>
+<li>通过<code>setConnectTimeout()</code>方法设置连接的超时时间。</li>
+<li>调用<code>getInputStream()</code>方法获取服务器返回的输入流。</li>
+<li>最后调用<code>disconnect()</code>方法关闭http连接。</li>
+</ul>
+</li>
+</ol>
+<h2 id="第10章图形图像处理">第10章图形图像处理</h2>
+<h3 id="判断题-10">判断题</h3>
+<ol>
+<li>Paint类表示画笔，主要用于描述图形的颜色和风格。（ √ ）</li>
+<li>Android提供的Matrix类能够结合其他API对图形进行变换，例如旋转、缩放、倾斜。（ √ ）</li>
+<li>Bitmap类的decodeFile方法用于从文件中解析Bitmap对象。（ √ ）</li>
+</ol>
+<h3 id="选择题-10">选择题</h3>
+<ol>
+<li>
+<p>下列关于Android动画的描述中，正确的是（    ）。（多选）<br>
+A.Android中的动画通常分为逐帧动画和补间动画两种<br>
+B.逐帧动画就是顺序播放一组预定义的静态图像而形成的动画效果<br>
+C.补间动画就是通过对场景中的对象不断进行图像变化来产生动画效果<br>
+D.实现补间动画时，只需要定义动画开始和结束的关键帧，其他过渡由系统自动计算补齐<br>
+<strong>答案：ABC</strong></p>
+</li>
+<li>
+<p>Android提供了哪些补间动画？（    ）。（多选）<br>
+A.透明度渐变动画（AlphaAnimation）<br>
+B.旋转动画（RotateAnimation）<br>
+C.缩放动画（ScaleAnimation）<br>
+D.平移动画（TranslateAnimation）<br>
+<strong>答案：ABCD</strong></p>
+</li>
+<li>
+<p>Android绘制图像时最常用的类包括（    ）。（多选）<br>
+A.Bitmap类<br>
+B.BitmapFactory类<br>
+C.Paint类<br>
+D.Canvas类<br>
+<strong>答案：ABCD</strong></p>
+</li>
+<li>
+<p>在Android中，使用Canvas类中的（    ）方法可以绘制椭圆。<br>
+A.<code>drawRect()</code><br>
+B.<code>drawOval()</code><br>
+C.<code>drawCircle()</code><br>
+D.<code>drawLine()</code><br>
+<strong>答案：B</strong></p>
+</li>
+<li>
+<p>下列关于Canvas类的描述，错误的是（    ）。<br>
+A.Canvas类表示画布<br>
+B.Canvas类可以绘制各种各样的图形<br>
+C.Canvas类和Paint类的作用一样<br>
+D.Canvas类的<code>drawRect()</code>方法用于绘制矩形<br>
+<strong>答案：C</strong></p>
+</li>
+</ol>
+<h3 id="简答题-10">简答题</h3>
+<ol>
+<li>
+<p><strong>简述逐帧动画的工作原理。</strong></p>
+<p>答：逐帧(Frame)动画的工作原理非常简单，类似与动画片的工作原理，他按照事先准备好的静态图片顺序进行播放，并利用人眼的“视觉暂留”原理，使用户产生动画的错觉。</p>
+</li>
+</ol>
+<h2 id="第11章多媒体应用开发">第11章多媒体应用开发</h2>
+<h3 id="判断题-11">判断题</h3>
+<ol>
+<li>SurfaceView控件继承自View，它是显示图像的控件。（ √ ）</li>
+<li>SurfaceView控件具有双缓冲技术。（ √ ）</li>
+<li>使用MediaPlayer类播放视频时，SurfaceView控件显示视频的时候必须要在子线程中更新。（ × ）</li>
+<li>Android中可以使用SoundPool类同时播放多个音频文件。（ √ ）</li>
+<li>使用VideoView控件播放视频时，需要使用<code>setVideoPalh()</code>方法设置播放视频路径。（ √ ）</li>
+</ol>
+<h3 id="选择题-11">选择题</h3>
+<ol>
+<li>
+<p>下列关于多媒体应用开发的描述中，正确的是（    ）。（多选）<br>
+A.可以使用MediaPlayer类或SoundPool类播放音频<br>
+B.使用MediaPlayer类每次只能播放一个音频，适用于播放长音乐或背景音乐<br>
+C.使用SoundPool类可以同时播放多个短小音频，适用于播放按键音或消息提示音<br>
+D.SoundPool类和SurfaceView控件一起使用，还可以播放视频<br>
+<strong>答案：ABC</strong></p>
+</li>
+<li>
+<p>MediaPlayer类中的setAudioStreamType（方法支持的音频类型包括（    ）。（多选）<br>
+A.音乐<br>
+B.响铃<br>
+C.闹钟<br>
+D.提示音<br>
+<strong>答案：ABC</strong></p>
+</li>
+<li>
+<p>下列关于MediaPlayer类的描述，错误的是（    ）。<br>
+A.MediaPlayer类是用于播放音频和视频的<br>
+B.MediaPlayer类对音频文件提供了非常全面的控制方法<br>
+C.MediaPlayer类会调用底层的音频驱动播放音频<br>
+D.MediaPlayer类只可以播放音频而不能播放视频<br>
+<strong>答案：D</strong></p>
+</li>
+</ol>
+<h3 id="简答题-11">简答题</h3>
+<ol>
+<li>
+<p>简述使用MediaPlayer播放音频的步骤。<br>
+答：使用MediaPlayer播放音频包含以下几个步骤：</p>
+<ul>
+<li>创建MediaPlayer对象</li>
+<li>调用<code>setAudioStreamType()</code>设置音频的类型</li>
+<li>设置数据源</li>
+<li>调用<code>start()</code>方法播放音频文件</li>
+<li>调用<code>stop()</code>方法停止播放音频文件</li>
+<li>调用<code>release()</code>方法释放MediaPlayer对象占用的资源</li>
+</ul>
+</li>
+<li>
+<p>简要介绍一下SoundPool使用的场景。<br>
+答：SoundPool又称为音频池，它适合在应用程序中播放按键音或者消息提示音等短小的多个音频。</p>
+</li>
+</ol>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Android%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/"><div class="tags-punctuation"><svg class="faa-tada icon" style="height:1.1em;width:1.1em;fill:currentColor;position:relative;top:2px;margin-right:3px" aria-hidden="true"><use xlink:href="#icon-sekuaibiaoqian"></use></svg></div>Android移动开发</a></div></div><link rel="stylesheet" href="/css/coin.css" media="defer" onload="this.media='all'"/><div class="post-reward"><button class="tip-button reward-button"><span class="tip-button__text">投喂作者</span><div class="coin-wrapper"><div class="coin"><div class="coin__middle"></div><div class="coin__back"></div><div class="coin__front"></div></div></div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat-reward.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat-reward.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay-reward.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay-reward.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></button></div><script defer="defer" src="/js/coin.js"></script><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/f31ac9c6.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/default_cover/071.webp" onerror="onerror=null;src='/assets/r2.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Linux简单操作速查</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><svg class="meta_icon" style="width:22px;height:22px;position:relative;top:5px"><use xlink:href="#icon-mulu1"></use></svg><span style="font-weight:bold">目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC1%E7%AB%A0Android%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8"><span class="toc-number">1.</span> <span class="toc-text">第1章Android基础入门</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98"><span class="toc-number">1.1.</span> <span class="toc-text">填空题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98"><span class="toc-number">1.2.</span> <span class="toc-text">判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98"><span class="toc-number">1.3.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E7%AD%94%E9%A2%98"><span class="toc-number">1.4.</span> <span class="toc-text">简答题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC2%E7%AB%A0Android%E5%B8%B8%E8%A7%81%E7%95%8C%E9%9D%A2%E5%B8%83%E5%B1%80"><span class="toc-number">2.</span> <span class="toc-text">第2章Android常见界面布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98-2"><span class="toc-number">2.1.</span> <span class="toc-text">填空题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98-2"><span class="toc-number">2.2.</span> <span class="toc-text">判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98-2"><span class="toc-number">2.3.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E7%AD%94%E9%A2%98-2"><span class="toc-number">2.4.</span> <span class="toc-text">简答题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC3%E7%AB%A0Android%E5%B8%B8%E8%A7%81%E7%95%8C%E9%9D%A2%E6%8E%A7%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text">第3章Android常见界面控件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98-3"><span class="toc-number">3.1.</span> <span class="toc-text">判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98-3"><span class="toc-number">3.2.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E7%AD%94%E9%A2%98-3"><span class="toc-number">3.3.</span> <span class="toc-text">简答题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC4%E7%AB%A0%E7%A8%8B%E5%BA%8F%E6%B4%BB%E5%8A%A8%E5%8D%95%E5%85%83Activity"><span class="toc-number">4.</span> <span class="toc-text">第4章程序活动单元Activity</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98-3"><span class="toc-number">4.1.</span> <span class="toc-text">填空题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98-4"><span class="toc-number">4.2.</span> <span class="toc-text">判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98-4"><span class="toc-number">4.3.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E7%AD%94%E9%A2%98-4"><span class="toc-number">4.4.</span> <span class="toc-text">简答题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC5%E7%AB%A0%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8"><span class="toc-number">5.</span> <span class="toc-text">第5章数据存储</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98-5"><span class="toc-number">5.1.</span> <span class="toc-text">判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98-5"><span class="toc-number">5.2.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E7%AD%94%E9%A2%98-5"><span class="toc-number">5.3.</span> <span class="toc-text">简答题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC6%E7%AB%A0%E5%86%85%E5%AE%B9%E6%8F%90%E4%BE%9B%E8%80%85%E5%92%8C%E5%86%85%E5%AE%B9%E8%A7%82%E5%AF%9F%E8%80%85"><span class="toc-number">6.</span> <span class="toc-text">第6章内容提供者和内容观察者</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98-6"><span class="toc-number">6.1.</span> <span class="toc-text">判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98-6"><span class="toc-number">6.2.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E7%AD%94%E9%A2%98-6"><span class="toc-number">6.3.</span> <span class="toc-text">简答题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC7%E7%AB%A0%E5%B9%BF%E6%92%AD%E6%9C%BA%E5%88%B6"><span class="toc-number">7.</span> <span class="toc-text">第7章广播机制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98-4"><span class="toc-number">7.1.</span> <span class="toc-text">填空题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98-7"><span class="toc-number">7.2.</span> <span class="toc-text">判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98-7"><span class="toc-number">7.3.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E7%AD%94%E9%A2%98-7"><span class="toc-number">7.4.</span> <span class="toc-text">简答题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC8%E7%AB%A0%E6%9C%8D%E5%8A%A1"><span class="toc-number">8.</span> <span class="toc-text">第8章服务</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98-5"><span class="toc-number">8.1.</span> <span class="toc-text">填空题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98-8"><span class="toc-number">8.2.</span> <span class="toc-text">判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98-8"><span class="toc-number">8.3.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E7%AD%94%E9%A2%98-8"><span class="toc-number">8.4.</span> <span class="toc-text">简答题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC9%E7%AB%A0%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B"><span class="toc-number">9.</span> <span class="toc-text">第9章网络编程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A1%AB%E7%A9%BA%E9%A2%98-6"><span class="toc-number">9.1.</span> <span class="toc-text">填空题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98-9"><span class="toc-number">9.2.</span> <span class="toc-text">判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98-9"><span class="toc-number">9.3.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E7%AD%94%E9%A2%98-9"><span class="toc-number">9.4.</span> <span class="toc-text">简答题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC10%E7%AB%A0%E5%9B%BE%E5%BD%A2%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86"><span class="toc-number">10.</span> <span class="toc-text">第10章图形图像处理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98-10"><span class="toc-number">10.1.</span> <span class="toc-text">判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98-10"><span class="toc-number">10.2.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E7%AD%94%E9%A2%98-10"><span class="toc-number">10.3.</span> <span class="toc-text">简答题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC11%E7%AB%A0%E5%A4%9A%E5%AA%92%E4%BD%93%E5%BA%94%E7%94%A8%E5%BC%80%E5%8F%91"><span class="toc-number">11.</span> <span class="toc-text">第11章多媒体应用开发</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%A4%E6%96%AD%E9%A2%98-11"><span class="toc-number">11.1.</span> <span class="toc-text">判断题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E9%A2%98-11"><span class="toc-number">11.2.</span> <span class="toc-text">选择题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E7%AD%94%E9%A2%98-11"><span class="toc-number">11.3.</span> <span class="toc-text">简答题</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer" style="background-color: transparent;"><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">格言🧬 </p><div class="bg-ad"><div>人生须有抵岸的力量🌊<br/>
+也不乏漂游的浪漫⛵<br/></div></div><p class="ft-t t-l-t" style="margin-top: auto;">交通枢纽<svg style="height:26px;width:26px;fill:currentColor;position:relative;top:8px" aria-hidden="true"><use xlink:href="#icon-taiyuannanzhancolour"> </use></svg></p><div class="bg-ad" style="margin-bottom: 20px;"><div style="display: flex;"><a class="meihua faa-parent animated-hover" href="https://travel.moe/go.html?travel=on" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" style="text-decoration:none;" target="_blank"> <svg class="faa-tada icon" style="height:26px;width:26px;fill:currentColor;position:relative;top:8px" aria-hidden="true"><use xlink:href="#icon-xingqiu"> </use></svg><span>异次元之旅</span></a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">猜你想看💡</p><ul class="ft-links"><li><a href="/pages/box/navigation/">网址导航</a><a href="/pages/about/update-records/">建设进程</a></li><li><a href="/pages/social/links/">我的朋友</a><a href="/pages/social/message-board/">说点什么</a></li><li><a href="/pages/about/me/">关于作者</a><a href="javascript:randomPost()">随便逛逛</a></li><li><a href="/pages/rests/games/">玩小游戏</a><a href="/pages/social/moments/">看朋友圈</a></li><li><a href="/pages/rests/talks/">即刻短文</a><a href="/pages/box/gallery/">小站画廊</a></li><li><a href="/pages/about/census/">网站数据</a><a href="/pages/site/articles/">文章统计</a></li></ul></div></div></div><div class="ft-item-2"><p class="ft-t">推荐链接⌛</p><div class="ft-img-group"></div></div></div><div class="copyright"><span><b>&copy;2023</b></span><span><b>&nbsp;&nbsp;By Royster</b></span></div>本站数据分析由<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/3FI49W6PtxRahPCr"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sdk.51.la/icon/1-1.png" style="height: 12px"/></a>和<a target="_blank" title="百度统计" href="https://tongji.baidu.com/main/overview/10000566992/overview/index"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tongji.baidu.com/main/static/media/logo.a99c3448f6aac870cd92b4db79f16fcf.svg" style="height: 18px"/></a>支持<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://beian.miit.gov.cn/" style="margin-inline:5px" title="域名备案：粤ICP备2021022294号"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/粤_ICP_备-2021022294号-008cff" alt=""/></a><a class="github-badge" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502010314" style="margin-inline:5px;" title="公安备案：粤公网安备44030502010314号"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/resource/elements/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png" style="width: 16px; position: relative; top: -3px; left: -1px"/><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/粤公网安备-44030502010314号-ff0000" alt=""/></a><a class="github-badge" target="_blank" href="https://icp.gov.moe/?keyword=20230807" style="margin-inline:5px" title="本站已加入萌ICP豪华套餐，萌ICP备20230807号"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/萌ICP备-20230807-fe1384" alt=""/></a><br/><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v7.0.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v4.3.1 -&gt; 4.6.1"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站项目由Vercel部署"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src=" https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button><button class="share" type="button" title="右键模式" onclick="changeMouseMode()"><i class="fas fa-mouse"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog right_side"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button class="share" type="button" title="分享链接" onclick="share()"><i class="fas fa-share-nodes"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div class="js-pjax" id="rightMenu"><div class="rightMenu-group rightMenu-small"><a class="rightMenu-item" href="javascript:window.history.back();"><i class="fa fa-arrow-left"></i></a><a class="rightMenu-item" href="javascript:window.history.forward();"><i class="fa fa-arrow-right"></i></a><a class="rightMenu-item" href="javascript:window.location.reload();"><i class="fa fa-refresh"></i></a><a class="rightMenu-item" href="javascript:rmf.scrollToTop();"><i class="fa fa-arrow-up"></i></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-text"><a class="rightMenu-item" href="javascript:rmf.copySelect();"><i class="fa fa-copy"></i><span>复制</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-paste"><a class="rightMenu-item" href="javascript:rmf.paste()"><i class="fa fa-copy"></i><span>粘贴</span></a><a class="rightMenu-item" href="javascript:window.open(&quot;https://www.baidu.com/s?wd=&quot;+window.getSelection().toString());window.location.reload();"><i class="fa fa-search"></i><span>百度一下</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-too"><a class="rightMenu-item" href="javascript:window.open(window.getSelection().toString());window.location.reload();"><i class="fa fa-link"></i><span>转到链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-post"><a class="rightMenu-item" href="javascript:rmf.copyWordsLink()"><i class="fa fa-link"></i><span>复制本文地址</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-to"><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>在新窗口打开</span></a><a class="rightMenu-item" id="menu-too" href="javascript:rmf.open()"><i class="fa fa-link"></i><span>转到链接</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-img"><a class="rightMenu-item" href="javascript:rmf.saveAs()"><i class="fa fa-download"></i><span>保存图片</span></a><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>在新窗口打开</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制图片链接</span></a></div><div class="rightMenu-group rightMenu-line"><a class="rightMenu-item" href="javascript:randomPost()"><i class="fa fa-paper-plane"></i><span>随便逛逛</span></a><a class="rightMenu-item" href="javascript:switchNightMode();"><i class="fa fa-moon"></i><span>昼夜切换</span></a><a class="rightMenu-item" href="/About/site/"><i class="fa fa-info-circle"></i><span>关于博客</span></a><a class="rightMenu-item" href="javascript:toggleWinbox();"><i class="fas fa-cog"></i><span>美化设置</span></a><a class="rightMenu-item" href="javascript:rmf.fullScreen();"><i class="fas fa-expand"></i><span>切换全屏</span></a><a class="rightMenu-item" href="javascript:window.print();"><i class="fa-solid fa-print"></i><span>打印页面</span></a></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://oss.iuoyt.com/resource/javascript/tw_cn.min.js"></script><script src="https://oss.iuoyt.com/resource/javascript/fancybox.umd.min.js"></script><script src="https://oss.iuoyt.com/resource/javascript/instantpage.min.js" type="module"></script><script src="https://oss.iuoyt.com/resource/javascript/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (true){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script async="async">var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())
+setTimeout(function(){preloader.endLoading();}, 5000);
+document.getElementById('loading-box').addEventListener('click',()=> {preloader.endLoading()})</script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container').forEach(node => {
+            if (node.hasAttribute('display')) {
+              btf.wrap(node, 'div', { class: 'mathjax-overflow' })
+            } else {
+              btf.wrap(node, 'span', { class: 'mathjax-overflow' })
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.iuoyt.com/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.iuoyt.com/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://oss.iuoyt.com/resource/javascript/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="https://oss.iuoyt.com/resource/javascript/jquery.min.js"></script><script async src="https://oss.iuoyt.com/resource/javascript/vue.min.js"></script><script async src="https://oss.iuoyt.com/resource/javascript/index.js"></script><script async src="https://oss.iuoyt.com/resource/javascript/clipboard.min.js"></script><script defer type="text/javascript" src="https://oss.iuoyt.com/resource/javascript/sweetalert2.all.js"></script><script async src="https://oss.iuoyt.com/resource/javascript/pace.min.js"></script><script defer src="https://oss.iuoyt.com/resource/javascript/winbox.bundle.min.js"></script><script async src="//at.alicdn.com/t/c/font_3586335_hsivh70x0fm.js"></script><script async src="//at.alicdn.com/t/c/font_3636804_gr02jmjr3y9.js"></script><script async src="//at.alicdn.com/t/c/font_3612150_kfv55xn3u2g.js"></script><script async src="//at.alicdn.com/t/c/font_4170107_eiu8mwjxwbu.js"></script><script async src="https://oss.iuoyt.com/resource/javascript/runtime.js"></script><script async src="https://oss.iuoyt.com/resource/javascript/Gold-ingot.js"></script><canvas id="universe"></canvas><canvas id="snow"></canvas><canvas id="canvas_sakura"></canvas><script defer src="/js/fomal.js"></script><script id="click-show-text" src="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/click-show-text.min.js" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法制,爱国,敬业,诚信,友善" data-fontsize="12px" data-random="false" async="async"></script><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://oss.iuoyt.com/resource/javascript/APlayer.min.js"></script><script src="https://oss.iuoyt.com/resource/javascript/Meting.min.js"></script><script src="https://oss.iuoyt.com/resource/javascript/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#web_bg",".js-pjax","#bibi","body > title","#app","#tag-echarts","#posts-echart","#categories-echarts"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="https://oss.iuoyt.com/resource/javascript/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://www.iuoyt.com/categories/Markdown/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍡 Markdown系列 (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://www.iuoyt.com/categories/Hexo/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍼 Hexo博客建站 (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://www.iuoyt.com/categories/学习笔记/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍉 学习笔记 (19)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://www.iuoyt.com/categories/LeetCode/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍟 LeetCode刷题笔记 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item" style="visibility: hidden"></div><div class="magnet_item" style="visibility: hidden"></div><a class="magnet_link_more"  href="https://www.iuoyt.com/categories/" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(33.333333333333336% - 5px);background: #e9e9e9;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: var(--text-bg-hover)}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/default_cover/039.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-07-15</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt="">Markdown语法与外挂标签写法汇总</a><div class="blog-slider__text">🥧本文是由Fomalhaut🥝汇总的Markdown格式以及外挂标签在网页端的渲染效果，可作为文档进行查询</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/79105230.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/default_cover/051.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-09-23</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/79105230.html&quot;);" href="javascript:void(0);" alt="">使用Github Desktop进行简单的团队合作开发</a><div class="blog-slider__text">文章未添加描述</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/79105230.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://oss.iuoyt.com/resource/javascript/swiper.min.js"></script><script defer data-pjax src="https://oss.iuoyt.com/resource/javascript/swiper_init.js"></script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script></div><script defer src="https://oss.iuoyt.com/resource/javascript/wow.min.js"></script><script defer src="https://oss.iuoyt.com/resource/javascript/wow_init.js"></script><script data-pjax src="https://oss.iuoyt.com/resource/javascript/gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('gitZone');
+      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 320px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('gitZone') && (location.pathname ==='/site/census/'|| '/site/census/' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("/api?null",['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9'],'null')
+    }
+  </script><!-- hexo injector body_end end --></body></html>
