@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.iuoyt.com/posts/471abbdf.html</loc>
+    
+    <lastmod>2023-12-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.iuoyt.com/posts/b8eb778b.html</loc>
     
     <lastmod>2023-12-24</lastmod>
@@ -721,6 +730,13 @@
   
   <url>
     <loc>https://www.iuoyt.com/tags/Android%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/</loc>
+    <lastmod>2023-12-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.iuoyt.com/tags/net/</loc>
     <lastmod>2023-12-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
