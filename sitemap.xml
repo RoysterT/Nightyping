@@ -659,6 +659,13 @@
 
   
   <url>
+    <loc>https://www.iuoyt.com/tags/Markdown/</loc>
+    <lastmod>2023-12-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.iuoyt.com/tags/Hexo/</loc>
     <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -673,14 +680,14 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/tags/Markdown/</loc>
+    <loc>https://www.iuoyt.com/tags/Git/</loc>
     <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/tags/Git/</loc>
+    <loc>https://www.iuoyt.com/tags/Linux/</loc>
     <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -708,13 +715,6 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/tags/Linux/</loc>
-    <lastmod>2023-12-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.iuoyt.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
     <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -729,14 +729,14 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/tags/Android%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/</loc>
+    <loc>https://www.iuoyt.com/tags/net/</loc>
     <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/tags/net/</loc>
+    <loc>https://www.iuoyt.com/tags/Android%E7%A7%BB%E5%8A%A8%E5%BC%80%E5%8F%91/</loc>
     <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -745,14 +745,14 @@
 
   
   <url>
-    <loc>https://www.iuoyt.com/categories/Hexo/</loc>
+    <loc>https://www.iuoyt.com/categories/Markdown/</loc>
     <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/categories/Markdown/</loc>
+    <loc>https://www.iuoyt.com/categories/Hexo/</loc>
     <lastmod>2023-12-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
