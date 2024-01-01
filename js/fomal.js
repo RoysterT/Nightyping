@@ -11,7 +11,7 @@ function percent() {
   try {
     rmf.showRightMenu(false);
     $(".rmMask").attr("style", "display: none");
-  } catch (err) {}
+  } catch (err) { }
 
   let a = document.documentElement.scrollTop, // 卷去高度
     b =
@@ -483,37 +483,37 @@ if (
         s = [];
       (i.width = window.innerWidth), (i.height = window.innerHeight);
       const h = () => {
-          n.clearRect(0, 0, i.width, i.height);
-          const r = e.minDist;
-          for (let t = 0; t < o; t++) {
-            let o = s[t];
-            const h = a,
-              w = d,
-              m = o.x,
-              c = o.y,
-              p = Math.sqrt((h - m) * (h - m) + (w - c) * (w - c));
-            if (p < r) {
-              const e = (h - m) / p,
-                t = (w - c) / p,
-                i = r / (p * p) / 2;
-              (o.velX -= i * e), (o.velY -= i * t);
-            } else
-              (o.velX *= 0.98),
-                o.velY < o.speed &&
-                  o.speed - o.velY > 0.01 &&
-                  (o.velY += 0.01 * (o.speed - o.velY)),
-                (o.velX += Math.cos((o.step += 0.05)) * o.stepSize);
-            (n.fillStyle = "rgba(" + e.color + ", " + o.opacity + ")"),
-              (o.y += o.velY),
-              (o.x += o.velX),
-              (o.y >= i.height || o.y <= 0) && l(o),
-              (o.x >= i.width || o.x <= 0) && l(o),
-              n.beginPath(),
-              n.arc(o.x, o.y, o.size, 0, 2 * Math.PI),
-              n.fill();
-          }
-          t(h);
-        },
+        n.clearRect(0, 0, i.width, i.height);
+        const r = e.minDist;
+        for (let t = 0; t < o; t++) {
+          let o = s[t];
+          const h = a,
+            w = d,
+            m = o.x,
+            c = o.y,
+            p = Math.sqrt((h - m) * (h - m) + (w - c) * (w - c));
+          if (p < r) {
+            const e = (h - m) / p,
+              t = (w - c) / p,
+              i = r / (p * p) / 2;
+            (o.velX -= i * e), (o.velY -= i * t);
+          } else
+            (o.velX *= 0.98),
+              o.velY < o.speed &&
+              o.speed - o.velY > 0.01 &&
+              (o.velY += 0.01 * (o.speed - o.velY)),
+              (o.velX += Math.cos((o.step += 0.05)) * o.stepSize);
+          (n.fillStyle = "rgba(" + e.color + ", " + o.opacity + ")"),
+            (o.y += o.velY),
+            (o.x += o.velX),
+            (o.y >= i.height || o.y <= 0) && l(o),
+            (o.x >= i.width || o.x <= 0) && l(o),
+            n.beginPath(),
+            n.arc(o.x, o.y, o.size, 0, 2 * Math.PI),
+            n.fill();
+        }
+        t(h);
+      },
         l = (e) => {
           (e.x = Math.floor(Math.random() * i.width)),
             (e.y = 0),
@@ -609,13 +609,13 @@ function dark() {
       (this.fadeIn = function () {
         this.fadingIn &&
           ((this.fadingIn = !(this.opacity > this.opacityTresh)),
-          (this.opacity += this.do));
+            (this.opacity += this.do));
       }),
       (this.fadeOut = function () {
         this.fadingOut &&
           ((this.fadingOut = !(this.opacity < 0)),
-          (this.opacity -= this.do / 2),
-          (this.x > n || this.y < 0) && ((this.fadingOut = !1), this.reset()));
+            (this.opacity -= this.do / 2),
+            (this.x > n || this.y < 0) && ((this.fadingOut = !1), this.reset()));
       }),
       (this.draw = function () {
         if ((h.beginPath(), this.giant))
@@ -946,7 +946,25 @@ function randomPost() {
 //----------------------------------------------------------------
 
 /* 小猫咪 start */
-if (document.body.clientWidth > 992) {
+var picSrc = "https://oss.iuoyt.com/resource/elements/autumn-kitty.png";
+var seasonGreet = "回到顶部";
+var date = new Date();
+var month = date.getMonth() + 1;
+var day = date.getDate();
+if (month == 3 && day >= 21 || month == 4 || month == 5 || month == 6 && day <= 21) {
+  seasonGreet = "春天啦";
+  picSrc = "https://oss.iuoyt.com/resource/elements/spring-bird.png";
+} else if (month == 6 && day >= 22 || month == 7 || month == 8 || month == 9 && day <= 22) {
+  seasonGreet = "夏天啦";
+  picSrc = "https://oss.iuoyt.com/resource/elements/summer-sun.png";
+} else if (month == 9 && day >= 23 || month == 10 || month == 11 || month == 12 && day <= 21) {
+  seasonGreet = "秋天啦";
+  picSrc = "https://oss.iuoyt.com/resource/elements/autumn-kitty.png";
+} else if (month == 12 && day >= 22 || month == 1 || month == 2 || month == 3 && day <= 20) {
+  seasonGreet = "冬天啦";
+  picSrc = "https://oss.iuoyt.com/resource/elements/winter-snowman.png";
+}
+if (document.body.clientWidth > 1080) {
   function getBasicInfo() {
     /* 窗口高度 */
     var ViewH = $(window).height();
@@ -981,8 +999,8 @@ if (document.body.clientWidth > 992) {
         zoom: 0.9,
         borderRadius: 5 + "px",
         right: 55.6 + "px",
-        nekoImg: "https://oss.iuoyt.com/resource/elements/kitty.png",
-        hoverMsg: "冬天啦~",
+        nekoImg: picSrc,
+        hoverMsg: seasonGreet,
         color: "var(--theme-color)",
         during: 500,
         blog_body: "body",
@@ -992,15 +1010,15 @@ if (document.body.clientWidth > 992) {
         this.prop("className") !== ""
           ? "." + this.prop("className")
           : this.prop("id") !== ""
-          ? "#" + this.prop("id")
-          : this.prop("nodeName");
+            ? "#" + this.prop("id")
+            : this.prop("nodeName");
       if ($(".neko").length == 0) {
         this.after(
           '<div class="neko" id=' +
-            setting.nekoname +
-            ' data-msg="' +
-            setting.hoverMsg +
-            '"></div>'
+          setting.nekoname +
+          ' data-msg="' +
+          setting.hoverMsg +
+          '"></div>'
         );
       }
       let basicInfo = getBasicInfo();
@@ -1212,7 +1230,7 @@ rmf.scrollToTop = function () {
   btf.scrollToDest(0, 500);
 };
 
-document.body.addEventListener("touchmove", function () {}, { passive: false });
+document.body.addEventListener("touchmove", function () { }, { passive: false });
 
 function popupMenu() {
   window.oncontextmenu = function (event) {
@@ -1537,9 +1555,9 @@ function createtime2() {
 createtime2();
 
 // 重写console方法
-console.log = function () {};
-console.error = function () {};
-console.warn = function () {};
+console.log = function () { };
+console.error = function () { };
+console.warn = function () { };
 
 /* 控制台输出字符画 end */
 
@@ -1664,10 +1682,10 @@ function share_() {
       : title;
     navigator.clipboard.writeText(
       "来自🌙Nightyping博客的分享\n标题：" +
-        subTitle +
-        "\n链接：" +
-        url +
-        "\n期待你的来访！🍭🍭🍭"
+      subTitle +
+      "\n链接：" +
+      url +
+      "\n期待你的来访！🍭🍭🍭"
     );
     new Vue({
       data: function () {
@@ -3127,8 +3145,8 @@ if (m == 7 && dd == 7) {
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire(
       "今天是卢沟桥事变" +
-        (y - 1937).toString() +
-        "周年纪念日\n🪔勿忘国耻，振兴中华！🪔"
+      (y - 1937).toString() +
+      "周年纪念日\n🪔勿忘国耻，振兴中华！🪔"
     );
     sessionStorage.setItem("isPopupWindow", "1");
   }
@@ -3149,8 +3167,8 @@ if (m == 9 && dd == 18) {
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire(
       "今天是九一八事变" +
-        (y - 1931).toString() +
-        "周年纪念日\n🪔勿忘国耻，振兴中华！🪔"
+      (y - 1931).toString() +
+      "周年纪念日\n🪔勿忘国耻，振兴中华！🪔"
     );
     sessionStorage.setItem("isPopupWindow", "1");
   }
@@ -3162,8 +3180,8 @@ if (m == 12 && dd == 13) {
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire(
       "今天是南京大屠杀" +
-        (y - 1937).toString() +
-        "周年纪念日\n🪔勿忘国耻，振兴中华！🪔"
+      (y - 1937).toString() +
+      "周年纪念日\n🪔勿忘国耻，振兴中华！🪔"
     );
     sessionStorage.setItem("isPopupWindow", "1");
   }
@@ -3196,13 +3214,8 @@ if (m == 4 && dd == 1) {
   //愚人节，随机谎话
   l = [
     "非常抱歉，因为不可控原因，博客将于明天停止运营！",
-    "好消息，日本没了！",
-    "美国垮了，原因竟然是川普！",
-    "微软垮了！",
-    "你的电脑已经过载，建议立即关机！",
     "你知道吗？站长很喜欢你哦！",
-    "一分钟有61秒哦",
-    "你喜欢的人跟别人跑了！",
+
   ];
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire(l[Math.floor(Math.random() * l.length)]);
@@ -3227,6 +3240,13 @@ if (m == 5 && dd == 20) {
   //520
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("今年是520情人节\n快和你喜欢的人一起过吧！💑");
+    sessionStorage.setItem("isPopupWindow", "1");
+  }
+}
+if (m == 6 && dd == 1) {
+  //儿童节
+  if (sessionStorage.getItem("isPopupWindow") != "1") {
+    Swal.fire("儿童节快乐\n谁还不是个孩子呢！👼🏼");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
@@ -3258,6 +3278,20 @@ if (m == 10 && dd <= 7) {
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
+if (m == 11 && dd == 11) {
+  //光棍节
+  if (sessionStorage.getItem("isPopupWindow") != "1") {
+    Swal.fire("光棍节快乐\n今天你过节吗？👩");
+    sessionStorage.setItem("isPopupWindow", "1");
+  }
+}
+if (m == 12 && dd == 24) {
+  //平安夜
+  if (sessionStorage.getItem("isPopupWindow") != "1") {
+    Swal.fire("今天是平安夜\n来吃个苹果吧！🍎");
+    sessionStorage.setItem("isPopupWindow", "1");
+  }
+}
 if (m == 12 && dd == 25) {
   //圣诞节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
@@ -3267,23 +3301,44 @@ if (m == 12 && dd == 25) {
 }
 
 //传统节日部分
+// 输出2024-2050年清明节日期
+// var output = "";
+// for (var i = 2024; i <= 2050; i++) {
+//   for (var j = 4; j <= 5; j++) {
+//     if(
+//       (i < 2041 && i % 2 == 0 && j == 4 + i / 2 % 2) ||
+//       (i < 2041 && i % 2 == 1 && j == 4 + (i-1) / 2 % 2) ||
+//       (i >= 2041 && i % 4 == 3 && j == 5) ||
+//       (i >= 2041 && i % 4 != 3 && j == 4)
+//     ){
+//       output += i + "年4月" + j + "日\n";
+//     }
+//   }
+// }
+// alert(output);
+
+//清明节
+// 2041年前，每两年切换一次4月4日和4月5日
+// 2041年后，每四年切换一次4月4日和4月5日
 if (
-  (y == 2023 && m == 4 && dd == 5) ||
-  (y == 2024 && m == 4 && dd == 4) ||
-  (y == 2025 && m == 4 && dd == 4)
+  (y < 2041 && y % 2 == 0 && m == 4 && dd == 4 + y / 2 % 2) ||
+  (y < 2041 && y % 2 == 1 && m == 4 && dd == 4 + (y - 1) / 2 % 2) ||
+  (y >= 2041 && y % 4 == 3 && m == 4 && dd == 5) ||
+  (y >= 2041 && y % 4 != 3 && m == 4 && dd == 4)
 ) {
-  //清明节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("清明时节雨纷纷,一束鲜花祭故人💐");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
+//冬至，规律和清明节一样
+// 23年是12月22日，24年是12月21日，25年是12月21日
 if (
-  (y == 2023 && m == 12 && dd == 22) ||
-  (y == 2024 && m == 12 && dd == 21) ||
-  (y == 2025 && m == 12 && dd == 21)
+  (y < 2041 && y % 2 == 0 && m == 12 && dd == 21 + y / 2 % 2) ||
+  (y < 2041 && y % 2 == 1 && m == 12 && dd == 21 + (y - 1) / 2 % 2) ||
+  (y >= 2041 && y % 4 == 3 && m == 12 && dd == 22) ||
+  (y >= 2041 && y % 4 != 3 && m == 12 && dd == 21)
 ) {
-  //冬至
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("冬至快乐\n快吃上一碗热热的汤圆和饺子吧🧆");
     sessionStorage.setItem("isPopupWindow", "1");
@@ -3294,54 +3349,79 @@ var lunar = calendarFormatter.solar2lunar();
 
 //农历采用汉字计算，防止出现闰月导致问题
 
-if (
-  (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初六") ||
-  (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初五") ||
-  (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初四") ||
-  (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初三") ||
-  (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初二") ||
-  (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "初一") ||
-  (lunar["IMonthCn"] == "腊月" && lunar["IDayCn"] == "三十") ||
-  (lunar["IMonthCn"] == "腊月" && lunar["IDayCn"] == "廿九")
-) {
-  //春节，本来只有大年三十到初六，但是有时候除夕是大年二十九，所以也加上了
+//除夕
+//先得到正月初一的公历日期，再减一天
+var lunar2 = calendarFormatter.lunar2solar(
+  lunar["lYear"],
+  1,
+  1,
+  lunar["isLeap"]
+);
+lunar2["cDay"] = lunar2["cDay"] - 1;
+if (lunar2["cDay"] == 0) {
+  lunar2["cMonth"] = lunar2["cMonth"] - 1;
+  lunar2["cDay"] = solarDays(lunar2["cYear"], lunar2["cMonth"]);
+}
+if (lunar2["cMonth"] == 0) {
+  lunar2["cYear"] = lunar2["cYear"] - 1;
+  lunar2["cMonth"] = 12;
+}
+if (lunar["cYear"] == lunar2["cYear"] && lunar["cMonth"] == lunar2["cMonth"]) {
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire(y.toString() + "年新年快乐\n🎊祝你心想事成，诸事顺利🎊");
+    Swal.fire("今天是除夕\n🧨祝你新年快乐，万事如意🧨");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
+//春节，从初一到初七
+if (
+  lunar["cYear"] == lunar2["cYear"] &&
+  lunar["cMonth"] == lunar2["cMonth"] &&
+  lunar["cDay"] <= 7
+) {
+  if (sessionStorage.getItem("isPopupWindow") != "1") {
+    Swal.fire("春节快乐\n🧨祝你新年快乐，万事如意🧨");
+    sessionStorage.setItem("isPopupWindow", "1");
+  }
+}
+//元宵节
 if (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "十五") {
-  //元宵节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("元宵节快乐\n送你一个大大的灯笼🧅");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
+//端午节
 if (lunar["IMonthCn"] == "五月" && lunar["IDayCn"] == "初五") {
-  //端午节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("端午节快乐\n请你吃一条粽子🍙");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
+//七夕节
 if (lunar["IMonthCn"] == "七月" && lunar["IDayCn"] == "初七") {
-  //七夕节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("七夕节快乐\n黄昏后,柳梢头,牛郎织女来碰头");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
+//中秋节
 if (lunar["IMonthCn"] == "八月" && lunar["IDayCn"] == "十五") {
-  //中秋节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("中秋节快乐\n请你吃一块月饼🥮");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
+//重阳节
 if (lunar["IMonthCn"] == "九月" && lunar["IDayCn"] == "初九") {
-  //重阳节
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("重阳节快乐\n独在异乡为异客，每逢佳节倍思亲");
+    sessionStorage.setItem("isPopupWindow", "1");
+  }
+}
+//腊八节
+if (lunar["IMonthCn"] == "十二月" && lunar["IDayCn"] == "初八") {
+  if (sessionStorage.getItem("isPopupWindow") != "1") {
+    Swal.fire("腊八节快乐\n请你吃一碗腊八粥🥣");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
@@ -3368,7 +3448,7 @@ const getStyle2 = (el, attr) => {
     return window.getComputedStyle
       ? window.getComputedStyle(el)[attr]
       : el.currentStyle[attr];
-  } catch (e) {}
+  } catch (e) { }
   return "";
 };
 
@@ -3477,8 +3557,25 @@ let newYearTimer = null;
 var newYear = () => {
   clearTimeout(newYearTimer);
   if (!document.querySelector("#newYear")) return;
+  var toGetLunarMonth = 1;
+  var toGetLunarDay = 1;
+  // 得到下一个农历正月初一的日期yyyy-mm-dd
+  let lunar = calendarFormatter.solar2lunar();
+  let year = lunar["lYear"];
+  let month = lunar["lMonth"];
+  let day = lunar["lDay"];
+  if (month > toGetLunarMonth || (month == toGetLunarMonth && day > toGetLunarDay)) {
+    year = year + 1;
+  }
+  // 得到下一个新年的字符串
+  let nextNewYear =
+    calendarFormatter.lunar2solar(year, toGetLunarMonth, toGetLunarDay)["cYear"] +
+    "-" +
+    calendarFormatter.lunar2solar(year, toGetLunarMonth, toGetLunarDay)["cMonth"] +
+    "-" +
+    calendarFormatter.lunar2solar(year, toGetLunarMonth, toGetLunarDay)["cDay"] + " 23:17:40";
   // 新年时间戳 and 星期对象
-  let newYear = new Date("2024-02-10 00:00:00").getTime() / 1000,
+  let newYear = new Date(nextNewYear).getTime() / 1000,
     week = {
       0: "周日",
       1: "周一",
@@ -3513,22 +3610,26 @@ var newYear = () => {
     // 现在与新年相差秒数
     let second = newYear - Math.round(now.getTime() / 1000);
 
-    // 小于0则表示已经过年
+    // 如果小于0则已经过年
     if (second < 0) {
       document.querySelector("#newYear .title").innerHTML = "Happy New Year!";
       document.querySelector("#newYear .newYear-time").innerHTML =
         '<span class="happyNewYear">新年快乐</p>';
     } else {
       // 大于0则还未过年
-      document.querySelector("#newYear .title").innerHTML = "距离2024年春节：";
+      document.querySelector("#newYear .title").innerHTML = "距离" + year + "年春节：";
 
       // 大于一天则直接渲染天数
       if (second > 86400) {
         document.querySelector(
           "#newYear .newYear-time"
-        ).innerHTML = `<span class="day">${Math.ceil(
+        ).innerHTML = `<span class="day">${Math.floor(
           second / 86400
         )}<span class="unit">天</span></span>`;
+        // 如果还剩1天多1分钟，则启动计时器
+        if (second < 86400 + 60) {
+          newYearTimer = setTimeout(time, 100);
+        }
       } else {
         // 小于一天则使用时分秒计时。
         let h = nol(parseInt(second / 3600));
@@ -3743,7 +3844,7 @@ function setFont(n) {
   }
   try {
     setFontBorder();
-  } catch (err) {}
+  } catch (err) { }
 }
 
 // 设置字体选择框边界
@@ -4033,7 +4134,7 @@ function setBlur() {
 // 切换自定义颜色
 var defineColor =
   localStorage.getItem("blogbg") &&
-  localStorage.getItem("blogbg").charAt(0) == "#"
+    localStorage.getItem("blogbg").charAt(0) == "#"
     ? localStorage.getItem("blogbg")
     : "#F4D88A";
 function changeBgColor() {
@@ -4681,11 +4782,11 @@ function checkForm() {
   });
 
   if (allChecked) {
-    addBtn.style.display="flex";
-    flinkApply.style.display="block";
+    addBtn.style.display = "flex";
+    flinkApply.style.display = "block";
   } else {
-    addBtn.style.display="none";
-    flinkApply.style.display="none";
+    addBtn.style.display = "none";
+    flinkApply.style.display = "none";
   }
 }
 
@@ -4695,49 +4796,49 @@ function checkForm() {
 
 /* 友链申请 */
 function TestUrl(url) {
-  var Expression=/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
-  var objExp=new RegExp(Expression);
-  if(objExp.test(url) != true){
-      return false;
+  var Expression = /http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+  var objExp = new RegExp(Expression);
+  if (objExp.test(url) != true) {
+    return false;
   }
   return true;
 }
-function askFriend (event){
+function askFriend(event) {
   let check = $("#friend-check").is(":checked");
   let name = $("#friend-name").val();
   let url = $("#friend-link").val();
   let image = $("#friend-icon").val();
   let des = $("#friend-des").val();
-  if(!check){
-      alert("Please check \"I am not submitting nonsense information\"");
-      return;
+  if (!check) {
+    alert("Please check \"I am not submitting nonsense information\"");
+    return;
   }
-  if(!(name&&url&&image&&des)){
-      alert("The information is incomplete! ");
-      return;
+  if (!(name && url && image && des)) {
+    alert("The information is incomplete! ");
+    return;
   }
-  if (!(TestUrl(url))){
-      alert("URL format error! Need to include HTTP protocol header! ");
-      return;
+  if (!(TestUrl(url))) {
+    alert("URL format error! Need to include HTTP protocol header! ");
+    return;
   }
-  if (!(TestUrl(image))){
-      alert("The format of the slice URL is wrong! It needs to contain the HTTP protocol header! ");
-      return;
+  if (!(TestUrl(image))) {
+    alert("The format of the slice URL is wrong! It needs to contain the HTTP protocol header! ");
+    return;
   }
   event.target.classList.add('is-loading');
   $.ajax({
-      type: 'POST',
-      dataType: "json",
-      data: {
-          "name": name,
-          "url": url,
-          "image": image,
-          "description": des,
-      },
-      url: 'https://qexo.iuoyt.com/pub/ask_friend/',
-      success: function (data) {
-          alert(data.msg);
-      }
+    type: 'POST',
+    dataType: "json",
+    data: {
+      "name": name,
+      "url": url,
+      "image": image,
+      "description": des,
+    },
+    url: 'https://qexo.iuoyt.com/pub/ask_friend/',
+    success: function (data) {
+      alert(data.msg);
+    }
   })
 }
 /* 友链申请end */

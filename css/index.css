@@ -3278,7 +3278,7 @@ h1.page-title + .tag-cloud-list {
   overflow-y: scroll;
   overflow-y: overlay;
   margin: 0 -24px;
-  max-height: calc(100vh - 120px);
+  max-height: calc(100vh - 160px);
 }
 @media screen and (max-width: 900px) {
   #aside-content #card-toc .toc-content {
@@ -5227,10 +5227,12 @@ h1.page-title + .tag-cloud-list {
   overflow-y: hidden;
 }
 span.mathjax-overflow {
+  display: inline-block;
   display: block;
   padding: 0 2px;
   max-width: 100%;
   vertical-align: bottom;
+  text-align: center;
 }
 .aplayer {
   color: #4c4948;
@@ -7066,13 +7068,13 @@ div#archive {
   }
 }
 
-/* 右下角闭眼 */
-.el-textarea__inner {
+/* 评论框右下角展示图，哔哩哔哩睁眼闭眼 */
+/* .el-textarea__inner {
   background-image: url(/assets/open.webp) !important;
 }
 .el-textarea__inner:focus {
   background-image: url(/assets/close.webp) !important;
-}
+} */
 
 /* 调整楼中楼样式 ，整体左移，贴合气泡化效果 */
 .tk-replies {
@@ -7595,7 +7597,7 @@ button#go-up:hover #percent {
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(
     1
   ):before {
-  content: "输入QQ号会自动获取昵称和头像🐧";
+  content: "输入QQ号自动获取头像，然后删除再填写您的昵称🐧";
 }
 
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(
@@ -7607,7 +7609,7 @@ button#go-up:hover #percent {
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(
     3
   ):before {
-  content: "可以通过昵称访问您的网站🔗";
+  content: "别人可以通过头像或昵称访问您的站点🔗";
 }
 
 /* 当用户点击输入框时显示 */
@@ -8737,7 +8739,7 @@ li.categoryBar-list-item {
   display: none;
   width: 100px;
   height: 100px;
-  background-image: url("https://bu.dusays.com/2022/07/20/62d812d95e6f5.png");
+  background-image: url("https://oss.iuoyt.com/resource/elements/dialogbox.png");
   background-size: contain;
   z-index: 9999;
   position: absolute;
