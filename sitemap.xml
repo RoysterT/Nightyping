@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/pages/box/sitv/v2/photos/2020/10/index.html</loc>
+    <loc>https://www.iuoyt.com/pages/box/sitv/v2/photos/2020/06-08/index.html</loc>
     
     <lastmod>2024-01-01</lastmod>
     
@@ -273,15 +273,6 @@
   
   <url>
     <loc>https://www.iuoyt.com/pages/box/sitv/v2/photos/2020/09-1/index.html</loc>
-    
-    <lastmod>2024-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.iuoyt.com/pages/box/sitv/v2/photos/2020/11-1/index.html</loc>
     
     <lastmod>2024-01-01</lastmod>
     
@@ -344,15 +335,6 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/pages/box/sitv/v2/photos/smc/2/index.html</loc>
-    
-    <lastmod>2024-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.iuoyt.com/pages/box/sitv/v2/photos/smc/1-2/index.html</loc>
     
     <lastmod>2024-01-01</lastmod>
@@ -362,7 +344,7 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/pages/box/sitv/v2/photos/2020/09-2/index.html</loc>
+    <loc>https://www.iuoyt.com/pages/box/sitv/v2/photos/2020/11-1/index.html</loc>
     
     <lastmod>2024-01-01</lastmod>
     
@@ -371,7 +353,25 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/pages/box/sitv/v2/photos/2020/06-08/index.html</loc>
+    <loc>https://www.iuoyt.com/pages/box/sitv/v2/photos/smc/2/index.html</loc>
+    
+    <lastmod>2024-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.iuoyt.com/pages/box/sitv/v2/photos/2020/10/index.html</loc>
+    
+    <lastmod>2024-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.iuoyt.com/pages/box/sitv/v2/photos/2020/09-2/index.html</loc>
     
     <lastmod>2024-01-01</lastmod>
     
@@ -390,33 +390,6 @@
   
   <url>
     <loc>https://www.iuoyt.com/categories/index.html</loc>
-    
-    <lastmod>2024-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.iuoyt.com/posts/9505e307.html</loc>
-    
-    <lastmod>2024-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.iuoyt.com/posts/cf3716a6.html</loc>
-    
-    <lastmod>2024-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.iuoyt.com/posts/62cfef17.html</loc>
     
     <lastmod>2024-01-01</lastmod>
     
@@ -696,6 +669,33 @@
   
   <url>
     <loc>https://www.iuoyt.com/posts/5a9cd021.html</loc>
+    
+    <lastmod>2024-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.iuoyt.com/posts/9505e307.html</loc>
+    
+    <lastmod>2024-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.iuoyt.com/posts/cf3716a6.html</loc>
+    
+    <lastmod>2024-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.iuoyt.com/posts/62cfef17.html</loc>
     
     <lastmod>2024-01-01</lastmod>
     
