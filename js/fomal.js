@@ -3862,7 +3862,7 @@ function setFontBorder() {
 
 // 设置主题色
 if (localStorage.getItem("themeColor") == undefined) {
-  localStorage.setItem("themeColor", "blue");
+  localStorage.setItem("themeColor", "red");
 }
 setColor(localStorage.getItem("themeColor"));
 function setColor(c) {
