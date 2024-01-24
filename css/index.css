@@ -6751,9 +6751,14 @@ h1.post-title {
 center#name-container {
   position: absolute !important;
   width: fit-content !important;
+  max-width: 50%;
   left: 50% !important;
   transform: translateX(-50%) !important;
   transform-origin: left;
+  /* 超出长度不换行及隐藏 */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   /* transform: translateY(-100%) !important; */
 }
 @media screen and (max-width: 768px) {
@@ -7890,7 +7895,7 @@ input#pic-link {
   -o-transition: none !important;
 }
 
-@media screen and (mai-width: 768px) {
+@media screen and (max-width: 768px) {
   #nav {
     padding: 0 28px;
   }
@@ -7934,7 +7939,7 @@ input#pic-link {
   scale: 1.03;
 }
 #page-name {
-  position: relative;
+  /* position: relative; */
   padding: 10px 30px; /*如果文字间隔不合理可以微调修改，第二个是水平方向的padding，第一个是垂直的*/
 }
 
