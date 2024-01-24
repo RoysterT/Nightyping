@@ -4633,8 +4633,8 @@ document.addEventListener("DOMContentLoaded", function () {
 // 获取当前页面的路径
 var currentPath = window.location.pathname;
 // 判断路径是否以 "/TreasureBox/sitv/" 开头
-if (!currentPath.startsWith("/TreasureBox/sitv/")) {
-  // 当前页面不在 "/TreasureBox/sitv/" 下，添加meta标签
+if (!currentPath.startsWith("/TreasureBox/sitv/"||!currentPath.startsWith("/posts/"))) {
+  // 当前页面不在 "/TreasureBox/sitv/" 或 "/posts/" 下，添加meta标签
   var metaTag = document.createElement("meta");
   metaTag.setAttribute("name", "referrer");
   metaTag.setAttribute("content", "no-referrer");
