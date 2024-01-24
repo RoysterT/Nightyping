@@ -7597,13 +7597,13 @@ button#go-up:hover #percent {
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(
     1
   ):before {
-  content: "输入QQ号自动获取头像，然后删除再填写您的昵称🐧";
+  content: "可以输入QQ号🐧自动获取头像，然后删除再填写您希望展示出的昵称";
 }
 
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(
     2
   ):before {
-  content: "收到回复将会发送到您的邮箱📧";
+  content: "收到回复将会发送到您的邮箱📧如果您在cravatar.cn管理头像，亦可通过邮箱获取";
 }
 
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(
