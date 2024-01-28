@@ -1462,6 +1462,20 @@ function createtime1() {
   now1.setTime(now1.getTime() + 250);
   var days = (now1 - grt) / 1000 / 60 / 60 / 24;
   var dnum = Math.floor(days);
+  var copyright = "©2023-" + now1.getFullYear() + " By Royster";
+  var grt_display =
+    grt.getFullYear() +
+    "-" +
+    (grt.getMonth() + 1) +
+    "-" +
+    grt.getDate() +
+    " " +
+    grt.getHours() +
+    ":" +
+    grt.getMinutes() +
+    ":" +
+    grt.getSeconds() +
+    "(GMT+08:00)";
 
   var ascll = [
     `欢迎来到🌙Nightyping!`,
@@ -1475,23 +1489,25 @@ function createtime1() {
   ╚═╝  ╚═══╝╚═╝ ╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚═╝     ╚═╝╚═╝  ╚═══╝ ╚═════╝ 
                                                                                 
 `,
-    "小站已经苟活",
+    "小站已经存活",
     dnum,
     "天啦!",
-    "©2023 By Royster",
+    copyright,
+    "站点上线时间：",
+    grt_display
   ];
 
   setTimeout(
     console.log.bind(
       console,
-      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c \n ${ascll[5]} \n ${ascll[6]} %c${ascll[7]}`,
       "color:#39c5bb",
       "",
-      "color:#39c5bb",
-      "color:#39c5bb",
       "",
       "color:#39c5bb",
-      ""
+      "",
+      "",
+      "color:#39c5bb"
     )
   );
 }
