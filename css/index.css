@@ -6752,6 +6752,7 @@ center#name-container {
   position: absolute !important;
   width: fit-content !important;
   max-width: 50%;
+  min-width: 200px;
   left: 50% !important;
   transform: translateX(-50%) !important;
   transform-origin: left;
@@ -6941,7 +6942,7 @@ div#archive {
   background: var(--text-bg-hover) !important;
   border-radius: 4px;
   box-shadow: 0 8px 12px -3px #4259ef23;
-  padding: 2px;
+  /* padding: 2px; */
   transition: all 0.3s ease-in-out;
 }
 
@@ -6999,6 +7000,10 @@ div#archive {
   min-height: 120px !important;
   background-size: 90px;
 }
+/* tk-row的tk-action部分不左右拆分显示 */
+.tk-row {
+  justify-content: left !important;
+}
 
 /* 自定义表情优化 */
 #twikoo .OwO-body {
@@ -7006,19 +7011,20 @@ div#archive {
 }
 /* 选择某个框 #twikoo .OwO .OwO-body .OwO-items:nth-child(1) */
 #twikoo .OwO .OwO-body .OwO-items {
-  max-height: 250px !important;
+  /* max-height: 250px !important; */
+  height: 200px;
 }
 
 .OwO .OwO-body .OwO-items-image .OwO-item {
-  max-width: calc(9% - 10px);
+  max-width: calc(7% - 12px);
   box-sizing: content-box;
 }
-.OwO .OwO-body .OwO-items-image .OwO-item[title|="Heybox"],
+/* .OwO .OwO-body .OwO-items-image .OwO-item[title|="Heybox"],
 .OwO .OwO-body .OwO-items-image .OwO-item[title|="Tieba"],
 .OwO .OwO-body .OwO-items-show .OwO-item[title*="bilibili"] {
   max-width: calc(7% - 10px) !important;
   box-sizing: content-box;
-}
+} */
 
 #twikoo .OwO-items li img {
   width: 100% !important;
@@ -7083,8 +7089,9 @@ div#archive {
 
 /* 调整楼中楼样式 ，整体左移，贴合气泡化效果 */
 .tk-replies {
-  left: -70px;
-  width: calc(100% + 70px);
+  /* left: -70px;
+  width: calc(100% + 70px); */
+  right: 10px;
 }
 /* 头像宽度调整 rem单位与全局字体大小挂钩，需配合自己情况调整大小以保证头像显示完整*/
 .tk-replies .tk-avatar {
@@ -7150,6 +7157,7 @@ div#archive {
   ); /*默认模式博主气泡配色*/
   color: #fff; /*默认模式博主气泡字体配色*/
   width: fit-content;
+  min-width: 200px;
   max-width: 100%;
 }
 .tk-master .tk-content a {
@@ -7204,20 +7212,26 @@ div#archive {
 @media screen and (min-width: 1024px) {
   /* 设置宽度上限，避免挤压博主头像 */
   .tk-content {
+    min-width: 200px;
     max-width: 75%;
     width: fit-content;
   }
   .tk-master .tk-content {
-    width: 75%;
+    /* width: 75%; */
+    max-width: 75%;
+    width: fit-content;
   }
   .tk-master .tk-content::before {
-    left: 100%;
-    border-left: 15px solid transparent;
-    border-right: 0px solid transparent;
+    /* left: 100%; */
+    /* border-left: 15px solid transparent; */
+    /* border-right: 0px solid transparent; */
+    border-right: 15px solid transparent;
   }
+  /* 评论区博主头像 */
   .tk-master .tk-avatar {
     position: relative;
-    left: calc(75% + 70px);
+    /* left: calc(75% + 70px); */
+    left: 0;
   }
   .tk-master .tk-row[data-v-d82ce9a0] {
     position: relative;
@@ -7225,8 +7239,10 @@ div#archive {
     left: calc(75% - 230px);
   }
   [data-theme="dark"] .tk-master .tk-content::before {
-    border-left: 15px solid #000;
-    border-right: 0px solid transparent;
+    /* border-left: 15px solid #000;
+    border-right: 0px solid transparent; */
+    /* border-left: 15px solid #000; */
+    border-right: 15px solid #000;
   }
 }
 /* 设备名称常态隐藏，悬停评论时显示 */
@@ -7512,7 +7528,7 @@ h6::before {
   top: 0 !important;
   right: 0 !important;
   width: 100%;
-  height: 100%;
+  height: 120%;
   content: "\f015";
   box-shadow: 0 0 5px var(--theme-color) !important;
   font-family: "Font Awesome 6 Free";
@@ -7908,7 +7924,7 @@ input#pic-link {
   width: 100%;
   min-width: 200px;
   height: 100%;
-  border-radius: 8px;
+  border-radius: 12px;
   color: white !important;
   top: 0;
   left: 0;
@@ -7921,7 +7937,7 @@ input#pic-link {
   -o-transition: all 0.3s;
   opacity: 0;
   box-shadow: 0 0 3px var(--theme-color) !important;
-  line-height: 45px; /*如果垂直位置不居中可以微调此值，也可以删了*/
+  line-height: 40px; /*如果垂直位置不居中可以微调此值，也可以删了*/
   left: 50% !important;
   transform: translateX(-50%) !important;
 }
@@ -7940,7 +7956,8 @@ input#pic-link {
 }
 #page-name {
   /* position: relative; */
-  padding: 10px 30px; /*如果文字间隔不合理可以微调修改，第二个是水平方向的padding，第一个是垂直的*/
+  min-width: 200px;
+  padding: 8px 0px; /*如果文字间隔不合理可以微调修改，第二个是水平方向的padding，第一个是垂直的*/
 }
 
 /* 调节字体显示栏目 */
@@ -10017,6 +10034,8 @@ hr:before {
     top: 0;
     content: '';
     font-size: 17px;
+    /* 文字溢出不换行 */
+    white-space: nowrap;
 }
 
 .d1,
