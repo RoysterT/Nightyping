@@ -3586,20 +3586,20 @@ var newYear = () => {
   // 得到下一个新年的字符串
   let nextNewYear =
     calendarFormatter.lunar2solar(year, toGetLunarMonth, toGetLunarDay)["cYear"] +
-    "-" +
+    "/" +
     calendarFormatter.lunar2solar(year, toGetLunarMonth, toGetLunarDay)["cMonth"] +
-    "-" +
-    calendarFormatter.lunar2solar(year, toGetLunarMonth, toGetLunarDay)["cDay"] + " 23:17:40";
+    "/" +
+    calendarFormatter.lunar2solar(year, toGetLunarMonth, toGetLunarDay)["cDay"] + " 00:00:00";
   // 新年时间戳 and 星期对象
   let newYear = new Date(nextNewYear).getTime() / 1000,
     week = {
-      0: "周日",
-      1: "周一",
-      2: "周二",
-      3: "周三",
-      4: "周四",
-      5: "周五",
-      6: "周六",
+      0: "星期日",
+      1: "星期一",
+      2: "星期二",
+      3: "星期三",
+      4: "星期四",
+      5: "星期五",
+      6: "星期六",
     };
 
   time();
@@ -3616,11 +3616,11 @@ var newYear = () => {
     // 右下角 今天
     document.querySelector("#newYear .today").innerHTML =
       now.getFullYear() +
-      "-" +
+      "年" +
       (now.getMonth() + 1) +
-      "-" +
+      "月" +
       now.getDate() +
-      " " +
+      "日 " +
       week[now.getDay()];
 
     // 现在与新年相差秒数
@@ -3630,16 +3630,16 @@ var newYear = () => {
     if (second < 0) {
       document.querySelector("#newYear .title").innerHTML = "Happy New Year!";
       document.querySelector("#newYear .newYear-time").innerHTML =
-        '<span class="happyNewYear">新年快乐</p>';
+        '<span class="happyNewYear">新年快乐！</p>';
     } else {
       // 大于0则还未过年
-      document.querySelector("#newYear .title").innerHTML = "距离" + year + "年春节：";
+      document.querySelector("#newYear .title").innerHTML = "距离" + year + "年春节还有：";
 
       // 大于一天则直接渲染天数
       if (second > 86400) {
         document.querySelector(
           "#newYear .newYear-time"
-        ).innerHTML = `<span class="day">${Math.floor(
+        ).innerHTML = `<span class="day">${Math.round(
           second / 86400
         )}<span class="unit">天</span></span>`;
         // 如果还剩1天多1分钟，则启动计时器
@@ -3671,7 +3671,7 @@ var newYear = () => {
         "https://oss.iuoyt.com/resource/elements/new-year/yb3.webp",
       ],
       totalFlakes: "100",
-      zIndex: "999999",
+      zIndex: "2",
       maxSize: "30",
       maxDuration: "20",
       useFlakeTrans: false,
@@ -3767,7 +3767,7 @@ if (
         var kd = `<span style="color:red">电竞级帧率😖</span>`;
       } else if (fps <= 25) {
         var kd = `<span style="color:orange">有点难受😨</span>`;
-      } else if (fps < 35) {
+      } else if (fps <= 35) {
         var kd = `<span style="color:#9338e6">不太流畅🙄</span>`;
       } else if (fps <= 45) {
         var kd = `<span style="color:#08b7e4">还不错哦😁</span>`;
@@ -4517,7 +4517,7 @@ function createWinbox() {
 <h3>8. 自定义背景</h3>
 <details class="folding-tag" cyan><summary> 设置自定义背景 </summary>
               <div class='content'>
-              <p><center><input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://source.fomal.cc/img/home_bg.webp"></center></p><p><center><button type="button" onclick="getPicture()" style="background:var(--theme-color);width:35%;padding: 5px 0px 7px 0px;border-radius:30px;color:white;line-height:2;">🌈切换背景🌈</button></center></p>
+              <p><center><input type="text" id="pic-link" size="70%" maxlength="1000" placeholder="请输入有效的图片链接，如 https://oss.iuoyt.com/img/bg/pc_day.webp"></center></p><p><center><button type="button" onclick="getPicture()" style="background:var(--theme-color);width:35%;padding: 5px 0px 7px 0px;border-radius:30px;color:white;line-height:2;">🌈切换背景🌈</button></center></p>
               </div>
             </details>
 
@@ -4890,6 +4890,183 @@ function isLinkLoaded() {
   }
 }
 /* 判断友链是否需要重新获取end */
+
+//----------------------------------------------------------------
+
+/* memos说说页面js */
+
+function loadBibi(){
+  var limit = 30; // 说说数量限制，0为不限制
+  var avatar = 'https://oss.iuoyt.com/resource/elements/avatar.webp'; // 头像链接
+  let url = 'https://memos.iuoyt.com'//这里地址最后面不要有'/'
+  fetch(url + '/api/v1/memo?creatorId=1').then(res => res.json()).then(data => {
+    let items = [],
+      html = '',
+      count = 0,
+      icon = '<svg viewBox="0 0 512 512"xmlns="http://www.w3.org/2000/svg"class="is-badge icon"><path d="m512 268c0 17.9-4.3 34.5-12.9 49.7s-20.1 27.1-34.6 35.4c.4 2.7.6 6.9.6 12.6 0 27.1-9.1 50.1-27.1 69.1-18.1 19.1-39.9 28.6-65.4 28.6-11.4 0-22.3-2.1-32.6-6.3-8 16.4-19.5 29.6-34.6 39.7-15 10.2-31.5 15.2-49.4 15.2-18.3 0-34.9-4.9-49.7-14.9-14.9-9.9-26.3-23.2-34.3-40-10.3 4.2-21.1 6.3-32.6 6.3-25.5 0-47.4-9.5-65.7-28.6-18.3-19-27.4-42.1-27.4-69.1 0-3 .4-7.2 1.1-12.6-14.5-8.4-26-20.2-34.6-35.4-8.5-15.2-12.8-31.8-12.8-49.7 0-19 4.8-36.5 14.3-52.3s22.3-27.5 38.3-35.1c-4.2-11.4-6.3-22.9-6.3-34.3 0-27 9.1-50.1 27.4-69.1s40.2-28.6 65.7-28.6c11.4 0 22.3 2.1 32.6 6.3 8-16.4 19.5-29.6 34.6-39.7 15-10.1 31.5-15.2 49.4-15.2s34.4 5.1 49.4 15.1c15 10.1 26.6 23.3 34.6 39.7 10.3-4.2 21.1-6.3 32.6-6.3 25.5 0 47.3 9.5 65.4 28.6s27.1 42.1 27.1 69.1c0 12.6-1.9 24-5.7 34.3 16 7.6 28.8 19.3 38.3 35.1 9.5 15.9 14.3 33.4 14.3 52.4zm-266.9 77.1 105.7-158.3c2.7-4.2 3.5-8.8 2.6-13.7-1-4.9-3.5-8.8-7.7-11.4-4.2-2.7-8.8-3.6-13.7-2.9-5 .8-9 3.2-12 7.4l-93.1 140-42.9-42.8c-3.8-3.8-8.2-5.6-13.1-5.4-5 .2-9.3 2-13.1 5.4-3.4 3.4-5.1 7.7-5.1 12.9 0 5.1 1.7 9.4 5.1 12.9l58.9 58.9 2.9 2.3c3.4 2.3 6.9 3.4 10.3 3.4 6.7-.1 11.8-2.9 15.2-8.7z"fill="#1da1f2"></path></svg>';
+    data.forEach(item => {
+      // 如果item.relationList为空，或者item.relationList[0].relatedMemoId等于item.id，是非回复的说说
+      if (item.relationList.length == 0 || item.relationList[0].relatedMemoId == item.id) {
+        if (limit > 0 && count >= limit) return;
+        count++;
+        items.push(Format(item));
+      }
+    });
+    // 没有说说
+    if (items.length == 0) {
+      document.getElementsByClassName('limit')[0].innerHTML = '- 暂无说说 -';
+      document.querySelector('.limit').style.display = 'block';
+    }
+    // 有上限数量的说说
+    else if (items.length == limit) {
+      document.getElementsByClassName('limit')[0].innerHTML = '- 只展示最近' + limit + '条说说 -';
+      document.querySelector('.limit').style.display = 'block';
+    }
+    // 有未到上限的说说
+    else {
+      document.getElementsByClassName('limit')[0].innerHTML = '- 没有更多内容了 -';
+      document.querySelector('.limit').style.display = 'block';
+    }
+    // 将每条说说的内容格式化
+    items.forEach(item => {
+      html += `
+      <div class="talk_item">
+        <div class="talk_meta">
+          <img class="no-lightbox no-lazyload avatar" src="${avatar}">
+          <div class="talk_info">
+            <span class="talk_nick">${item.creatorUsername+icon}</span>
+            <span class="talk_date">${item.date}</span>
+          </div>
+        </div>
+        <div class="talk_content">
+          ${item.content}
+        </div>
+        <div class="talk_bottom">
+          <div class="talk_tag">${item.tag}</div>
+          <span class="icon" onclick="goComment('${item.text}')" title="评论这条说说">
+            <i class="fa-solid fa-message fa-fw"></i>
+          </span>
+        </div>
+      </div>
+      `
+    })
+    document.getElementById('talk').innerHTML = html
+  })
+  // 页面内容格式化
+  function Format(item) {
+    let date = getTime(new Date(item.createdTs * 1000).toString()),
+      creatorUsername = item.creatorUsername,
+      content = item.content,
+      tag = item.content.match(/#([^ ]+)/g),
+      imgs = content.match(/!\[.*\]\(.*?\)/g),
+      text = '';
+    // 图片处理
+    if (imgs) imgs = imgs.map(item => { return item.replace(/!\[.*\]\((.*?)\)/, '$1') })
+    if (item.resourceList.length) {
+      if (!imgs) imgs = []
+      item.resourceList.forEach(t => {
+        if (t.externalLink) imgs.push(t.externalLink)
+        else imgs.push(`${url}/o/r/${t.name}`)
+      })
+    }
+    // text = content.replace(/#(.*?)\s/g, '').replace(/\!\[(.*?)\]\((.*?)\)/g, '').replace(/\{(.*?)\}/g, '')
+    // content = text.replace(/\[(.*?)\]\((.*?)\)/g, `<a href="$2">@$1</a>`);
+    // 文本处理
+    text = content.replace(/#[^\s]+/g, '');
+    text = text.replace(/\n/g, '<br/>');
+    content = text.replace(/\[(.*?)\]\((.*?)\)/g, `<a href="$2">@$1</a>`);
+    // 图片处理
+    if (imgs) {
+      content += `<div class="zone_imgbox">`
+      imgs.forEach(e => content += `<a href="${e}" data-fancybox="gallery" class="fancybox" data-thumb="${e}"><img class="no-lazyload" src="${e}"></a>`
+      )
+      content += '</div>'
+    }
+    // tag处理
+    var tag_content = '';
+    if (tag) {
+      // 将每个tag打包为span标签
+      tag.forEach(item => {
+        tag_content += `<span class="tag_item"><use xlink:href="#icon-biaoqian"/>${item.replace("#","")}</span>`
+      })
+    }
+    return {
+      id: item.id,
+      name: item.name,
+      content: content,
+      creatorUsername: creatorUsername,
+      tag: tag_content,
+      date: date,
+      text: text
+    }
+  }
+  // 页面时间格式化
+  function getTime(time) {
+    let d = new Date(time),
+      ls = [d.getFullYear(), d.getMonth() + 1, d.getDate(), d.getHours(), d.getMinutes(), d.getSeconds()];
+    for (let i = 0; i < ls.length; i++) {
+      ls[i] = ls[i] <= 9 ? '0' + ls[i] : ls[i] + ''
+    }
+    // 如果在1分钟内，则显示刚刚
+    if (new Date().getTime() - d.getTime() < 60000) {
+      return '刚刚'
+    }
+    // 如果在1小时内，则显示分钟前
+    else if (new Date().getTime() - d.getTime() < 3600000) {
+      return Math.floor((new Date().getTime() - d.getTime()) / 60000) + '分钟前'
+    }
+    // 如果是今天，则显示时间
+    else if (new Date().toDateString() == d.toDateString()) {
+      return '今天 ' + ls[3] + ':' + ls[4]
+    }
+    // 如果是昨天，则显示昨天
+    else if (new Date().toDateString() == new Date(d.getTime() + 86400000).toDateString()) {
+      return '昨天 ' + ls[3] + ':' + ls[4]
+    }
+    // 如果是今年的说说，就不显示年份
+    else if (new Date().getFullYear() == ls[0]) {
+      return ls[1] + '月' + ls[2] + '日 ' + ls[3] + ':' + ls[4]
+    }
+    // 如果不是今年的说说，就显示年份
+    else {
+      return ls[0] + '年' + ls[1] + '月' + ls[2] + '日 ' + ls[3] + ':' + ls[4]
+    }
+  }
+}
+
+// 在pages/rests/memos/下
+if (window.location.pathname.startsWith("/pages/rests/memos/")) {
+  loadBibi();
+  // 适配Pjax
+  document.addEventListener("pjax:complete", function () {
+    loadBibi();
+  });
+}
+
+// 页面评论
+function goComment(e) {
+  // 前往评论区#post-comment
+  var n = document.querySelector(".el-textarea__inner")
+  n.value = `> ${e}\n\n`;
+  n.focus();
+  new Vue({
+    data: function () {
+      this.$notify({
+        title: "添加评论",
+        message: "无需删除空行，直接输入评论即可",
+        position: "top-left",
+        offset: 50,
+        showClose: true,
+        type: "success",
+        duration: 2000,
+      });
+    },
+  });
+}
+
+/* memos页面end */
+
+//----------------------------------------------------------------
 
 //----------------------------------------------------------------
 
