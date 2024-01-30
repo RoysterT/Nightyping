@@ -4943,7 +4943,7 @@ function loadBibi(){
         </div>
         <div class="talk_bottom">
           <div class="talk_tag">${item.tag}</div>
-          <span class="icon" onclick="goComment('${item.text}')" title="评论这条说说">
+          <span class="icon" onclick="goComment('${item.text}')" title="评论这条哔哔">
             <i class="fa-solid fa-message fa-fw"></i>
           </span>
         </div>
