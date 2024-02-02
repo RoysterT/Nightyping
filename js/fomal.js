@@ -3841,7 +3841,7 @@ function clearItem() {
 
 // 设置字体
 if (localStorage.getItem("font") == undefined) {
-  localStorage.setItem("font", "ZhuZiAWan");
+  localStorage.setItem("font", "LXGW");
 }
 setFont(localStorage.getItem("font"));
 function setFont(n) {
@@ -5067,6 +5067,37 @@ function goComment(e) {
 /* memos页面end */
 
 //----------------------------------------------------------------
+
+/* 清理缓存 */
+
+function clearCache(){
+  localStorage.clear();
+  sessionStorage.clear();
+  window.location.reload();
+}
+
+/* end */
+
+//----------------------------------------------------------------
+
+/* 关于我页面底部赞赏 */
+
+var rewardPanel = document.getElementById("reward-panel");
+// 显示赞赏
+function rewardShow(){
+  rewardPanel.style.zIndex = 10;
+  rewardPanel.style.opacity = 1;
+}
+// 关闭赞赏
+var rewardCloseBtn = document.getElementById("close-reward-panel");
+rewardCloseBtn.addEventListener("click", function(){
+  rewardPanel.style.opacity = 0;
+  setTimeout(function(){
+    rewardPanel.style.zIndex = -1;
+  }, 300);
+});
+
+/* 关于页面赞赏end */
 
 //----------------------------------------------------------------
 

@@ -2,9 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.iuoyt.com/pages/about/me/index.html</loc>
+    
+    <lastmod>2024-02-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.iuoyt.com/pages/about/update-records/index.html</loc>
     
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.iuoyt.com/posts/731a4ede.html</loc>
+    
+    <lastmod>2024-02-01</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -41,15 +59,6 @@
     <loc>https://www.iuoyt.com/pages/rests/jike/index.html</loc>
     
     <lastmod>2024-01-30</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.iuoyt.com/posts/731a4ede.html</loc>
-    
-    <lastmod>2024-01-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -371,7 +380,7 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/pages/about/update-records/en.html</loc>
+    <loc>https://www.iuoyt.com/pages/about/update-records/zh.html</loc>
     
     <lastmod>2023-08-19</lastmod>
     
@@ -380,7 +389,7 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/pages/about/update-records/zh.html</loc>
+    <loc>https://www.iuoyt.com/pages/about/update-records/en.html</loc>
     
     <lastmod>2023-08-19</lastmod>
     
@@ -401,15 +410,6 @@
     <loc>https://www.iuoyt.com/pages/social/moments/index%20copy.html</loc>
     
     <lastmod>2023-08-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.iuoyt.com/pages/about/me/index.html</loc>
-    
-    <lastmod>2023-08-09</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -706,7 +706,7 @@
 
   <url>
     <loc>https://www.iuoyt.com/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -714,91 +714,91 @@
   
   <url>
     <loc>https://www.iuoyt.com/tags/Hexo/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/tags/Butterfly/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/tags/Markdown/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/tags/Git/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/tags/Linux/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/tags/LeetCode/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/tags/%E6%95%B0%E7%BB%84/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/tags/%E5%AD%A6%E6%9C%9F%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/tags/Java/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/tags/Stable-Diffusion/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -807,42 +807,42 @@
   
   <url>
     <loc>https://www.iuoyt.com/categories/Hexo/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/categories/Markdown/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/categories/LeetCode/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/categories/Java/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://www.iuoyt.com/categories/AI%E7%BB%98%E7%94%BB/</loc>
-    <lastmod>2024-01-30</lastmod>
+    <lastmod>2024-02-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
