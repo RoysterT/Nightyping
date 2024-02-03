@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.iuoyt.com/pages/about/site/index.html</loc>
+    <loc>https://www.iuoyt.com/pages/about/me/index.html</loc>
     
     <lastmod>2024-02-03</lastmod>
     
@@ -11,9 +11,9 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/pages/about/me/index.html</loc>
+    <loc>https://www.iuoyt.com/pages/about/site/index.html</loc>
     
-    <lastmod>2024-02-02</lastmod>
+    <lastmod>2024-02-03</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -713,13 +713,6 @@
 
   
   <url>
-    <loc>https://www.iuoyt.com/tags/Markdown/</loc>
-    <lastmod>2024-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.iuoyt.com/tags/Hexo/</loc>
     <lastmod>2024-02-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -728,6 +721,13 @@
   
   <url>
     <loc>https://www.iuoyt.com/tags/Butterfly/</loc>
+    <lastmod>2024-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.iuoyt.com/tags/Markdown/</loc>
     <lastmod>2024-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -806,14 +806,14 @@
 
   
   <url>
-    <loc>https://www.iuoyt.com/categories/Markdown/</loc>
+    <loc>https://www.iuoyt.com/categories/Hexo/</loc>
     <lastmod>2024-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/categories/Hexo/</loc>
+    <loc>https://www.iuoyt.com/categories/Markdown/</loc>
     <lastmod>2024-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

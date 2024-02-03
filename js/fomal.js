@@ -5082,26 +5082,14 @@ function clearCache(){
 
 /* 关于我页面底部赞赏 */
 
-var rewardPanel = document.getElementById("reward-panel");
-// 显示赞赏
-function rewardShow(){
-  rewardPanel.style.zIndex = 10;
-  rewardPanel.style.opacity = 1;
-}
-// 关闭赞赏
-var rewardCloseBtn = document.getElementById("close-reward-panel");
-rewardCloseBtn.addEventListener("click", function(){
-  rewardPanel.style.opacity = 0;
-  setTimeout(function(){
-    rewardPanel.style.zIndex = -1;
-  }, 300);
-});
+
 
 /* 关于页面赞赏end */
 
 //----------------------------------------------------------------
 
 /* 关于我页面js */
+
 function initAboutPage() {
   const ck = "3FI49W6PtxRahPCr";
   var laUrl = "https://v6-widget.51.la/v6/" + ck + "/quote.js";
@@ -5221,11 +5209,6 @@ function initAboutPage() {
       stagger: -0.1,
     });
   });
-}
-if (typeof gsap === "object") {
-  initAboutPage()
-} else {
-  getScript("https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/gsap/3.9.1/gsap.min.js").then(initAboutPage);
 }
 
 /* 关于我页面js end */
