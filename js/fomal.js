@@ -3382,7 +3382,7 @@ if (lunar2["cMonth"] == 0) {
   lunar2["cYear"] = lunar2["cYear"] - 1;
   lunar2["cMonth"] = 12;
 }
-if (lunar["cYear"] == lunar2["cYear"] && lunar["cMonth"] == lunar2["cMonth"]) {
+if (lunar["cYear"] == lunar2["cYear"] && lunar["cMonth"] == lunar2["cMonth"] && lunar["cDay"] == lunar2["cDay"]) {
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("今天是除夕\n🧨祝你新年快乐，万事如意🧨");
     sessionStorage.setItem("isPopupWindow", "1");
@@ -3392,7 +3392,7 @@ if (lunar["cYear"] == lunar2["cYear"] && lunar["cMonth"] == lunar2["cMonth"]) {
 if (
   lunar["cYear"] == lunar2["cYear"] &&
   lunar["cMonth"] == lunar2["cMonth"] &&
-  lunar["cDay"] <= 7
+  lunar["cDay"] <= lunar2["cDay"] + 6
 ) {
   if (sessionStorage.getItem("isPopupWindow") != "1") {
     Swal.fire("春节快乐\n🧨祝你新年快乐，万事如意🧨");
