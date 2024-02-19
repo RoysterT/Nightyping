@@ -3384,7 +3384,7 @@ if (lunar2["cMonth"] == 0) {
 }
 if (lunar["cYear"] == lunar2["cYear"] && lunar["cMonth"] == lunar2["cMonth"] && lunar["cDay"] == lunar2["cDay"]) {
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("今天是除夕\n🧨祝你新年快乐，万事如意🧨");
+    Swal.fire("今天是除夕\n🎆祝你除夕快乐，烦恼消除🎆");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
@@ -3395,14 +3395,14 @@ if (
   lunar["cDay"] <= lunar2["cDay"] + 6
 ) {
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("春节快乐\n🧨祝你新年快乐，万事如意🧨");
+    Swal.fire("今天是农历新年\n🧨祝你新年快乐，万事如意🧨");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
 //元宵节
 if (lunar["IMonthCn"] == "正月" && lunar["IDayCn"] == "十五") {
   if (sessionStorage.getItem("isPopupWindow") != "1") {
-    Swal.fire("元宵节快乐\n送你一个大大的灯笼🧅");
+    Swal.fire("今天是元宵节\n祝你元宵节快乐，送你一个大大的灯笼🧅");
     sessionStorage.setItem("isPopupWindow", "1");
   }
 }
@@ -3584,12 +3584,15 @@ var newYear = () => {
     year = year + 1;
   }
   // 得到下一个新年的字符串
+  let lMonth = calendarFormatter.lunar2solar(year, toGetLunarMonth, toGetLunarDay)["cMonth"];
+  let lDay = calendarFormatter.lunar2solar(year, toGetLunarMonth, toGetLunarDay)["cDay"];
   let nextNewYear =
     calendarFormatter.lunar2solar(year, toGetLunarMonth, toGetLunarDay)["cYear"] +
-    "/" +
-    calendarFormatter.lunar2solar(year, toGetLunarMonth, toGetLunarDay)["cMonth"] +
-    "/" +
-    calendarFormatter.lunar2solar(year, toGetLunarMonth, toGetLunarDay)["cDay"] + " 00:00:00";
+    "/" + lMonth + "/" + lDay + " 00:00:00";
+  // 得到农历正月十六的日期yyyy-mm-dd
+  let lunarEnd = calendarFormatter.lunar2solar(lunar["lYear"], 1, 16);
+  let lunarEndStr =
+    lunarEnd["cYear"] + "/" + lunarEnd["cMonth"] + "/" + lunarEnd["cDay"] + " 00:00:00";
   // 新年时间戳 and 星期对象
   let newYear = new Date(nextNewYear).getTime() / 1000,
     week = {
@@ -3625,15 +3628,16 @@ var newYear = () => {
 
     // 现在与新年相差秒数
     let second = newYear - Math.round(now.getTime() / 1000);
-
-    // 如果小于0则已经过年
-    if (second < 0) {
+    let yearSecond = new Date(lunarEndStr).getTime() / 1000 - Math.round(now.getTime() / 1000);
+    // 如果小于0则已经过年，同时需要判断未到正月十五
+    if (second < 0 || yearSecond > 0) {
       document.querySelector("#newYear .title").innerHTML = "Happy New Year!";
       document.querySelector("#newYear .newYear-time").innerHTML =
         '<span class="happyNewYear">新年快乐！</p>';
-    } else {
+    }
+    else {
       // 大于0则还未过年
-      document.querySelector("#newYear .title").innerHTML = "距离" + year + "年春节还有：";
+      document.querySelector("#newYear .title").innerHTML = "距" + year + "年春节(" + year + "." + lMonth + "." + lDay + ")还有：";
 
       // 大于一天则直接渲染天数
       if (second > 86400) {
@@ -4895,7 +4899,7 @@ function isLinkLoaded() {
 
 /* memos说说页面js */
 
-function loadBibi(){
+function loadBibi() {
   var limit = 30; // 说说数量限制，0为不限制
   var avatar = 'https://oss.iuoyt.com/resource/elements/avatar.webp'; // 头像链接
   let url = 'https://memos.iuoyt.com'//这里地址最后面不要有'/'
@@ -4934,7 +4938,7 @@ function loadBibi(){
         <div class="talk_meta">
           <img class="no-lightbox no-lazyload avatar" src="${avatar}">
           <div class="talk_info">
-            <span class="talk_nick">${item.creatorUsername+icon}</span>
+            <span class="talk_nick">${item.creatorUsername + icon}</span>
             <span class="talk_date">${item.date}</span>
           </div>
         </div>
@@ -4987,7 +4991,7 @@ function loadBibi(){
     if (tag) {
       // 将每个tag打包为span标签
       tag.forEach(item => {
-        tag_content += `<span class="tag_item"><use xlink:href="#icon-biaoqian"/>${item.replace("#","")}</span>`
+        tag_content += `<span class="tag_item"><use xlink:href="#icon-biaoqian"/>${item.replace("#", "")}</span>`
       })
     }
     return {
@@ -5070,7 +5074,7 @@ function goComment(e) {
 
 /* 清理缓存 */
 
-function clearCache(){
+function clearCache() {
   localStorage.clear();
   sessionStorage.clear();
   window.location.reload();
