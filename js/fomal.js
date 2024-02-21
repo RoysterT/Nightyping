@@ -1,3 +1,11 @@
+//----------------------------------------------------------------
+// 全局变量
+
+// 版本号
+var latestVersion = "0.5.8_beta";
+
+//----------------------------------------------------------------
+
 /* 阅读进度 start */
 document.addEventListener("pjax:complete", function () {
   window.onscroll = percent;
@@ -3882,7 +3890,7 @@ function setFontBorder() {
 
 // 设置主题色
 if (localStorage.getItem("themeColor") == undefined) {
-  localStorage.setItem("themeColor", "red");
+  localStorage.setItem("themeColor", "green");
 }
 setColor(localStorage.getItem("themeColor"));
 function setColor(c) {
@@ -3939,7 +3947,7 @@ function setSnow() {
   }
 }
 
-// 樱花飘落效果开关
+// 飘落效果开关
 if (localStorage.getItem("sakura") == undefined) {
   localStorage.setItem("sakura", "none");
 }
@@ -4017,23 +4025,23 @@ function toggleRightside() {
   }
 }
 
-// 天气开关
-if (!localStorage.getItem("weather")) {
-  localStorage.setItem("weather", "-50px");
-}
-document.getElementById("he-plugin-simple").style.top = localStorage.getItem("weather");
-// document
-//   .getElementById("he-plugin-simple")
-//   .setAttribute("style", "top:" + localStorage.getItem("weather"));
-function setWeather() {
-  if (document.getElementById("weatherSet").checked) {
-    document.getElementById("he-plugin-simple").style.top = "10px";
-    localStorage.setItem("weather", "10px");
-  } else {
-    document.getElementById("he-plugin-simple").style.top = "-50px";
-    localStorage.setItem("weather", "-50px");
-  }
-}
+// // 天气开关
+// if (!localStorage.getItem("weather")) {
+//   localStorage.setItem("weather", "-50px");
+// }
+// document.getElementById("he-plugin-simple").style.top = localStorage.getItem("weather");
+// // document
+// //   .getElementById("he-plugin-simple")
+// //   .setAttribute("style", "top:" + localStorage.getItem("weather"));
+// function setWeather() {
+//   if (document.getElementById("weatherSet").checked) {
+//     document.getElementById("he-plugin-simple").style.top = "10px";
+//     localStorage.setItem("weather", "10px");
+//   } else {
+//     document.getElementById("he-plugin-simple").style.top = "-50px";
+//     localStorage.setItem("weather", "-50px");
+//   }
+// }
 
 // 透明度调节滑块
 if (localStorage.getItem("transNum") == undefined) {
@@ -4425,70 +4433,76 @@ function createWinbox() {
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 侧栏显示 </div>
 </div>
 
-<div class="content" style="display:flex">
+<!-- <div class="content" style="display:flex">
   <input type="checkbox" id="weatherSet" onclick="setWeather()" style="min-width:37px">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 天气显示（手机端不生效） </div>
-</div>
+</div> -->
 
 
 <h2>二、字体设置（字体切换请稍等片刻！）</h2>
 <div class="note warning modern"><p>非商免字体未经授权只能个人使用。本站为完全非商业、非盈利性质的网站，平时用于个人学习交流，如有侵权请联系站长删除，谢谢！ —— 致版权方</p>
 </div>
 <p id="swfs">
-<a class="swf" id="swf_ZhuZiAWan" href="javascript:;" rel="noopener external nofollow" style="font-family:'ZhuZiAWan'!important;color:black" onclick="setFont('ZhuZiAWan')">筑紫A丸标准体2.0</a>
-<a class="swf" id="swf_HYTMR" href="javascript:;" rel="noopener external nofollow" style="font-family:'HYTMR'!important;color:black" onclick="setFont('HYTMR')">汉仪唐美人</a>
-<a class="swf" id="swf_LXGW" href="javascript:;" rel="noopener external nofollow" style="font-family:'LXGW'!important;color:black" onclick="setFont('LXGW')">霞鹜文楷</a>
-<a class="swf" id="swf_TTQHB" href="javascript:;" rel="noopener external nofollow" style="font-family:'TTQHB'!important;color:black" onclick="setFont('TTQHB')">甜甜圈海报</a>
-<a class="swf" id="swf_YSHST" href="javascript:;" rel="noopener external nofollow" style="font-family:'YSHST'!important;color:black" onclick="setFont('YSHST')">优设好身体</a>
-<a class="swf" id="swf_MiSans" href="javascript:;" rel="noopener external nofollow" style="font-family:'MiSans'!important;color:black" onclick="setFont('MiSans')">MiSans</a>
-<a class="swf" id="swf_default" href="javascript:;" rel="noopener external nofollow" style="font-family:-apple-system, IBM Plex Mono ,monosapce,'微软雅黑', sans-serif;!important;color:black" onclick="setFont('default')">系统默认</a>
+  <a class="swf" id="swf_default" href="javascript:;" rel="noopener external nofollow" style="font-family:-apple-system, IBM Plex Mono ,monosapce,'微软雅黑', sans-serif;!important;color:black" onclick="setFont('default')">系统默认</a>
+  <a class="swf" id="swf_LXGW" href="javascript:;" rel="noopener external nofollow" style="font-family:'LXGW'!important;color:black" onclick="setFont('LXGW')">霞鹜文楷</a>
+  <a class="swf" id="swf_ZhuZiAWan" href="javascript:;" rel="noopener external nofollow" style="font-family:'ZhuZiAWan'!important;color:black" onclick="setFont('ZhuZiAWan')">筑紫A丸</a>
+  <a class="swf" id="swf_MiSans" href="javascript:;" rel="noopener external nofollow" style="font-family:'MiSans'!important;color:black" onclick="setFont('MiSans')">MiSans</a>
+  <a class="swf" id="swf_HYTMR" href="javascript:;" rel="noopener external nofollow" style="font-family:'HYTMR'!important;color:black" onclick="setFont('HYTMR')">汉仪唐美人</a>
+  <a class="swf" id="swf_TTQHB" href="javascript:;" rel="noopener external nofollow" style="font-family:'TTQHB'!important;color:black" onclick="setFont('TTQHB')">甜甜圈海报</a>
+  <a class="swf" id="swf_YSHST" href="javascript:;" rel="noopener external nofollow" style="font-family:'YSHST'!important;color:black" onclick="setFont('YSHST')">优设好身体</a>
 </p>
 
 <h2>三、主题色设置</h2>
-<div class="content" style="display:flex"><input type="radio" id="red" name="colors" value=" "
-        onclick="setColor('red')"><input type="radio" id="orange" name="colors" value=" "
-        onclick="setColor('orange')"><input type="radio" id="yellow" name="colors" value=" "
-        onclick="setColor('yellow')"><input type="radio" id="green" name="colors" value=" "
-        onclick="setColor('green')"><input type="radio" id="blue" name="colors" value=" "
-        onclick="setColor('blue')"><input type="radio" id="heoblue" name="colors" value=" "
-        onclick="setColor('heoblue')"><input type="radio" id="darkblue" name="colors" value=" "
-        onclick="setColor('darkblue')"><input type="radio" id="purple" name="colors" value=" "
-        onclick="setColor('purple')"><input type="radio" id="pink" name="colors" value=" "
-        onclick="setColor('pink')" checked="checked"><input type="radio" id="black" name="colors" value=" "
-        onclick="setColor('black')"><input type="radio" id="blackgray" name="colors" value=" "
-        onclick="setColor('blackgray')"></div>
+<div class="content" style="display:flex">
+  <input type="radio" id="red" name="colors" value=" " onclick="setColor('red')">
+  <input type="radio" id="orange" name="colors" value=" " onclick="setColor('orange')">
+  <input type="radio" id="yellow" name="colors" value=" " onclick="setColor('yellow')">
+  <input type="radio" id="green" name="colors" value=" " onclick="setColor('green')">
+  <input type="radio" id="blue" name="colors" value=" " onclick="setColor('blue')">
+  <input type="radio" id="heoblue" name="colors" value=" " onclick="setColor('heoblue')">
+  <input type="radio" id="darkblue" name="colors" value=" " onclick="setColor('darkblue')">
+  <input type="radio" id="purple" name="colors" value=" " onclick="setColor('purple')">
+  <input type="radio" id="pink" name="colors" value=" " onclick="setColor('pink')" checked="checked">
+  <input type="radio" id="black" name="colors" value=" " onclick="setColor('black')">
+  <input type="radio" id="blackgray" name="colors" value=" " onclick="setColor('blackgray')">
+</div>
 
 <h2>四、背景设置</h2>
-<center><button onclick="resetBg()" style="background:var(--theme-color);display:block;width:35%;padding:15px 0;border-radius:30px;color:white;"><i class="fa-solid fa-arrows-rotate"></i>&nbsp;恢复默认背景</button></center>
+<center>
+  <button onclick="resetBg()" style="background:var(--theme-color);display:block;width:35%;padding:15px 0;border-radius:30px;color:white;">
+    <i class="fa-solid fa-arrows-rotate"></i>&nbsp;恢复默认背景
+  </button>
+</center>
+
 
 <h3>1. 二次元</h3>
 <details class="folding-tag" cyan><summary> 查看二次元背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a></div>
+              <div class="bgbox">  <a href="javascript:;" rel="noopener external nofollow"     style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)"     class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a></div>
               </div>
             </details>
 
 
 <h3>2. 风景</h3>
-
 <details class="folding-tag" cyan><summary> 查看风景背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)')"></a></div>
+              <div class="bgbox">  <a href="javascript:;" rel="noopener external nofollow"     style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)"     class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)')"></a></div>
               </div>
             </details>
+
 
 <h3>3. 萌宠</h3>
-
 <details class="folding-tag" cyan><summary> 查看萌宠背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/mc1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/mc1.webp)')"></a></div>
+              <div class="bgbox">  <a href="javascript:;" rel="noopener external nofollow"   style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/mc1.webp)"     class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/mc1.webp)')"></a></div>
               </div>
             </details>
+
 
 <h3>4. 渐变色</h3>
 <details class="folding-tag" cyan><summary> 查看渐变色背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #544a7d, #ffd452)" onclick="changeBg('linear-gradient(to right, #544a7d, #ffd452)')"></a><a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to bottom, #7f7fd5, #86a8e7, #91eae4)" onclick="changeBg('linear-gradient(to bottom, #7f7fd5, #86a8e7, #91eae4)')"></a><a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to left, #654ea3, #eaafc8)" onclick="changeBg('linear-gradient(to left, #654ea3, #eaafc8)')"></a><a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to top, #feac5e, #c779d0, #4bc0c8)" onclick="changeBg('linear-gradient(to top, #feac5e, #c779d0, #4bc0c8)')"></a><a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to top, #d3959b, #bfe6ba)" onclick="changeBg('linear-gradient(to top, #d3959b, #bfe6ba)')"></a><a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to top, #8360c3, #2ebf91)" onclick="changeBg('linear-gradient(to top, #8360c3, #2ebf91)')"></a><a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to top, #108dc7, #ef8e38)" onclick="changeBg('linear-gradient(to top, #108dc7, #ef8e38)')"></a><a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to top, #355c7d, #6c5b7b, #c06c84)" onclick="changeBg('linear-gradient(to top, #355c7d, #6c5b7b, #c06c84)')"></a></div>
+              <div class="bgbox">  <a href="javascript:;" rel="noopener external nofollow" class="box"     style="background: linear-gradient(to right, #544a7d, #ffd452)"     onclick="changeBg('linear-gradient(to right, #544a7d, #ffd452)')"></a>  <a href="javascript:;" rel="noopener external nofollow" class="box"     style="background: linear-gradient(to bottom, #7f7fd5, #86a8e7, #91eae4)"     onclick="changeBg('linear-gradient(to bottom, #7f7fd5, #86a8e7, #91eae4)')"></a>  <a href="javascript:;" rel="noopener external nofollow" class="box"     style="background: linear-gradient(to left, #654ea3, #eaafc8)"     onclick="changeBg('linear-gradient(to left, #654ea3, #eaafc8)')"></a>  <a href="javascript:;" rel="noopener external nofollow" class="box"     style="background: linear-gradient(to top, #feac5e, #c779d0, #4bc0c8)"     onclick="changeBg('linear-gradient(to top, #feac5e, #c779d0, #4bc0c8)')"></a>  <a href="javascript:;" rel="noopener external nofollow" class="box"     style="background: linear-gradient(to top, #d3959b, #bfe6ba)"     onclick="changeBg('linear-gradient(to top, #d3959b, #bfe6ba)')"></a>  <a href="javascript:;" rel="noopener external nofollow" class="box"     style="background: linear-gradient(to top, #8360c3, #2ebf91)"     onclick="changeBg('linear-gradient(to top, #8360c3, #2ebf91)')"></a>  <a href="javascript:;" rel="noopener external nofollow"     class="box" style="background: linear-gradient(to top, #108dc7, #ef8e38)"     onclick="changeBg('linear-gradient(to top, #108dc7, #ef8e38)')"></a>  <a href="javascript:;" rel="noopener external nofollow"     class="box" style="background: linear-gradient(to top, #355c7d, #6c5b7b, #c06c84)"     onclick="changeBg('linear-gradient(to top, #355c7d, #6c5b7b, #c06c84)')"></a></div>
               </div>
             </details>
 
@@ -4496,16 +4510,15 @@ function createWinbox() {
 <h3>5. 纯色</h3>
 <details class="folding-tag" cyan><summary> 查看纯色背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #ecb1b1" onclick="changeBg('#ecb1b1')"></a> <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #d3ebac" onclick="changeBg('#d3ebac')"></a> <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #ace9ce" onclick="changeBg('#ace9ce')"></a><a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #c1ebea" onclick="changeBg('#c1ebea')"></a> <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #dee7f1" onclick="changeBg('#dee7f1')"></a> <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #e9e3f2" onclick="changeBg('#e9e3f2')"></a> <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #f7eff5" onclick="changeBg('#f7eff5')"></a>  <input type="color" id="define_colors" href="javascript:;" rel="noopener external nofollow" class="box" autocomplete="on" value="${defineColor}" oninput="changeBgColor()"></input></div>
+              <div class="bgbox">  <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #ecb1b1" onclick="changeBg('#ecb1b1')"></a>   <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #d3ebac" onclick="changeBg('#d3ebac')"></a>   <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #ace9ce" onclick="changeBg('#ace9ce')"></a>  <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #c1ebea" onclick="changeBg('#c1ebea')"></a>   <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #dee7f1" onclick="changeBg('#dee7f1')"></a>   <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #e9e3f2" onclick="changeBg('#e9e3f2')"></a>   <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: #f7eff5" onclick="changeBg('#f7eff5')"></a>    <input type="color" id="define_colors" href="javascript:;" rel="noopener external nofollow" class="box" autocomplete="on" value="${defineColor}" oninput="changeBgColor()"></input></div>
               </div>
             </details>
-
 
 
 <h3>6. 适配手机</h3>
 <details class="folding-tag" cyan><summary> 查看适配手机的背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/mb4.webp)" class="pimgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/mb4.webp)')"></a></div>
+              <div class="bgbox">  <a href="javascript:;" rel="noopener external nofollow"     style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/mb4.webp)" class="pimgbox"     onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/mb4.webp)')"></a></div>
               </div>
             </details>
 
@@ -4513,7 +4526,7 @@ function createWinbox() {
 <h3>7. 壁纸API</h3>
 <details class="folding-tag" cyan><summary> 查看壁纸API系列背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a id="bingDayBox" rel="noopener external nofollow" style="background-image: ${bingDayBg}" class="box apiBox" onclick="changeBg('${bingDayBg}')"></a><a id="bingHistoryBox" rel="noopener external nofollow" style="background-image: ${bingHistoryBg}" class="box apiBox" onclick="changeBg('${bingHistoryBg}')"></a><a id="EEEDogBox" rel="noopener external nofollow" style="background-image: ${EEEDog}" class="box apiBox" onclick="changeBg('${EEEDog}')"></a><a id="seovxBox" rel="noopener external nofollow" style="background-image: ${seovx}" class="box apiBox" onclick="changeBg('${seovx}')"></a><a id="picsumBox" rel="noopener external nofollow" style="background-image: ${picsum}" class="box apiBox" onclick="changeBg('${picsum}')"></a><a id="waiBizhiBox" rel="noopener external nofollow" style="background-image: ${waiBizhi}" class="box apiBox" onclick="changeBg('${waiBizhi}')"></a><a id="btstuBox" rel="noopener external nofollow" style="background-image: ${btstu}" class="box apiBox" onclick="changeBg('${btstu}')"></a><a id="unsplashBox" rel="noopener external nofollow" style="background-image: ${unsplash}" class="box apiBox" onclick="changeBg('${unsplash}')"></a></div>
+              <div class="bgbox">  <!-- <a bingid="bingDayBox" rel="noopener external nofollow" style="background-image: ${bingDayBg}" class="box apiBox" onclick="changeBg('${bingDayBg}')"></a> -->  <!-- <a id="bingHistoryBox" rel="noopener external nofollow" style="background-image: ${bingHistoryBg}" class="box apiBox" onclick="changeBg('${bingHistoryBg}')"></a> -->  <a id="EEEDogBox" rel="noopener external nofollow" style="background-image: ${EEEDog}" class="box apiBox" onclick="changeBg('${EEEDog}')"></a>  <!-- <a id="seovxBox" rel="noopener external nofollow" style="background-image: ${seovx}" class="box apiBox" onclick="changeBg('${seovx}')"></a> -->  <a id="picsumBox" rel="noopener external nofollow" style="background-image: ${picsum}" class="box apiBox" onclick="changeBg('${picsum}')"></a>  <!-- <a id="waiBizhiBox" rel="noopener external nofollow" style="background-image: ${waiBizhi}" class="box apiBox" onclick="changeBg('${waiBizhi}')"></a> -->  <a id="btstuBox" rel="noopener external nofollow" style="background-image: ${btstu}" class="box apiBox" onclick="changeBg('${btstu}')"></a>  <a id="unsplashBox" rel="noopener external nofollow" style="background-image: ${unsplash}" class="box apiBox" onclick="changeBg('${unsplash}')"></a></div>
               </div>
             </details>
 
@@ -4557,12 +4570,12 @@ function createWinbox() {
   } else if (localStorage.getItem("sakuraItem") == "maple") {
     document.getElementById("sakuraItemSet").checked = true;
   }
-  if (localStorage.getItem("weather") == "10px") {
-    document.getElementById("weatherSet").checked = true;
-  } else if (localStorage.getItem("weather") == "-50px") {
-    document.getElementById("weatherSet").checked = false;
-  }
-  document.getElementById("weatherSet").checked = false;
+  // if (localStorage.getItem("weather") == "10px") {
+  //   document.getElementById("weatherSet").checked = true;
+  // } else if (localStorage.getItem("weather") == "-50px") {
+  //   document.getElementById("weatherSet").checked = false;
+  // }
+  // document.getElementById("weatherSet").checked = false;
   if (localStorage.getItem("fpson") == "1") {
     document.getElementById("fpson").checked = true;
   } else {
@@ -5216,6 +5229,63 @@ function initAboutPage() {
 }
 
 /* 关于我页面js end */
+
+//----------------------------------------------------------------
+
+/* 网站版本显示及更新提示 */
+
+// 版本号切割函数
+function splitVersion(v) {
+  // 循环10次
+  for (let i = 0; i < 10; i++) {
+    v = v.replace(/[^0-9.]/, '');
+  }
+  return v.split(".");
+}
+// 显示版本号
+document.getElementById("blogVer").innerHTML = "Patch Ver v" + latestVersion;
+// 从localstorage读取版本号
+var curVersion = localStorage.getItem("version");
+// 和最新版本号对比
+let cpResult;
+if (curVersion != null) {
+  const newVerArr = splitVersion(latestVersion);
+  const curVerArr = splitVersion(curVersion);
+  i = 0;
+  while (true) {
+    const s1 = newVerArr[i];
+    const s2 = curVerArr[i++];
+    if (s1 === undefined || s2 === undefined) {
+      cpResult = newVerArr.length - curVerArr.length;
+      break;
+    }
+    if (s1 === s2) continue;
+    cpResult = s1 - s2;
+    break;
+  }
+}
+// 保存版本号
+localStorage.setItem("version", latestVersion);
+if (curVersion === null || cpResult > 0) {
+  debounce(function () {
+    new Vue({
+      data: function () {
+        this.$notify({
+          title: "更新提示",
+          message: "已获取到最新版本（v" + latestVersion + "），欢迎体验！",
+          position: "top-left",
+          offset: 50,
+          showClose: true,
+          type: "success",
+          duration: 5000,
+        });
+      },
+    });
+  }, 300);
+}
+
+
+/* 网站版本显示及更新提示end */
 
 //----------------------------------------------------------------
 
