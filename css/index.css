@@ -3850,6 +3850,10 @@ body[data-type='about'] #web_bg {
   -moz-transition: 1s ease-in-out;
   -o-transition: 1s ease-in-out;
   -ms-transition: 1s ease-in-out;
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -3947,6 +3951,10 @@ body[data-type='about'] #web_bg {
 }
 .author-content-item.map:hover {
   background-size: 120%;
+  -webkit-transition: 4s ease-in-out;
+  -moz-transition: 4s ease-in-out;
+  -o-transition: 4s ease-in-out;
+  -ms-transition: 4s ease-in-out;
   -webkit-transition: 4s ease-in-out;
   -moz-transition: 4s ease-in-out;
   -o-transition: 4s ease-in-out;
@@ -8926,7 +8934,7 @@ h1.page-title + .tag-cloud-list {
 }
 span.mathjax-overflow {
   display: inline-block;
-  display: block;
+  display: inline;
   padding: 0 2px;
   max-width: 100%;
   vertical-align: bottom;
