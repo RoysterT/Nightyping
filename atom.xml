@@ -6,7 +6,7 @@
   <link href="https://www.iuoyt.com/atom.xml" rel="self"/>
   
   <link href="https://www.iuoyt.com/"/>
-  <updated>2024-03-05T07:36:07.270Z</updated>
+  <updated>2024-03-06T11:29:51.016Z</updated>
   <id>https://www.iuoyt.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>计算机网络概述</title>
+    <link href="https://www.iuoyt.com/posts/7c4ca347.html"/>
+    <id>https://www.iuoyt.com/posts/7c4ca347.html</id>
+    <published>2024-03-06T09:57:32.000Z</published>
+    <updated>2024-03-06T11:29:51.016Z</updated>
+    
+    <content type="html"><![CDATA[<p>最早有三类网络：电信网络、有线电视网络和计算机网络，后来“三网融合”，将三种网络融合成一种网络就可以提供上述的所有服务。</p><h2 id="互联网概述">互联网概述</h2><h3 id="两个基本特点">两个基本特点</h3><ul><li>互联网有两个重要的基本特点，即<strong>连通性</strong>和<strong>共享</strong>。<ul><li>连通性：用户之间不论相距都远的距离，通过互联网都可以便捷地、经济地交换各种信息。</li><li>共享：也就是资源共享，可以是信息共享、软件共享或者是硬件共享。这些资源就好像在用户身边一样，使用非常方便。</li></ul></li></ul><h3 id="计算机网络">计算机网络</h3><ul><li>计算机网络由若干**节点（node）<strong>和连接这些节点的</strong>链路（link）**构成，节点可以是计算机、集线器、交换机、路由器等。所谓互联网也就是将各部分计算机网络连接起来，形成一张更大的网络，即“网络的网络”。</li><li>网络把计算机连接在一起，而互联网则把许多网络通过路由器连接在一起。与网络相连的计算机常称为主机（host）。</li></ul><h3 id="互联网基础结构发展的三个阶段">互联网基础结构发展的三个阶段</h3><ul><li><p>第一阶段：从单个网络ARPANET向互联网发展的过程。</p><p>1969年美国国防部创建的第一个分组交换网ARPANET最初只是一个单个的分组交换网，各主机都直接与就近的节点交换机相连。后来逐渐应用在民用技术上，互联网络由此出现，成为现今互联网的雏形。</p></li><li><p>第二阶段：建成了三级结构的互联网。</p><p>1985年，美国国家科学基金会NSF围绕六个大型计算机中心建设计算机网络，由三级构成，分别为主干网、地区网和校园网（或企业网），这个网络覆盖了美国主要的大学和研究所。1991年，NSF和其他政府机构认为互联网不应只限于大学和研究机构，于是允许众多公司接入互联网，网络上的信息量急剧增大，使互联网的容量已无法满足需要，政府决定将互联网主干网交给私人公司经营，并开始收费。</p></li><li><p>第三阶段：逐渐形成了全球范围的多层次ISP结构的互联网。</p><p>从1993年开始，由美国政府自主的NSFNET逐渐被若干个商用的互联网主干网替代，由此出现了<strong>互联网服务提供者ISP</strong>（Internet Service Provider），例如我国的中国电信、中国联通和中国移动。ISP可以从互联网管理机构申请到很多IP地址，同时拥有通信线路和路由器等联网设备，因此任何个人或机构向ISP缴纳规定费用，就可以从ISP获取到IP地址和租用权，并通过ISP接入互联网。</p></li></ul><h3 id="互联网服务提供者层次">互联网服务提供者层次</h3><ul><li>互联网服务提供者ISP也分为多个层次，主干ISP、地区ISP和本地ISP，目前覆盖全世界的互联网，主干ISP只有十几个，但本地ISP数量达到几十万个。<ul><li>主干ISP：由特定公司创建和维护，服务面积最大（一般覆盖国家范围），并且拥有高速主干网。不同网络运营商都有自己的主干ISP网络，并且可以彼此互通。</li><li>地区ISP：这些地区ISP通过主干ISP连接起来，数据率也比主干ISP低一些。</li><li>本地ISP：给用户提供直接的服务，可以连接到地区ISP，也可以直接连接到主干ISP。可以是提供互联网服务的公司，或是向内部提供服务的企业，或是运行自己网络的非营利机构（比如学校）。</li></ul></li><li>随着互联网数据的急剧增长，以及为了给主干ISP减轻转发分组的压力和提高转发效率，<strong>互联网交换点IXP</strong>（Internet eXchange Point）应运而生。其作用是：允许两个网络直接相连并交换分组，而不需要再通过第三个网络来转发分组，由此，转发分组不必再经过最上层的主干ISP，而是直接在两个地区ISP之间用高速链路对等地交换分组。</li></ul><h3 id="互联网标准化">互联网标准化</h3><ul><li>1992年后成立了一个国际性组织互联网协会ISOC（Internet Society）来对互联网进行全面管理以及在世界范围内促进起发展和使用。</li><li>所有的互联网标准都是以RFC（Request For Comments，“请求评论”）的形式在互联网上发表的，指定互联网的正式标准要经过三个阶段：<ul><li>互联网草案（Internet Draft）：六个月有效期，但不算是RFC文档</li><li>建议标准（Proposed Standard）：开始成为RFC文档</li><li>互联网标准（Internet Standard）：如果经过长期的检验，证明某个检疫标准可以成为互联网标准，则为其分配一个标准编号</li></ul></li></ul><h2 id="互联网的组成">互联网的组成</h2><ul><li>互联网从工作方式上看可以分为两大模块，边缘部分和核心部分。其核心功能是分组转发。</li></ul><h3 id="边缘部分">边缘部分</h3><ul><li><p>边缘部分由所有连接在互联网上的主机（端系统）组成，这部分是用户直接使用的，用来进行通信（传输数据、音频或视频）和资源共享。端系统可以是个人电脑、智能手机、网络摄像头，或者是大型计算机（服务器），拥有者可以是个人或者单位，或者也可以属于某一ISP。</p></li><li><p>端系统之间的通信方式有两大类：</p><ul><li><p>客户-服务器方式（C/S方式）</p><p>互联网上最常用、最传统的方式，<strong>客户（client）是服务请求方，服务器（server）是服务提供方</strong>。</p></li><li><p>对等连接方式（P2P方式）</p><p>对等连接（peer-to-peer）的两台主机通过对等连接软件就可以进行平等的对等连接通信，双方都可以下载对方已经存储在硬盘中的共享文档。这一种连接方式中，<strong>每一台主机既是客户又是服务器</strong>。</p></li></ul></li></ul><h3 id="核心部分">核心部分</h3><ul><li>核心部分由大量网络和链接这些网络的路由器组成，这部分是为边缘部分提供服务的（提供连通性和交换），使得边缘部分中的任何一台主机都能与其他主机通信。</li><li>网络核心部分起特殊作用的是路由器（router），是一种专用计算机，是实现分组交换（packet switching）的关键构件，任务是转发收到的分组。路由器和边缘部分的主机有很大不同，主机是为用户进行信息处理的，路由器则是用来转发分组，即进行分组交换。</li></ul><h4 id="电路交换">电路交换</h4><ul><li>必须经过“建立连接（占用通信资源）→通话（一直占用通信资源）→释放连接（归还通信资源）”三个步骤的交换方式称为电路交换。</li><li>特点：<ul><li>突发性：数据是突发式地出现在传输线路上的</li><li>利用率低：线路上真正用来传送数据的时间往往不到10%甚至1%，已被用户占用的通信线路资源在绝大部分时间里都是空闲的。</li></ul></li></ul><h4 id="分组交换">分组交换</h4><ul><li>分组交换采用存储转发技术，把一个报文划分为几个分组后再进行传送。每一个数据段前面都会加上一些必要的控制信息组成首部（header），包括目的地址、源地址等重要信息。</li><li>优点：<ul><li>高效：再分组传输的过程中动态分配传输带宽，对通信链路逐段占用</li><li>灵活：为每一个分组独立地选择最合适的转发路由</li><li>迅速：以分组作为传送单位，不先建立连接就能向其他主机发送分组</li><li>可靠：保证可靠性的网络协议，分布式多路由的分组交换网使得网络有很好的生存性</li></ul></li><li>缺点：<ul><li>造成一定的时延：分组在各路由器存储转发时需要排队</li><li>造成一定的开销：数据在转发过程中可能会丢失</li></ul></li></ul><div class="note info flat"><p>内容更新中……</p></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最早有三类网络：电信网络、有线电视网络和计算机网络，后来“三网融合”，将三种网络融合成一种网络就可以提供上述的所有服务。&lt;/p&gt;
+&lt;h2 id=&quot;互联网概述&quot;&gt;互联网概述&lt;/h2&gt;
+&lt;h3 id=&quot;两个基本特点&quot;&gt;两个基本特点&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;互联网有两个重要的</summary>
+      
+    
+    
+    
+    <category term="学习笔记" scheme="https://www.iuoyt.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="计算机网络" scheme="https://www.iuoyt.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>财经应用文写作方式</title>
@@ -424,27 +452,6 @@
     
     
     <category term="设计模式" scheme="https://www.iuoyt.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Linux任务计划crontab</title>
-    <link href="https://www.iuoyt.com/posts/b38a663c.html"/>
-    <id>https://www.iuoyt.com/posts/b38a663c.html</id>
-    <published>2023-11-03T10:18:50.000Z</published>
-    <updated>2023-11-25T03:23:38.928Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="crontab简介">crontab简介</h2><ul><li><p><code>crontab</code>命令用于设置周期性被执行的命令，并将其存放于 crontab 文件中，以供之后读取和执行。</p></li><li><p><code>crontab</code>储存的指令被守护进程激活，<code>crond</code>为其守护进程，<code>crond</code>常常在后台运行，每一分钟会检查一次是否有预定的作业需要执行。</p></li><li><blockquote><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Example of job definition:</span></span><br><span class="line"><span class="comment"># .---------------- minute (0 - 59)</span></span><br><span class="line"><span class="comment"># |  .------------- hour (0 - 23)</span></span><br><span class="line"><span class="comment"># |  |  .---------- day of month (1 - 31)</span></span><br><span class="line"><span class="comment"># |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...</span></span><br><span class="line"><span class="comment"># |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat</span></span><br><span class="line"><span class="comment"># |  |  |  |  |</span></span><br><span class="line"><span class="comment"># *  *  *  *  * user-name command to be executed</span></span><br></pre></td></tr></table></figure></blockquote></li></ul><h2 id="crontab准备">crontab准备</h2><ul><li><p>使用<code>rsyslog</code>可以通过日志中的信息来得知任务是否被执行了：</p>  <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-<span class="built_in">get</span> install -y rsyslog</span><br><span class="line">sudo<span class="built_in"> service </span>rsyslog start</span><br></pre></td></tr></table></figure><p><img src="https://oss.iuoyt.com/img/posts/image-20231103174614045.png" alt="image-20231103174614045"></p></li></ul><h2 id="crontab使用">crontab使用</h2><h3 id="新增任务">新增任务</h3><ul><li><p>首先来添加一个计划任务：</p>  <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">crontab -e</span></span><br></pre></td></tr></table></figure><p>如果是第一次启动则会出现如下内容，选择编辑工具，通常使用2号vim工具：</p><p><img src="https://oss.iuoyt.com/img/posts/image-20231103174813614.png" alt="image-20231103174813614"></p></li><li><p>接下来会进入下面的界面，这个界面就是添加计划的地方：<br><img src="https://oss.iuoyt.com/img/posts/image-20231103175001232.png" alt="image-20231103175001232"></p></li><li><p>接下来按下<kbd>i</kbd>进入编辑模式，在最后一行添加如下内容，作用是每分钟在用户目录下创建一个以当前的年月日时分秒为名字的空白文件：</p>  <figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*/<span class="number">1</span> * * * * touch /home/shiyanlou/$(<span class="keyword">date</span> +\%Y\%m\%d\%H\%M\%S)</span><br></pre></td></tr></table></figure></li><li><p>然后按下<kbd>Esc</kbd>，输入<code>:wq</code>保存并退出，输入如下指令查看文件内容：</p>  <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">crontab -l</span></span><br></pre></td></tr></table></figure><p><img src="https://oss.iuoyt.com/img/posts/image-20231103180017702.png" alt="image-20231103180017702"></p></li><li><p>虽然已经添加了任务，但如果cron的进程并没有启动，那么任务也不会被执行，可以通过如下两种方式确定cron是否已启动：</p>  <figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta"># 第一种</span></span><br><span class="line">ps aux <span class="string">| grep cron</span></span><br><span class="line"><span class="meta"># 第二种</span></span><br><span class="line">pgrep cron</span><br></pre></td></tr></table></figure></li><li><p>如果已经启动，在用户目录下使用<code>ll</code>命令，可以看到：</p><p><img src="https://oss.iuoyt.com/img/posts/image-20231103180524732.png" alt="image-20231103180524732"></p></li><li><p>通过如下命令可以查看到执行任务命令之后在日志中的信息反馈：</p>  <figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo tail -f /<span class="keyword">var</span>/<span class="built_in">log</span>/syslog</span><br></pre></td></tr></table></figure><p><img src="https://oss.iuoyt.com/img/posts/image-20231103180704821.png" alt="image-20231103180704821"></p></li></ul><h3 id="删除任务">删除任务</h3><ul><li><p>当不需要再自动执行任务，可以使用如下命令：</p>  <figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">crontab -r</span></span><br></pre></td></tr></table></figure></li><li><p>执行后再查看任务列表，可以看到已经没有正在执行的任务：</p><p><img src="https://oss.iuoyt.com/img/posts/image-20231103180918834.png" alt="image-20231103180918834"></p></li></ul><h3 id="系统级任务">系统级任务</h3><ul><li><p>如果需要定义系统级别定时任务，可以使用sudo权限编辑crontab文件：</p>  <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim <span class="regexp">/etc/</span>crontab</span><br></pre></td></tr></table></figure></li><li><p>cron服务的最小检测时间为分钟，所以cron每分钟会去文件中读取一次内容</p></li></ul><h3 id="cron的相关文件">cron的相关文件</h3><ul><li><p>在<code>/etc</code>目录下查看cron相关的文件：</p>  <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ll</span> /etc | <span class="keyword">grep</span> cron</span><br></pre></td></tr></table></figure><p><img src="https://oss.iuoyt.com/img/posts/image-20231103181401458.png" alt="image-20231103181401458"></p></li><li><p>其中部分作用如下：</p></li></ul><table><thead><tr><th style="text-align:center">目录</th><th style="text-align:center">作用</th></tr></thead><tbody><tr><td style="text-align:center"><code>/etc/cron.daily</code></td><td style="text-align:center">在每天的6点25分时执行一次</td></tr><tr><td style="text-align:center"><code>/etc/cron.hourly</code></td><td style="text-align:center">在每小时的17分钟时执行一次</td></tr><tr><td style="text-align:center"><code>/etc/cron.monthly</code></td><td style="text-align:center">在每月1号的6点52分时执行一次</td></tr><tr><td style="text-align:center"><code>/etc/cron.weekly</code></td><td style="text-align:center">在每周第七天的6点47分时执行一次</td></tr></tbody></table>]]></content>
-    
-    
-    <summary type="html">本文介绍了如何在Linux中使用crontab进行计划任务</summary>
-    
-    
-    
-    <category term="学习笔记" scheme="https://www.iuoyt.com/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-    <category term="Linux" scheme="https://www.iuoyt.com/tags/Linux/"/>
     
   </entry>
   
