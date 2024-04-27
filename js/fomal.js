@@ -3934,7 +3934,7 @@ function setUniverse() {
 
 // 雪花开关
 if (localStorage.getItem("snow") == undefined) {
-  localStorage.setItem("snow", "block");
+  localStorage.setItem("snow", "none");
 }
 document.getElementById("snow").style.display = localStorage.getItem("snow");
 function setSnow() {
@@ -3949,7 +3949,7 @@ function setSnow() {
 
 // 飘落效果开关
 if (localStorage.getItem("sakura") == undefined) {
-  localStorage.setItem("sakura", "none");
+  localStorage.setItem("sakura", "block");
 }
 document.getElementById("canvas_sakura").style.display =
   localStorage.getItem("sakura");
