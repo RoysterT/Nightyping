@@ -4663,18 +4663,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* 判断是否需要添加referrer头 */
 
-// 获取当前页面的路径
-var currentPath = window.location.pathname;
-// 判断路径是否以 "/TreasureBox/sitv/" 开头
-if (!(currentPath.startsWith("/TreasureBox/sitv/") || currentPath.startsWith("/posts/"))) {
-  // 当前页面不在 "/TreasureBox/sitv/" 或 "/posts/" 下，添加meta标签
-  var metaTag = document.createElement("meta");
-  metaTag.setAttribute("name", "referrer");
-  metaTag.setAttribute("content", "no-referrer");
-  // 将meta标签插入到head标签中
-  var headElement = document.querySelector("head");
-  headElement.appendChild(metaTag);
-}
+// // 获取当前页面的路径
+// var currentPath = window.location.pathname;
+// // 判断路径是否以 "/TreasureBox/sitv/" 开头
+// if (!(currentPath.startsWith("/TreasureBox/sitv/") || currentPath.startsWith("/posts/"))) {
+// alert(currentPath);
+//   // 当前页面不在 "/TreasureBox/sitv/" 或 "/posts/" 下，添加meta标签
+//   var metaTag = document.createElement("meta");
+//   metaTag.setAttribute("name", "referrer");
+//   metaTag.setAttribute("content", "no-referrer");
+//   // 将meta标签插入到head标签中
+//   var headElement = document.querySelector("head");
+//   headElement.appendChild(metaTag);
+// }
 
 /* 判断是否需要添加referrer头 end */
 
