@@ -8934,7 +8934,6 @@ h1.page-title + .tag-cloud-list {
 }
 span.mathjax-overflow {
   display: inline-block;
-  display: inline;
   padding: 0 2px;
   max-width: 100%;
   vertical-align: bottom;
