@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.iuoyt.com/pages/about/update-records/index.html</loc>
+    <loc>https://www.iuoyt.com/posts/22cfe9dd.html</loc>
     
     <lastmod>2024-06-23</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/posts/22cfe9dd.html</loc>
+    <loc>https://www.iuoyt.com/posts/7199abcd.html</loc>
     
     <lastmod>2024-06-23</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/posts/7199abcd.html</loc>
+    <loc>https://www.iuoyt.com/pages/about/update-records/index.html</loc>
     
     <lastmod>2024-06-23</lastmod>
     
@@ -923,13 +923,6 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/tags/Stable-Diffusion/</loc>
-    <lastmod>2024-06-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.iuoyt.com/tags/%E6%8E%92%E5%BA%8F/</loc>
     <lastmod>2024-06-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -944,14 +937,14 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/tags/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF/</loc>
+    <loc>https://www.iuoyt.com/tags/Stable-Diffusion/</loc>
     <lastmod>2024-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/tags/%E5%BA%94%E7%94%A8%E6%96%87%E5%86%99%E4%BD%9C/</loc>
+    <loc>https://www.iuoyt.com/tags/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2024-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -979,6 +972,13 @@
   </url>
   
   <url>
+    <loc>https://www.iuoyt.com/tags/%E5%BA%94%E7%94%A8%E6%96%87%E5%86%99%E4%BD%9C/</loc>
+    <lastmod>2024-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.iuoyt.com/tags/CSS/</loc>
     <lastmod>2024-06-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -986,14 +986,14 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/tags/SEO/</loc>
+    <loc>https://www.iuoyt.com/tags/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/</loc>
     <lastmod>2024-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/tags/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86/</loc>
+    <loc>https://www.iuoyt.com/tags/SEO/</loc>
     <lastmod>2024-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1037,14 +1037,14 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/categories/AI%E7%BB%98%E7%94%BB/</loc>
+    <loc>https://www.iuoyt.com/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2024-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/categories/%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://www.iuoyt.com/categories/AI%E7%BB%98%E7%94%BB/</loc>
     <lastmod>2024-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
