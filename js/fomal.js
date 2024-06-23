@@ -3846,7 +3846,7 @@ function clearItem() {
   localStorage.removeItem("mouse");
   localStorage.removeItem("light");
   localStorage.removeItem("snow");
-  localStorage.removeItem("weather");
+  // localStorage.removeItem("weather");
   localStorage.removeItem("sakura");
   localStorage.removeItem("sakuraItem");
 }
@@ -4030,9 +4030,9 @@ function toggleRightside() {
 //   localStorage.setItem("weather", "-50px");
 // }
 // document.getElementById("he-plugin-simple").style.top = localStorage.getItem("weather");
-// // document
-// //   .getElementById("he-plugin-simple")
-// //   .setAttribute("style", "top:" + localStorage.getItem("weather"));
+// document
+//   .getElementById("he-plugin-simple")
+//   .setAttribute("style", "top:" + localStorage.getItem("weather"));
 // function setWeather() {
 //   if (document.getElementById("weatherSet").checked) {
 //     document.getElementById("he-plugin-simple").style.top = "10px";
