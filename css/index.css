@@ -8933,11 +8933,15 @@ h1.page-title + .tag-cloud-list {
   overflow-y: hidden;
 }
 span.mathjax-overflow {
-  display: inline-block;
   padding: 0 2px;
   max-width: 100%;
   vertical-align: bottom;
   text-align: center;
+}
+@media screen and (max-width: 900px) {
+  span.mathjax-overflow {
+    display: inline-block;
+  }
 }
 .aplayer {
   color: #4c4948;
