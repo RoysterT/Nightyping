@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.iuoyt.com/posts/4b6174b7.html</loc>
+    
+    <lastmod>2024-06-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.iuoyt.com/posts/f546d1cf.html</loc>
     
     <lastmod>2024-06-27</lastmod>
@@ -839,13 +848,6 @@
 
   
   <url>
-    <loc>https://www.iuoyt.com/tags/Markdown/</loc>
-    <lastmod>2024-06-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.iuoyt.com/tags/Hexo/</loc>
     <lastmod>2024-06-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -854,6 +856,13 @@
   
   <url>
     <loc>https://www.iuoyt.com/tags/Butterfly/</loc>
+    <lastmod>2024-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.iuoyt.com/tags/Markdown/</loc>
     <lastmod>2024-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -965,6 +974,13 @@
   </url>
   
   <url>
+    <loc>https://www.iuoyt.com/tags/CSS/</loc>
+    <lastmod>2024-06-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.iuoyt.com/tags/Webpack/</loc>
     <lastmod>2024-06-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -973,13 +989,6 @@
   
   <url>
     <loc>https://www.iuoyt.com/tags/Vue/</loc>
-    <lastmod>2024-06-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.iuoyt.com/tags/CSS/</loc>
     <lastmod>2024-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1002,14 +1011,14 @@
 
   
   <url>
-    <loc>https://www.iuoyt.com/categories/Markdown/</loc>
+    <loc>https://www.iuoyt.com/categories/Hexo/</loc>
     <lastmod>2024-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/categories/Hexo/</loc>
+    <loc>https://www.iuoyt.com/categories/Markdown/</loc>
     <lastmod>2024-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1051,14 +1060,14 @@
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/categories/Webpack/</loc>
+    <loc>https://www.iuoyt.com/categories/CSS/</loc>
     <lastmod>2024-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.iuoyt.com/categories/CSS/</loc>
+    <loc>https://www.iuoyt.com/categories/Webpack/</loc>
     <lastmod>2024-06-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

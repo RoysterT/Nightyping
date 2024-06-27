@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>计算机网络期末复习</title>
+      <link href="/posts/4b6174b7.html"/>
+      <url>/posts/4b6174b7.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="计算题">计算题</h2><h3 id="时延">时延</h3><h4 id="发送时延">发送时延</h4><h4 id="传播时延">传播时延</h4><h4 id="处理时延">处理时延</h4><h4 id="排队时延">排队时延</h4><h4 id="时延带宽积">时延带宽积</h4><h4 id="信道利用率">信道利用率</h4><h2 id="第一章">第一章</h2><h3 id="体系结构">体系结构</h3><h3 id="服务与协议">服务与协议</h3><h3 id="交换技术">交换技术</h3><h2 id="物理层">物理层</h2><h3 id="编码-解码">编码-解码</h3><h3 id="调制-解调">调制-解调</h3><h3 id="通信方式">通信方式</h3><h3 id="复用技术">复用技术</h3><h3 id="传输介质">传输介质</h3><h2 id="数据链路层">数据链路层</h2><h3 id="CSMA-CD">CSMA/CD</h3><h3 id="CSMA-CA">CSMA/CA</h3><h3 id="CRC">CRC</h3><h3 id="网卡">网卡</h3><h3 id="交换机（自学习）">交换机（自学习）</h3><h2 id="网络层">网络层</h2><h3 id="ARP">ARP</h3><h3 id="ICMP">ICMP</h3><h3 id="RIP（路由更新）">RIP（路由更新）</h3><h3 id="VPN">VPN</h3><h3 id="NAT">NAT</h3><h3 id="划分子网-构造超网（路由器转发分组）">划分子网-构造超网（路由器转发分组）</h3><h2 id="运输层">运输层</h2><h3 id="TCP">TCP</h3><h3 id="可靠传输">可靠传输</h3><h3 id="拥塞控制">拥塞控制</h3><h2 id="应用层">应用层</h2><h3 id="DNS">DNS</h3><h3 id="HTTP">HTTP</h3><h3 id="电子邮件协议">电子邮件协议</h3><h3 id="WWW">WWW</h3><h3 id="DHCP">DHCP</h3><h2 id="无线局域网">无线局域网</h2><h3 id="WLAN组成">WLAN组成</h3><h3 id="暴露站-隐蔽站问题">暴露站/隐蔽站问题</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学期总结 </tag>
+            
+            <tag> 计算机网络 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>大学物理重要概念及考点参考</title>
       <link href="/posts/22cfe9dd.html"/>
       <url>/posts/22cfe9dd.html</url>
@@ -1150,11 +1177,11 @@
       
         <tags>
             
-            <tag> Markdown </tag>
-            
             <tag> Hexo </tag>
             
             <tag> Butterfly </tag>
+            
+            <tag> Markdown </tag>
             
         </tags>
       
