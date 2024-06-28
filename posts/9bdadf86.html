@@ -1,0 +1,930 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><div id="myscoll"></div><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>计算机网络计算题练习 | 🌙Nightyping</title><meta name="keywords" content="学期总结,计算机网络"><meta name="author" content="Royster"><meta name="copyright" content="Royster"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="计算机网络期末考试考点知识总结（计算题）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络计算题练习">
+<meta property="og:url" content="https://www.iuoyt.com/posts/9bdadf86.html">
+<meta property="og:site_name" content="🌙Nightyping">
+<meta property="og:description" content="计算机网络期末考试考点知识总结（计算题）">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://oss.iuoyt.com/img/default_cover/024.webp">
+<meta property="article:published_time" content="2024-06-28T06:19:13.000Z">
+<meta property="article:modified_time" content="2024-06-28T13:46:24.496Z">
+<meta property="article:author" content="Royster">
+<meta property="article:tag" content="学期总结">
+<meta property="article:tag" content="计算机网络">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://oss.iuoyt.com/img/default_cover/024.webp"><link rel="shortcut icon" href="https://oss.iuoyt.com/icon/favicon-rs32.ico"><link rel="canonical" href="https://www.iuoyt.com/posts/9bdadf86.html"><link rel="preconnect" href="//fastly.jsdelivr.net"/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="rQ6Jyb3J-HrgV7Xdz_4ktcVoWktwNRcMRGIVf6HPDIw"/><meta name="baidu-site-verification" content="codeva-qcq47P1S9d"/><meta name="msvalidate.01" content="AF2B266618C7BF3480CA8442E359FC9D"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/font-awesome_v6_css_all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?f07e4c247a33bb8cc369f37137ab5dcb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"距离文章发表已经过去了","messageNext":"天，文章的部分内容可能已经过期，请注意辨别！"},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":300,"languages":{"author":"作者: Royster","link":"链接: ","source":"来源: 🌙Nightyping","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.js',
+      css: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '计算机网络计算题练习',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-06-28 21:46:24'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = url => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      link.onload = () => resolve()
+      link.onerror = () => reject()
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/index.css"><meta name="description" content="人生须有抵岸的力量🌊也不乏漂游的浪漫⛵ | 欢迎来到Royster的个人博客，这里记录了我的生活点滴"><style id="themeColor"></style><style id="rightSide"></style><style id="transPercent"></style><style id="blurNum"></style><style id="settingStyle"></style><span id="fps"></span><style id="defineBg"></style><style id="menu_shadow"></style><script src="/js/utils/checkBrowser.js"><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script><script>LA.init({id:"3FI49W6PtxRahPCr",ck:"3FI49W6PtxRahPCr",autoTrack:true})</script><script src="https://oss.iuoyt.com/resource/javascript/echarts.min.js"></script><script src="https://oss.iuoyt.com/resource/javascript/china.js"></script><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/katex.min.css"><script defer src="https://oss.iuoyt.com/resource/javascript/katex.min.js"></script><script defer src="https://oss.iuoyt.com/resource/javascript/auto-render.min.js"></script><script type="text/javascript" src="https://player.dogecloud.com/js/loader"></script><link rel="stylesheet" href="/css/essay_page/essay_page.css"><script async data-pjax src="/js/jike/jike.js"></script><script async data-pjax src="/js/jike/waterfall.js"></script><script src="/js/qexo_friends.js"></script><link rel="stylesheet" href="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.18.1/tianli_gpt.css"><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://oss.iuoyt.com/resource/javascript/carousel-touch.js"></script><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/gitcalendar.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://oss.iuoyt.com/resource/stylesheet/animate.min.css" media="print" onload="this.media='screen'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="🌙Nightyping" type="application/atom+xml">
+</head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/resource/elements/avatar.webp" onerror="onerror=null;src='/assets/r1.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">47</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">23</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiaofangzi"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-bowenzhuti"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-biaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiawucha"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/rests/memos/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xianxingmotianlun">                   </use></svg><span class="menu_word" style="font-size:17px"> 哔哔</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/rests/games/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-a-tupianyihuifu-30">                   </use></svg><span class="menu_word" style="font-size:17px"> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-gongjuxiang"></use></svg><span class="menu_word" style="font-size:17px"> 百宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/box/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban-">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/box/navigation/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhishipai">                   </use></svg><span class="menu_word" style="font-size:17px"> 网站导航</span></a></li><li><a class="site-page child faa-parent animated-hover" target="_blank" rel="noopener" href="https://pan.iuoyt.com/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yunduan">                   </use></svg><span class="menu_word" style="font-size:17px"> 云盘</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/box/sitv/v2/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-TV">                   </use></svg><span class="menu_word" style="font-size:17px"> SITV</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/social/moments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pengyouquan">                   </use></svg><span class="menu_word" style="font-size:17px"> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/social/message-board/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyanmoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/social/links/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuchengguanli-copy">                   </use></svg><span class="menu_word" style="font-size:17px"> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guanyu"></use></svg><span class="menu_word" style="font-size:17px"> 关于</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/about/census/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhuzhuangtu">                   </use></svg><span class="menu_word" style="font-size:17px"> 数据</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/about/site/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-bokezhuanjia">                   </use></svg><span class="menu_word" style="font-size:17px"> 网站</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/about/me/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-iconzhengli-">                   </use></svg><span class="menu_word" style="font-size:17px"> 我</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/about/update-records/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-he_22caozuojilu">                   </use></svg><span class="menu_word" style="font-size:17px"> 日志</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">🌙Nightyping</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiaofangzi"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-bowenzhuti"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-biaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiawucha"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/rests/memos/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xianxingmotianlun">                   </use></svg><span class="menu_word" style="font-size:17px"> 哔哔</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/rests/games/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-a-tupianyihuifu-30">                   </use></svg><span class="menu_word" style="font-size:17px"> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-gongjuxiang"></use></svg><span class="menu_word" style="font-size:17px"> 百宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/box/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban-">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/box/navigation/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhishipai">                   </use></svg><span class="menu_word" style="font-size:17px"> 网站导航</span></a></li><li><a class="site-page child faa-parent animated-hover" target="_blank" rel="noopener" href="https://pan.iuoyt.com/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yunduan">                   </use></svg><span class="menu_word" style="font-size:17px"> 云盘</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/box/sitv/v2/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-TV">                   </use></svg><span class="menu_word" style="font-size:17px"> SITV</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/social/moments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pengyouquan">                   </use></svg><span class="menu_word" style="font-size:17px"> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/social/message-board/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyanmoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/social/links/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuchengguanli-copy">                   </use></svg><span class="menu_word" style="font-size:17px"> 友链</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guanyu"></use></svg><span class="menu_word" style="font-size:17px"> 关于</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/pages/about/census/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhuzhuangtu">                   </use></svg><span class="menu_word" style="font-size:17px"> 数据</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/about/site/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-bokezhuanjia">                   </use></svg><span class="menu_word" style="font-size:17px"> 网站</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/about/me/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-iconzhengli-">                   </use></svg><span class="menu_word" style="font-size:17px"> 我</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/pages/about/update-records/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-he_22caozuojilu">                   </use></svg><span class="menu_word" style="font-size:17px"> 日志</span></a></li></ul></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()">PAGE_NAME</a></center><div id="nav-right"><div id="he-plugin-simple"><div id="none_space"></div></div><div id="search-button" style="margin-right: 5px"><a class="search faa-parent animated-hover" title="检索站内任何你想要的信息"><svg class="faa-tada icon" style="height:24px;width:24px;fill:currentColor;position:relative;top:6px" aria-hidden="true"><use xlink:href="#icon-37search"></use></svg><span> 搜索</span></a></div><a class="meihua faa-parent animated-hover" onclick="toggleWinbox()" title="美化设置-自定义你的风格" id="meihua-button"><svg class="faa-tada icon" style="height:24px;width:24px;fill:currentColor;position:relative;top:6px" aria-hidden="true"><use xlink:href="#icon-zhuti"></use></svg></a><a class="sun_moon faa-parent animated-hover" onclick="switchNightMode()" title="浅色和深色模式转换" id="nightmode-button"><svg class="faa-tada" style="height:25px;width:25px;fill:currentColor;position:relative;top:7px" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon">       </use></svg></a><div id="toggle-menu"><a><i class="fas fa-bars fa-fw"></i></a></div></div></div></nav><div id="post-info"><h1 class="post-title">计算机网络计算题练习</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><svg class="meta_icon post-meta-icon" style="width:30px;height:30px;position:relative;top:10px"><use xlink:href="#icon-rili"></use></svg><span class="post-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2024-06-28T06:19:13.000Z" title="发表于 2024-06-28 14:19:13">2024-06-28</time><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:18px;height:18px;position:relative;top:5px"><use xlink:href="#icon-gengxin1"></use></svg><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-06-28T13:46:24.496Z" title="更新于 2024-06-28 21:46:24">2024-06-28</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:18px;height:18px;position:relative;top:5px"><use xlink:href="#icon-biaoqian"></use></svg><a class="post-meta-categories" href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</a></span><span class="post-meta-separator">|</span><span class="post-meta-orlike"><svg class="meta_icon post-meta-icon" style="width:18px;height:18px;position:relative;top:5px"><use xlink:href="#icon-dianzan"></use></svg><span class="post-meta-label">点赞数:</span><a href="/posts/9bdadf86.html#orlike-box"><span class="orlike-count"></span></a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><svg class="meta_icon post-meta-icon" style="width:25px;height:25px;position:relative;top:8px"><use xlink:href="#icon-charuword"></use></svg><span class="post-meta-label">字数总计:</span><span class="word-count">4227</span><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:20px;height:20px;position:relative;top:5px"><use xlink:href="#icon-shizhong"></use></svg><span class="post-meta-label">阅读时长:</span><span>15分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="计算机网络计算题练习"><svg class="meta_icon post-meta-icon" style="width:25px;height:25px;position:relative;top:5px"><use xlink:href="#icon-eye"></use></svg><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="常见单位换算">常见单位换算</h2>
+<ul>
+<li>
+<p>时间转换：</p>
+  <div class="note info flat"><p>$1s=10^3ms=10^6\mu s(us)$</p>
+</div>
+</li>
+<li>
+<p>数据大小：</p>
+  <div class="note info flat"><p>$1Byte=8bit$</p>
+<p>$1TB=10^3GB=10^6MB=10^9KB=10^{12}B$</p>
+</div>
+</li>
+</ul>
+<h2 id="第一章-概述">第一章 概述</h2>
+<h3 id="时延">时延</h3>
+<ul>
+<li>时延是指一个报文或分组从网络的一端传送到另一端所需要的时间，其单位是秒（s）、毫秒（ms）、微秒（μs）等。</li>
+<li>总时延=发送时延+传播时延+处理时延+排队时延</li>
+</ul>
+<h4 id="发送时延ts">发送时延ts</h4>
+<ul>
+<li>发送时延（传输时延）：主机或路由器发送数据帧所需要的时间。也就是从发送数据帧的第一个比特算起，到该帧的最后一个比特发送完毕所需的时间。</li>
+<li>$发送时延=\frac{数据帧长度(bit)}{发送速率(bps)}$</li>
+</ul>
+<ol>
+<li>
+<p>一个10MB数据块在传输数率为1Mbps的信道上发送，则发送时延为？</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>发送时延：$\frac{10\times2^{20}\times8bit}{10^6bps}=83.89s$</p>
+              </div>
+            </details>
+</li>
+</ol>
+<h4 id="传播时延tp">传播时延tp</h4>
+<ul>
+<li>
+<p>传播时延：电磁波在信道中传播一定的距离而花费的时间。 信号传输速率（即发送速率）和信号在信道上的传播速率是完全不同的概念。</p>
+  <div class="note info flat"><p>电磁波在真空（空气）中的传播速率为$3\times10^8m/s$，在电缆中的传播速率要比在真空中的略低，约为$2.3\times10^8m/s$，在光纤中的传播速率约为$2.0×10^8m/s$</p>
+</div>
+</li>
+<li>
+<p>$传播时延=\frac{信道长度(m)}{信号在信道上的传播速率(m/s)}$</p>
+</li>
+</ul>
+<ol>
+<li>
+<p>求1000km长的光纤线路带来的传播时延？</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>传播时延：$\frac{10^6m}{2.0\times10^8m/s}=5\times10^{-3}s=5ms$</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>收发两端之间的传输距离为1000km，信号在媒体上的传播速率为$2×10^8m/s$。试计算以下两种情况的发送时延和传播时延：</p>
+<p>（1） 数据长度为$10^7bit$,数据发送速率为$100kb/s$。</p>
+<p>（2） 数据长度为$10^3bit$,数据发送速率为$1Gb/s$。</p>
+<p>（3）从上面的计算中可以得到什么样的结论？</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <ol><li><p>发送时延：$ts=\frac{10^7bit}{10^5bps}=100s$</p><p>传播时延：$tp=\frac{10^6m}{2\times10^8m/s}=5\times10^{-3}s=5ms$</p></li><li><p>发送时延：$ts=\frac{10^3bit}{10^9bps}=1\mu s$</p><p>传播时延：$tp=\frac{10^6m}{2\times10^8m/s}=5\times10^{-3}s=5ms$</p></li><li><p>结论：若数据长度大而发送速率低，则总时延中，发送时延往往大于传播时延。但若数据长度短而发送速率高，则传播时延就可能是总时延中的主要成分。</p></li></ol>
+              </div>
+            </details>
+</li>
+</ol>
+<h4 id="时延带宽积">时延带宽积</h4>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/posts/image-20240628140146974.png" alt="时延带宽积" style="zoom:33%;" />
+<ul>
+<li>$时延带宽积=传播时延\times带宽$</li>
+<li>链路的时延带宽积又称为以比特为单位的链路长度。</li>
+</ul>
+<h3 id="信道利用率">信道利用率</h3>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/posts/image-20240628143044625.png" alt="信道利用率" style="zoom: 33%;" />
+<ul>
+<li>$主机甲的信道利用率=\frac{数据帧发送时延}{从发送数据开始到收到确认帧的总时间}=\frac{a}{2a+2b}$</li>
+</ul>
+<h3 id="综合计算题">综合计算题</h3>
+<ol>
+<li>
+<p>假设信号在媒体上的传播速度为$2×10^8m/s$，媒体长度L分别为：</p>
+<p>（1）10cm（网络接口卡）（2）100km（城域网）</p>
+<p>试计算出当数据率为1Mb/s和1Gb/s时在以上媒体中正在传播的比特数。</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <ol><li><p>传播时延：$tp=\frac{0.1m}{2\times10^8m/s}=5\times10^{-10}s$</p><p>1Mb/s比特数：$5\times10^{-10}s\times10^6bps=5\times10^{-4}bit$</p><p>1Gb/s比特数：$5\times10^{-10}s\times10^9bps=0.5bit$</p></li><li><p>传播时延：$tp=\frac{10^6m}{2\times10^8m/s}=5\times10^{-4}s$</p><p>1Mb/s比特数：$5\times10^{-4}s\times10^6bps=5\times10^2bit$</p><p>1Gb/s比特数：$5\times10^{-4}s\times10^9bps=5\times10^5bit$</p></li></ol>
+              </div>
+            </details>
+</li>
+<li>
+<p>长2KM、数据传输率为10Mbps的基带总线LAN，信号传播速度为200m/us，试计算：1000比特的帧从发送开始到接收信号结束的最大时间是多少？</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>发送时延：$ts=\frac{1000bit}{10\times10^6bps}=10^{-4}s=100us$</p><p>传播时延：$tp=\frac{2\times10^3m}{200m/us}=10us$</p><p>总时间：$ts+tp=110us=1.1\times10^{-4}s$</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>长度为100字节的应用层数据交给传输层传送，需加上20字节的TCP首部。再交给网络层传送，需加上20字节的IP首部。最后交给数据链路层的以太网传送，加上首部和尾部共18字节。试求数据的传输效率？若应用层数据长度为1000字节，数据的传输效率是多少？</p>
+ <div class="note info flat"><p>数据的传输效率是指发送的应用层数据除以所发送的总数据（即应用数据加上各种首部和尾部的额外开销）。</p>
+</div>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <ol><li>$\frac{100}{100+20+20+18}=63.3$%</li><li>$\frac{1000}{1000+20+20+18}=94.5$%</li></ol>
+              </div>
+            </details>
+</li>
+<li>
+<p>使用 HTTP、 TCP、 IP 和以太网协议栈的网络发送一个1000字节的用户消息。每个协议头是 20 个字节长。使用此消息将使网络带宽的使用率达到多少？<br>
+A、7%<br>
+B、93%<br>
+C、6%<br>
+D、94%</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>B</p><p>一共添加四次协议头，$\frac{1000}{1000+20\times4}=92.5$%</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>假定1km长的CSMA/CD网络的数据率为1Gb/s。设信号在网络上的传播速率为200000km/s。求能够使用此协议的最短帧长。</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>对于 1km 电缆，单程传播时间为$\frac{1km}{2\times10^5km/s}=5us$，往返传播时间为10us。</p><p>为了能够按照CSMA/CD工作，最小帧的发射时间不能小于10us。</p><p>以1Gb/s速率工作，10us可以发送的比特数等于：$10\times10^{-6}s\times10^9bps=10^4bit$。</p><p>因此，最短帧是10000 位或 1250 字节长</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>考虑一个最大距离为2km的局域网，当带宽等于多大时传播时延（传播速度为$2×10^8m/s$）等于100B分组的发送时延？<br>
+A、20Mbit/s<br>
+B、80Mbit/s<br>
+C、40Mbit/s<br>
+D、160Mbit/s</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>B</p><p>发送时延$ts=\frac{100B\times8}{带宽}$</p><p>传播时延$tp=\frac{2\times10^3m}{2\times10^8m/s}=10^{-5}s$</p><p>由$ts=tp$得带宽为$8\times10^7bps=80Mbps$</p>
+              </div>
+            </details>
+</li>
+</ol>
+<h2 id="第二章-物理层">第二章 物理层</h2>
+<ol>
+<li>
+<p>对于某带宽为4000Hz的低通信道，采用16种不同的物理状态来表示数据。按照奈奎斯特定理，信道的最大传输速率是（    ）？<br>
+A. 4kbit/s<br>
+B. 8kbit/s<br>
+C. 16kbit/s<br>
+D. 32kbit/s</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>D</p><p>根据奈氏定理，本题中$W=4000Hz$，最大码元传输速率$=2W=8000Baud$</p><p>16种不同的物理状态可表示为$\log_216=4bit$数据，即一码元携带4bit数据，所以信道的$最大传输速率=8000\times4=32kbit/s$</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>已知某信道的信号传输速率为64kbps，一个载波信号码元有4个有效离散值，则该信道的波特率为（    ）？<br>
+A. 16kBaud<br>
+B. 32kBaud<br>
+C. 64kBaud<br>
+D. 128kBaud</p>
+ <div class="note info flat"><p>一个码元若取$2^n$个不同离散值，则含有n bit的信息量</p>
+</div>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>B</p><p>一个波信号含有2bit的信息，波特率为$\frac{64}{2}=32kBaud$</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>若某通信链路的数据传输速率为2400bit／s，采用4相位调制，则该链路的波特率是（    ）<br>
+A、4800<br>
+B、600<br>
+C、1200<br>
+D、2400</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>C</p><p>采用4个相位，有4种不同状态组合，则一个码元可携带2bit信息量，波特率为$\frac{2400}{2}=1200Baud$</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>电话系统的典型参数是信道带宽为3000Hz，信噪比为30dB，则该系统的最大数据传输速率为（    ）。<br>
+A. 3kbit/s<br>
+B. 6kbit/s<br>
+C. 30kbit/s<br>
+D. 64kbit/s</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>C</p><p>信噪比$30dB=10\log_{10}(S/N)$，可解出$S/N=1000$。</p><p>根据香农定理$C=W log_2(1+S/N) b/s$</p><p>所以信道的最大数据传输速率：$3000\times log_2(1+1000)\approx30kbit/s$</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>若连接R2和R3链路的频率带宽为8kHz，信噪比为30dB，该链路实际数据传输速率约为理论最大数据传输速率的50%，则该链路的实际数据传输速率约是多少？<br>
+A、20kbps<br>
+B、40kbps<br>
+C、80kbps<br>
+D、8kbps</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>B</p><p>信噪比$30dB=10\log_{10}(S/N)$，所以$S/N=1000$。</p><p>根据香农定理$C=W log_2(1+S/N) b/s$</p><p>所以信道的最大数据传输速率：$8000\times log_2(1+1000)\approx80kbps$​</p><p>实际速率为$40kbps$</p>
+              </div>
+            </details>
+</li>
+</ol>
+<h2 id="第三章-数据链路层">第三章 数据链路层</h2>
+<h3 id="首尾标记法中的位填充">首尾标记法中的位填充</h3>
+<ul>
+<li>
+<p>每一帧使用一个特殊的位模式“01111110”作为开始和结束标记。该位模式又称为“flag”。</p>
+</li>
+<li>
+<p>在首尾标记法中，由于数据中可能会出现与标记相同的位串，从而干扰帧的正常定界。比特(位)填充法可用于解决上述问题。即发送端在数据中若遇到5个连续的“1”时，则在其后自动插入一个“0”。该技术简称“逢五1插0”；接收端则忽略5个连续的“1”后面的“0”，简称“逢五1删0” 。</p>
+  <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/posts/image-20240628145400494.png" alt="首尾标记法中的位填充" style="zoom:33%;" />
+</li>
+</ul>
+<ol>
+<li>
+<p>内容：10011 01110 11111 01001 11111 10010，实际发送和实际接收如何做处理？</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <ol><li><p>在收尾添加开始和结束标记：</p><p><span style="color:blue">01111110</span> 100110111011111010011111110010 <span style="color:blue">01111110</span>（发送数据）</p></li><li><p>0比特插入：</p><p><span style="color:blue">01111110</span> 100110111011111<span style="color:red"><u>0</u></span>010011111<span style="color:red"><u>0</u></span>110010 <span style="color:blue">01111110</span>（实际发送、实际接收）</p></li><li><p>0比特删除：</p><p><span style="color:blue">01111110</span> 100110111011111010011111110010 <span style="color:blue">01111110</span>（接收数据）</p></li></ol>
+              </div>
+            </details>
+</li>
+<li>
+<p>在采用零比特填充的链路层传输中，比特串0111101111110装帧发送出去的串为（   ）<br>
+A、011110111110100<br>
+B、01111011111010<br>
+C、0111101111110<br>
+D、00111101111110</p>
+ <div class="hide-block"><button type="button" class="hide-button" style="">查看答案
+    </button><div class="hide-content"><p>参考答案：B</p>
+</div></div>
+</li>
+</ol>
+<h3 id="循环冗余码CRC（多项式校验）">循环冗余码CRC（多项式校验）</h3>
+<ul>
+<li>工作原理：模2除法，将余式作为冗余信息传送（冗余码FCS：帧检验序列）</li>
+<li>选定的生成多项式（生成码）作为除数，在发送序列后添加生成多项式位数减一个0作为被除数，列竖式计算余数，则为冗余码。</li>
+</ul>
+<ol>
+<li>
+<p>发送的二进制序列：110011（$x^5+x^4+x+1$），选取生成多项式：11001（$x^4+x^3+1$）<br>
+（1）求冗余码和发送序列<br>
+（2）判断接收码字为1100111001时的正确性</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <ol><li><p>①被除式为：1100110000（$x^9+x^8+x^5+x^4$）</p><p>②列式计算</p> <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/posts/image-20240628153544771.png" alt="image-20240628153544771" style="zoom: 50%;" /><p>③冗余码：1001，发送序列：110011 1001</p><ol start="2"><li>用接收到的帧除以生成码（模2运算），被除数是1100111001，除数P=11001，结果余数为0，所以码字正确。</li></ol></li></ol>
+              </div>
+            </details>
+</li>
+<li>
+<p>一串数据10111110111011001使用CRC校验方式，已知校验使用的二进制数为110101，生成多项式是什么？发送序列是什么？</p>
+<details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <ol><li>$x^5+x^4+x^2+1$</li><li>10111110111011001 <span style="color:red">00101</span></li></ol>
+              </div>
+            </details>
+</li>
+</ol>
+<h3 id="交换机的两种用法">交换机的两种用法</h3>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/posts/image-20240628153801420.png" alt="交换机两种用法" style="zoom:50%;" />
+<ul>
+<li>
+<p>端口下接站点：站点独占10Mbps带宽</p>
+<p>端口下接网段：网段中所有站点共享10Mbps带宽</p>
+</li>
+</ul>
+<ol>
+<li>
+<p>假如10个站通过一个10Mb/s的集线器相连，每一个站平均得到的带宽为（）bps？如10个站通过一个100Mb/s的交换机相连，每一个站能得到的带宽为（ ）bps？</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <ol><li>通过集线器相连，各个站共享带宽，分别$1Mbps=10^6bps$</li><li>直连交换机，各个站独享完整带宽，$100Mbps=10^8bps$</li></ol>
+              </div>
+            </details>
+</li>
+</ol>
+<h3 id="交换机的自学习算法">交换机的自学习算法</h3>
+<ol>
+<li>
+<p>分析完成如下过程后，S1和S2的交换表内容分别是什么？</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/posts/image-20240628153926609.png" alt="自学习算法"></p>
+<ul>
+<li>A 向 B 发送了一帧</li>
+<li>C 向 E 发送了一帧</li>
+<li>E 向 A 发送了一帧</li>
+</ul>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/posts/image-20240628154053421.png" alt="image-20240628154053421"></p>
+              </div>
+            </details>
+</li>
+</ol>
+<h2 id="第四章-网络层">第四章 网络层</h2>
+<h3 id="IP数据报的分片与重组">IP数据报的分片与重组</h3>
+<ol>
+<li>
+<p>一个数据报长度为1420字节（固定首部长度）。现在经过一个网络传送，但此网络能够传送的最大数据长度是620字节。<br>
+（1）应当划分为几个短些的数据报片<br>
+（2）各数据报片的数据字段长度、片偏移字段、MF标志和DF标志为何数值？</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <ol><li><p>分3个数据报片</p></li><li><p>片1数据字段长度600字节，片偏移0，MF=1，DF=0</p><p>片2数据字段长度600字节，片偏移75，MF=1，DF=0</p><p>片3数据字段长度200字节，片偏移150，MF=0，DF=0</p><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/posts/image-20240628155626004.png" alt="image-20240628155626004"></p></li></ol>
+              </div>
+            </details>
+</li>
+<li>
+<p>一个数据报长度为4000字节（固定首部长度）。现在经过一个网络传送，但此网络能够传送的最大数据长度是1500字节。<br>
+（1）应当划分为几个短些的数据报片<br>
+（2）各数据报片的数据字段长度、片偏移字段和MF标志为何数值？</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <ol><li><p>分3个数据报片</p></li><li><p>片1数据字段长度1480字节，片偏移0，MF=1</p><p>片2数据字段长度1480字节，片偏移1480/8=185，MF=1</p><p>片3数据字段长度1020字节，片偏移2960/8=370，MF=0</p></li></ol>
+              </div>
+            </details>
+</li>
+</ol>
+<h3 id="划分子网">划分子网</h3>
+<ol>
+<li>
+<p>一企业内部网IP为192.168.1.0/24，最大一个部门需要30台主机，请问该如何划分。</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>$2^5-2=30$，所以5位主机位，3位子网划分位。<br>子网掩码为：255.255.255.224<br>$2^3=8$，所以可划分8个子网：<br>192.168.1.0<br>192.168.1.32<br>192.168.1.64<br>192.168.1.96<br>192.168.1.128<br>192.168.1.160<br>192.168.1.192<br>192.168.1.224</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>假如正在构建一个有22个子网的B类网络，但不久后该网络有可能会增至80个子网，同时每个子网要求支持至少300个主机，那么应该选择下面哪个子网掩码？（   ）<br>
+A、255.255.0.0<br>
+B、 255.255.254.0<br>
+C、255.255.255.0<br>
+D、255.255.248.0</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>B</p><p>$2^9-2\gt300$​，所以9位子网位。</p><p>$(11111110)_2=254$</p><p>子网掩码为：255.255.254.0</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>IP地址212.110.24.169/27所在子网段的网络地址是（   ）。<br>
+A、212.110.24.168<br>
+B、212.110.0.0<br>
+C、212.110.24.160<br>
+D、212.110.24.0</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>C</p><p>5位作为主机位，$169=(10101001)_2$，保留前3位后$(10100000)_2=160$</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>把网络202.112.78.0划分为多个子网（子网掩码是255.255.255.192），则各子网中可用的主机地址总数是（    ）<br>
+A、64<br>
+B、128<br>
+C、126<br>
+D、62</p>
+ <div class="hide-block"><button type="button" class="hide-button" style="">查看答案
+    </button><div class="hide-content"><p>参考答案：D</p>
+</div></div>
+</li>
+<li>
+<p>某公司申请到一个C类网络，由于有地理位置上的考虑必须切割成5个子网，请问子网掩码要设为（   ）。<br>
+A、255.255.255.224<br>
+B、255.255.255.192<br>
+C、255.255.255.254<br>
+D、255.285.255.240</p>
+ <div class="hide-block"><button type="button" class="hide-button" style="">查看答案
+    </button><div class="hide-content"><p>参考答案：A</p>
+</div></div>
+</li>
+<li>
+<p>IP地址67.198.30.120/30的子网掩码是（  ）。<br>
+A、255.255.255.252<br>
+B、255.255.0.0<br>
+C、255.255.255.240<br>
+D、255.255.255.0</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>A</p><p>剩余2位用来分配主机，子网分配使用6位，$(11111100)_2=252$</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>IP地址40.178.30.120/30的子网号位数是（   ）。<br>
+A、30<br>
+B、22<br>
+C、16<br>
+D、8</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>B</p><p>A类IP地址的默认掩码是8位，子网号位数为30-8=22位</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>某网络192.168.0.0，要划分4个子网，试回答下面问题。</p>
+<p>子网掩码为？</p>
+ <div class="hide-block"><button type="button" class="hide-button" style="">查看答案
+    </button><div class="hide-content"><p>参考答案：255.255.255.192</p>
+</div></div>
+<p>第一个子网地址？</p>
+ <div class="hide-block"><button type="button" class="hide-button" style="">查看答案
+    </button><div class="hide-content"><p>参考答案：192.168.0.0</p>
+</div></div>
+<p>第一个子网的广播地址？</p>
+ <div class="hide-block"><button type="button" class="hide-button" style="">查看答案
+    </button><div class="hide-content"><p>参考答案：192.168.0.63</p>
+</div></div>
+<p>第二个子网地址？</p>
+ <div class="hide-block"><button type="button" class="hide-button" style="">查看答案
+    </button><div class="hide-content"><p>参考答案：192.168.0.64</p>
+</div></div>
+<p>第三个子网的第一个有效IP地址？</p>
+ <div class="hide-block"><button type="button" class="hide-button" style="">查看答案
+    </button><div class="hide-content"><p>参考答案：192.168.0.129</p>
+</div></div>
+</li>
+</ol>
+<h3 id="构造超网">构造超网</h3>
+<ol>
+<li>
+<p>有如下的4个/24地址块，试进行最大可能性的聚合<br>
+①212.56.132.0/24<br>
+②212.56.133.0/24<br>
+③212.56.134.0/24<br>
+④212.56.135.0/24</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>$212= (11010100)_2，56= (00111000)_2$<br>$132= ($<span style="color:red">$100001$</span>$00)_2$<br>$133= ($<span style="color:red">$100001$</span>$01)_2$<br>$134= ($<span style="color:red">$100001$</span>$10)_2$<br>$135= ($<span style="color:red">$100001$</span>$11)_2$</p><p>所以共同的前缀有22位，即11010100 00111000 100001，聚合的CIDR地址块是： 212.56.132.0/22</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>设有2条路由21.1.193.0/24和21.1.194.0/24，如果进行路由汇聚，覆盖这2条路由的地址是（     ）。<br>
+A、21.1.200.0/22<br>
+B、21.1.192.0/23<br>
+C、21.1.192.0/21<br>
+D、21.1.224.0/20</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>C</p><p>$193=(11000001)_2$<br>$194=(11000010)_2$​​</p><p>$192= ($<span style="color:red">$110000$</span>$00)_2$</p>
+              </div>
+            </details>
+</li>
+</ol>
+<h2 id="第五章-运输层">第五章 运输层</h2>
+<ol>
+<li>
+<p>TCP发送一段数据报，其序号是35～150，如果正确到达，接收方对其确认的序号为（    ）。<br>
+A. 36<br>
+B. 150<br>
+C. 35<br>
+D. 151</p>
+ <div class="hide-block"><button type="button" class="hide-button" style="">查看答案
+    </button><div class="hide-content"><p>参考答案：D</p>
+</div></div>
+</li>
+<li>
+<p>主机A通过TCP连接向主机B连续发送两个TCP数据报，第一个数据报序号为20，第一个数据报序号为80，则<br>
+（1）第一个数据报中有多少数据？<br>
+（2）假定第一段数据报丢失而第二段报文到达主机B，B发往主机A的确认报文中确认号应该是多少？</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <ol><li>80-20=60字节</li><li>确认号为20</li></ol>
+              </div>
+            </details>
+</li>
+<li>
+<p>主机甲与主机乙之间建立了一个TCP连接，主机甲向主机乙发送了3个连续的TCP段，分别包含300B，400B和500B的有效载荷，第3个段的序号为900，若主机乙仅正确收到第1和第3个段，则主机乙发送给主机甲的确认序号是多少？<br>
+A、300<br>
+B、1200<br>
+C、500<br>
+D、1400</p>
+ <details class="folding-tag" ><summary> 查看答案 </summary>
+              <div class='content'>
+              <p>C</p><p>从 “第3个段的序号为900 “，可以推断出初始序列号是$900-(300+400)=200$，所以，第二个数据段的序列号应该是$200+300=500$。第二个数据段没有被B正确接收，所以B的ACK=500，告诉A从500序列号开始传输。</p>
+              </div>
+            </details>
+</li>
+<li>
+<p>当 TCP 接收端获得一个有效载荷大小 是1000和序列号为8000 的数据段时，有效载荷中的最后一个字节相关联的序列号是多少？<br>
+A、9000<br>
+B、8000<br>
+C、7999<br>
+D、8999</p>
+ <div class="hide-block"><button type="button" class="hide-button" style="">查看答案
+    </button><div class="hide-content"><p>参考答案：D</p>
+</div></div>
+</li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>计算机网络计算题练习</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://www.iuoyt.com/posts/9bdadf86.html">https://www.iuoyt.com/posts/9bdadf86.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>Royster</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2024-06-28</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2024-06-28</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E6%9C%9F%E6%80%BB%E7%BB%93/"><div class="tags-punctuation"><svg class="faa-tada icon" style="height:1.1em;width:1.1em;fill:currentColor;position:relative;top:2px;margin-right:3px" aria-hidden="true"><use xlink:href="#icon-sekuaibiaoqian"></use></svg></div>学期总结</a><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"><div class="tags-punctuation"><svg class="faa-tada icon" style="height:1.1em;width:1.1em;fill:currentColor;position:relative;top:2px;margin-right:3px" aria-hidden="true"><use xlink:href="#icon-sekuaibiaoqian"></use></svg></div>计算机网络</a></div></div><link rel="stylesheet" href="/css/coin.css" media="defer" onload="this.media='all'"/><div class="post-reward"><button class="tip-button reward-button"><span class="tip-button__text">点击投币</span><div class="coin-wrapper"><div class="coin"><div class="coin__middle"></div><div class="coin__back"></div><div class="coin__front"></div></div></div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat-reward.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/wechat-reward.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay-reward.jpg" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/alipay-reward.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></button></div><script defer="defer" src="/js/coin.js"></script><div class="orlike-box" id="orlike-box"><script>(() => {
+  function loadOrLike () {
+    new OrLike({
+      serverUrl: "https://orlike.iuoyt.com",
+      el: ".orlike-box",
+      days: 30,
+    });
+  }
+  window.pjax ? loadOrLike() : window.addEventListener('load', loadOrLike)
+})();</script></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/4b6174b7.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/default_cover/050.webp" onerror="onerror=null;src='/assets/r2.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">计算机网络期末复习</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/posts/4b6174b7.html" title="计算机网络期末复习"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/default_cover/050.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-27</div><div class="title">计算机网络期末复习</div></div></a></div><div><a href="/posts/f31ac9c6.html" title="Linux简单操作速查"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/default_cover/064.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-12-17</div><div class="title">Linux简单操作速查</div></div></a></div><div><a href="/posts/7199abcd.html" title="大学物理期末复习题"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/default_cover/044.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-07</div><div class="title">大学物理期末复习题</div></div></a></div><div><a href="/posts/9caf9e2f.html" title="大学物理期末复习-分类检测"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/default_cover/059.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-18</div><div class="title">大学物理期末复习-分类检测</div></div></a></div><div><a href="/posts/f546d1cf.html" title="信息安全技术期末复习"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/default_cover/025.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-20</div><div class="title">信息安全技术期末复习</div></div></a></div><div><a href="/posts/22cfe9dd.html" title="大学物理重要概念及考点参考"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/default_cover/071.webp" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-06-20</div><div class="title">大学物理重要概念及考点参考</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><svg class="meta_icon" style="width:22px;height:22px;position:relative;top:5px"><use xlink:href="#icon-mulu1"></use></svg><span style="font-weight:bold">目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E5%8D%95%E4%BD%8D%E6%8D%A2%E7%AE%97"><span class="toc-number">1.</span> <span class="toc-text">常见单位换算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0-%E6%A6%82%E8%BF%B0"><span class="toc-number">2.</span> <span class="toc-text">第一章 概述</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%B6%E5%BB%B6"><span class="toc-number">2.1.</span> <span class="toc-text">时延</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%91%E9%80%81%E6%97%B6%E5%BB%B6ts"><span class="toc-number">2.1.1.</span> <span class="toc-text">发送时延ts</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BC%A0%E6%92%AD%E6%97%B6%E5%BB%B6tp"><span class="toc-number">2.1.2.</span> <span class="toc-text">传播时延tp</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%B6%E5%BB%B6%E5%B8%A6%E5%AE%BD%E7%A7%AF"><span class="toc-number">2.1.3.</span> <span class="toc-text">时延带宽积</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%A1%E9%81%93%E5%88%A9%E7%94%A8%E7%8E%87"><span class="toc-number">2.2.</span> <span class="toc-text">信道利用率</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%BC%E5%90%88%E8%AE%A1%E7%AE%97%E9%A2%98"><span class="toc-number">2.3.</span> <span class="toc-text">综合计算题</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0-%E7%89%A9%E7%90%86%E5%B1%82"><span class="toc-number">3.</span> <span class="toc-text">第二章 物理层</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%89%E7%AB%A0-%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82"><span class="toc-number">4.</span> <span class="toc-text">第三章 数据链路层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A6%96%E5%B0%BE%E6%A0%87%E8%AE%B0%E6%B3%95%E4%B8%AD%E7%9A%84%E4%BD%8D%E5%A1%AB%E5%85%85"><span class="toc-number">4.1.</span> <span class="toc-text">首尾标记法中的位填充</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E5%86%97%E4%BD%99%E7%A0%81CRC%EF%BC%88%E5%A4%9A%E9%A1%B9%E5%BC%8F%E6%A0%A1%E9%AA%8C%EF%BC%89"><span class="toc-number">4.2.</span> <span class="toc-text">循环冗余码CRC（多项式校验）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%9A%84%E4%B8%A4%E7%A7%8D%E7%94%A8%E6%B3%95"><span class="toc-number">4.3.</span> <span class="toc-text">交换机的两种用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%9A%84%E8%87%AA%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95"><span class="toc-number">4.4.</span> <span class="toc-text">交换机的自学习算法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0-%E7%BD%91%E7%BB%9C%E5%B1%82"><span class="toc-number">5.</span> <span class="toc-text">第四章 网络层</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#IP%E6%95%B0%E6%8D%AE%E6%8A%A5%E7%9A%84%E5%88%86%E7%89%87%E4%B8%8E%E9%87%8D%E7%BB%84"><span class="toc-number">5.1.</span> <span class="toc-text">IP数据报的分片与重组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%92%E5%88%86%E5%AD%90%E7%BD%91"><span class="toc-number">5.2.</span> <span class="toc-text">划分子网</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9E%84%E9%80%A0%E8%B6%85%E7%BD%91"><span class="toc-number">5.3.</span> <span class="toc-text">构造超网</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%94%E7%AB%A0-%E8%BF%90%E8%BE%93%E5%B1%82"><span class="toc-number">6.</span> <span class="toc-text">第五章 运输层</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-color: transparent;"><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">格言🧬 </p><div class="bg-ad"><div>人生须有抵岸的力量🌊<br/>
+也不乏漂游的浪漫⛵<br/></div></div><p class="ft-t t-l-t" style="margin-top: auto;">交通枢纽<svg style="height:26px;width:26px;fill:currentColor;position:relative;top:8px" aria-hidden="true"><use xlink:href="#icon-taiyuannanzhancolour"> </use></svg></p><div class="bg-ad" style="margin-bottom: 20px;"><div style="display: flex;"><a class="meihua faa-parent animated-hover" href="https://travel.moe/go.html?travel=on" title="异次元之旅-跃迁-我们一起去萌站成员的星球旅行吧！" style="text-decoration:none;" target="_blank"> <svg class="faa-tada icon" style="height:26px;width:26px;fill:currentColor;position:relative;top:8px" aria-hidden="true"><use xlink:href="#icon-xingqiu"> </use></svg><span>异次元之旅</span></a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">猜你想看💡</p><ul class="ft-links"><li><a href="/pages/box/navigation/">网址导航</a><a href="/pages/about/update-records/">建设进程</a></li><li><a href="/pages/social/links/">我的朋友</a><a href="/pages/social/message-board/">说点什么</a></li><li><a href="/pages/about/me/">关于博主</a><a href="javascript:randomPost()">随便逛逛</a></li><li><a href="/pages/rests/games/">玩小游戏</a><a href="/pages/social/moments/">看朋友圈</a></li><li><a href="/pages/rests/memos/">哔哔一下</a><a href="/pages/box/gallery/">小站画廊</a></li><li><a href="/pages/about/census/">网站数据</a><a href="/pages/site/articles/">文章统计</a></li></ul></div></div></div><div class="ft-item-2"><p class="ft-t">推荐链接⌛</p><div class="ft-img-group"></div></div></div><div class="copyright"><span><b>&copy;2023-2024</b></span><span><b>&nbsp;&nbsp;By Royster</b></span></div>本站数据分析由<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/3FI49W6PtxRahPCr"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sdk.51.la/icon/1-1.png" style="height: 12px"/></a>和<a target="_blank" title="百度统计" href="https://tongji.baidu.com/main/overview/10000566992/overview/index"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tongji.baidu.com/main/static/media/logo.a99c3448f6aac870cd92b4db79f16fcf.svg" style="height: 18px"/></a>支持<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://beian.miit.gov.cn/" style="margin-inline:5px" title="域名备案：粤ICP备2021022294号"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/粤_ICP_备-2021022294号-008cff" alt=""/></a><a class="github-badge" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502010314" style="margin-inline:5px;" title="公安备案：粤公网安备44030502010314号"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/resource/elements/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png" style="width: 16px; position: relative; top: -3px; left: -1px"/><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/粤公网安备-44030502010314号-ff0000" alt=""/></a><a class="github-badge" target="_blank" href="https://icp.gov.moe/?keyword=20230807" style="margin-inline:5px" title="本站已加入萌ICP豪华套餐，萌ICP备20230807号"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/萌ICP备-20230807-fe1384" alt=""/></a><br/><a class="github-badge" target="_blank" href="https://www.aliyun.com/" style="margin-inline:5px" title="本站项目在阿里云部署"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-阿里云-ff6a00?style=flat&amp;logo=alibabacloud" alt=""/></a><a class="github-badge" target="_blank" href="https://pages.github.com/" style="margin-inline:5px" title="本站项目在Gihbut Pages部署"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Github-222222?style=flat&amp;logo=Github" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站项目在Vercel部署"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Vercel-black?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://developers.cloudflare.com/pages/" style="margin-inline:5px" title="本站项目在Cloudflare部署"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Cloudflare-f38020?style=flat&amp;logo=Cloudflare" alt=""/></a><a class="github-badge" target="_blank" href="https://www.netlify.com/" style="margin-inline:5px" title="本站项目在Netlify部署"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Netlify-00C7B7?style=flat&amp;logo=netlify" alt=""/></a><br/><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v7.0.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-0e83cd?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v4.3.1 -&gt; 4.6.1"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本站项目由Github托管"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src=" https://img.shields.io/badge/Source-Github-181717?style=flat&amp;logo=GitHub" alt=""/></a><a class="github-badge" target="_blank" href="https://user.51.la/" style="margin-inline:5px" title="本站数据分析得益于51la技术支持"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Analytics-51.la-1690FF?style=flat" alt=""/></a><a class="github-badge" target="_blank" href="https://tongji.baidu.com/" style="margin-inline:5px" title="本站数据分析得益于百度统计技术支持"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Analytics-百度统计-2932e1?style=flat&amp;logo=Baidu" alt=""/></a><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" title="本站采用知识共享署名-非商业性使用-相同方式共享4.0国际许可协议进行许可"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Copyright-BY--NC--SA%204.0-d42328?style=flat&amp;logo=Claris" alt=""/></a></p></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="cache" type="button" title="清除缓存" onclick="clearCache()"><svg width="25" height="25" viewBox="0 0 1024 1024" fill="#fff"><use id="modeicon" xlink:href="#icon-qinglihuancun"></use></svg></button><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button><button class="share" type="button" title="右键模式" onclick="changeMouseMode()"><i class="fas fa-mouse"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog right_side"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button class="share" type="button" title="分享链接" onclick="share()"><i class="fas fa-share-nodes"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div class="js-pjax" id="rightMenu"><div class="rightMenu-group rightMenu-small"><a class="rightMenu-item" href="javascript:window.history.back();"><i class="fa fa-arrow-left"></i></a><a class="rightMenu-item" href="javascript:window.history.forward();"><i class="fa fa-arrow-right"></i></a><a class="rightMenu-item" href="javascript:window.location.reload();"><i class="fa fa-refresh"></i></a><a class="rightMenu-item" href="javascript:rmf.scrollToTop();"><i class="fa fa-arrow-up"></i></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-text"><a class="rightMenu-item" href="javascript:rmf.copySelect();"><i class="fa fa-copy"></i><span>复制</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-paste"><a class="rightMenu-item" href="javascript:rmf.paste()"><i class="fa fa-copy"></i><span>粘贴</span></a><a class="rightMenu-item" href="javascript:window.open(&quot;https://www.baidu.com/s?wd=&quot;+window.getSelection().toString());window.location.reload();"><i class="fa fa-search"></i><span>百度一下</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-too"><a class="rightMenu-item" href="javascript:window.open(window.getSelection().toString());window.location.reload();"><i class="fa fa-link"></i><span>转到链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-post"><a class="rightMenu-item" href="javascript:rmf.copyWordsLink()"><i class="fa fa-link"></i><span>复制本文地址</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-to"><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>在新窗口打开</span></a><a class="rightMenu-item" id="menu-too" href="javascript:rmf.open()"><i class="fa fa-link"></i><span>转到链接</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-img"><a class="rightMenu-item" href="javascript:rmf.saveAs()"><i class="fa fa-download"></i><span>保存图片</span></a><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>在新窗口打开</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制图片链接</span></a></div><div class="rightMenu-group rightMenu-line"><a class="rightMenu-item" href="javascript:randomPost()"><i class="fa fa-paper-plane"></i><span>随便逛逛</span></a><a class="rightMenu-item" href="javascript:switchNightMode();"><i class="fa fa-moon"></i><span>昼夜切换</span></a><a class="rightMenu-item" href="/About/site/"><i class="fa fa-info-circle"></i><span>关于博客</span></a><a class="rightMenu-item" href="javascript:toggleWinbox();"><i class="fas fa-cog"></i><span>美化设置</span></a><a class="rightMenu-item" href="javascript:rmf.fullScreen();"><i class="fas fa-expand"></i><span>切换全屏</span></a><a class="rightMenu-item" href="javascript:window.print();"><i class="fa-solid fa-print"></i><span>打印页面</span></a></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://oss.iuoyt.com/resource/javascript/tw_cn.min.js"></script><script src="https://oss.iuoyt.com/resource/javascript/fancybox.umd.min.js"></script><script src="https://oss.iuoyt.com/resource/javascript/instantpage.min.js" type="module"></script><script src="https://oss.iuoyt.com/resource/javascript/lazyload.iife.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (true){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script src="/js/search/local-search.js"></script><script async="async">var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())
+setTimeout(function(){preloader.endLoading();}, 5000);
+document.getElementById('loading-box').addEventListener('click',()=> {preloader.endLoading()})</script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.1
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container').forEach(node => {
+            if (node.hasAttribute('display')) {
+              btf.wrap(node, 'div', { class: 'mathjax-overflow' })
+            } else {
+              btf.wrap(node, 'span', { class: 'mathjax-overflow' })
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twikoo.iuoyt.com/',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twikoo.iuoyt.com/',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.staticfile.org/twikoo/1.6.31/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="https://oss.iuoyt.com/resource/javascript/jquery.min.js"></script><script async src="https://oss.iuoyt.com/resource/javascript/vue.min.js"></script><script async src="https://oss.iuoyt.com/resource/javascript/index.js"></script><script async src="https://oss.iuoyt.com/resource/javascript/clipboard.min.js"></script><script defer type="text/javascript" src="https://oss.iuoyt.com/resource/javascript/sweetalert2.all.js"></script><script async src="https://oss.iuoyt.com/resource/javascript/pace.min.js"></script><script defer src="https://oss.iuoyt.com/resource/javascript/winbox.bundle.min.js"></script><script async src="//at.alicdn.com/t/c/font_3586335_hsivh70x0fm.js"></script><script async src="//at.alicdn.com/t/c/font_3636804_gr02jmjr3y9.js"></script><script async src="//at.alicdn.com/t/c/font_3612150_kfv55xn3u2g.js"></script><script async src="//at.alicdn.com/t/c/font_4170107_gscypordo5.js"></script><script async src="https://oss.iuoyt.com/resource/javascript/runtime.js"></script><script async src="https://oss.iuoyt.com/resource/javascript/Gold-ingot.js"></script><canvas id="universe"></canvas><canvas id="snow"></canvas><canvas id="canvas_sakura"></canvas><script defer src="/js/fomal.js"></script><script>let tianliGPT_postSelector='\#post \#article-container';let tianliGPT_key='d463ce12f53cc3802f76';let tianliGPT_Title = 'Nightyping-AI';</script><script src="https://cdn1.tianli0.top/gh/zhheo/Post-Abstract-AI@0.18.1/tianli_gpt.min.js"></script><script defer="true" src="/js/utils/orlike.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/butterfly-extsrc/1.1.3/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="/" data-mobile="false" data-text="富强,民主,文明,和谐,自由,平等,公正,法制,爱国,敬业,诚信,友善" data-fontsize="12px" data-random="false" async="async"></script><script src="https://oss.iuoyt.com/resource/javascript/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#web_bg",".js-pjax","#bibi","body > title","#app","#tag-echarts","#posts-echart","#categories-echarts"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://www.iuoyt.com/categories/Markdown/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍡 Markdown系列 (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://www.iuoyt.com/categories/Hexo/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍼 Hexo博客建站 (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://www.iuoyt.com/categories/学习笔记/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍉 学习笔记 (33)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://www.iuoyt.com/categories/LeetCode/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍟 LeetCode刷题笔记 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item" style="visibility: hidden"></div><div class="magnet_item" style="visibility: hidden"></div><a class="magnet_link_more"  href="https://www.iuoyt.com/categories/" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(33.333333333333336% - 5px);background: #e9e9e9;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: var(--text-bg-hover)}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/default_cover/034.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-07-15</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt="">Markdown语法与外挂标签写法汇总</a><div class="blog-slider__text">由Fomalhaut🥝整理的Markdown格式以及外挂标签在网页端的渲染效果。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/79105230.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://oss.iuoyt.com/img/default_cover/004.webp" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2023-09-23</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/79105230.html&quot;);" href="javascript:void(0);" alt="">使用Github Desktop进行简单的团队合作开发</a><div class="blog-slider__text">借助Github Desktop，无需深入了解Git也可以使用Git仓库进行简单的团队合作。</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/79105230.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://oss.iuoyt.com/resource/javascript/swiper.min.js"></script><script defer data-pjax src="https://oss.iuoyt.com/resource/javascript/swiper_init.js"></script><script data-pjax src="https://oss.iuoyt.com/resource/javascript/gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('gitZone');
+      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 320px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('gitZone') && (location.pathname ==='/site/census/'|| '/site/census/' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("/api?null",['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9'],'null')
+    }
+  </script><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script></div><script defer src="https://oss.iuoyt.com/resource/javascript/wow.min.js"></script><script defer src="https://oss.iuoyt.com/resource/javascript/wow_init.js"></script><!-- hexo injector body_end end --></body></html>
