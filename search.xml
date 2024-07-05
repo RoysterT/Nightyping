@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>如何使用搜索引擎？</title>
+      <link href="/posts/e82d7e38.html"/>
+      <url>/posts/e82d7e38.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="站点搜索">站点搜索</h2><p>使用<code>site</code>可以准确搜索指定站点的数据，比如仅查看Github上的Vue相关内容：<code>vue site:github.com</code>。</p><p><img src="https://oss.iuoyt.com/img/posts/image-20240705102036099.png" alt="站点搜索"></p><h2 id="（文件）类型指定">（文件）类型指定</h2><p>使用<code>filetype</code>可以搜索指定文件类型的内容，比如查找Vue学习相关的pdf文档：<code>Vue学习 filetype:pdf</code>。</p><ul><li>百度支持的类型：ppt、xls、doc、rtf、pdf和all（表示搜索所有支持的文件类型）</li><li>谷歌支持的类型：ppt、xls、doc、rtf、swf、pdf、kmz、kml、ps、def等，更多详见<a href="https://developers.google.com/search/docs/crawling-indexing/indexable-file-types?hl=zh-cn">Google 编入索引的文件类型</a></li></ul><p><img src="https://oss.iuoyt.com/img/posts/image-20240705102438722.png" alt="（文件）类型指定"></p><h2 id="标题搜索">标题搜索</h2><p>使用<code>intitle</code>可以搜索标题中出现的关键词，比如想知道搜索引擎的使用技巧为标题的搜索相关的文章：<code>高级搜索 intitle:搜索引擎使用技巧</code>。</p><p><img src="https://oss.iuoyt.com/img/posts/image-20240705103753930.png" alt="标题搜索"></p><h2 id="搜索排除">搜索排除</h2><p>使用<code>-</code>可以排除出现某个关键词的内容，比如：<code>Java学习路线  -黑马程序员</code>。</p><p><img src="https://oss.iuoyt.com/img/posts/image-20240705104802826.png" alt="搜索排除"></p><h2 id="精确搜索">精确搜索</h2><p>使用<code>&quot;&quot;</code>可以精确搜索指定的关键词，而不对关键词进行分析重组，同时严格按照关键词的先后顺序筛选。</p><p><img src="https://oss.iuoyt.com/img/posts/image-20240705105813468.png" alt="精确搜索"></p><h2 id="模糊搜索">模糊搜索</h2><p>使用<code>*</code>可以对模糊词进行替代，比如只记得一部分的内容，希望搜索完整内容时。</p><p><img src="https://oss.iuoyt.com/img/posts/image-20240705110722324.png" alt="模糊搜索"></p><h2 id="数字范围">数字范围</h2><p>使用<code>....</code>可以对指定范围的数字进行搜索。</p><p><img src="https://oss.iuoyt.com/img/posts/image-20240705111344748.png" alt="数字范围"></p><h2 id="同时包含">同时包含</h2><p>使用<code>AND</code>可以指定需要同时包含的多个关键词。</p><p><img src="./20240705-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%EF%BC%9F.assets/image-20240705111556780.png" alt="同时包含"></p><h2 id="选择包含">选择包含</h2><p>使用<code>OR</code>可以指定某个可以被互相替换的关键词，仅需包含其中一个。</p><p><img src="https://oss.iuoyt.com/img/posts/image-20240705111923997.png" alt="选择包含"></p><h2 id="时间范围">时间范围</h2><p>使用<code>before</code>或<code>after</code>可以指定某个时间范围，检索特定时间的内容。</p><p><img src="./20240705-%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%EF%BC%9F.assets/image-20240705112220246.png" alt="时间范围"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 实用技巧 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 搜索引擎 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>计算机网络计算题练习</title>
       <link href="/posts/9bdadf86.html"/>
       <url>/posts/9bdadf86.html</url>
@@ -413,9 +438,9 @@
             
             <tag> Java </tag>
             
-            <tag> 算法 </tag>
-            
             <tag> 排序 </tag>
+            
+            <tag> 算法 </tag>
             
         </tags>
       
@@ -1204,11 +1229,11 @@
       
         <tags>
             
+            <tag> Markdown </tag>
+            
             <tag> Hexo </tag>
             
             <tag> Butterfly </tag>
-            
-            <tag> Markdown </tag>
             
         </tags>
       
