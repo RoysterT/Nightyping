@@ -2,7 +2,7 @@
 // 全局变量
 
 // 版本号
-var latestVersion = "1.0.0";
+var latestVersion = "1.0.1";
 
 //----------------------------------------------------------------
 
@@ -3807,10 +3807,10 @@ if (
 /* 美化模块 start */
 
 // 更新版本需要每个用户都恢复一次默认设置
-if (localStorage.getItem("reset_4") == undefined) {
-  localStorage.setItem("reset_4", "1");
+if (localStorage.getItem("reset_5") == undefined) {
+  localStorage.setItem("reset_5", "1");
   // 清空之前的标记值
-  for (var i = 1; i <= 3; i++) {
+  for (var i = 1; i <= 4; i++) {
     localStorage.removeItem("reset_" + i);
   }
   clearItem();
@@ -3890,7 +3890,7 @@ function setFontBorder() {
 
 // 设置主题色
 if (localStorage.getItem("themeColor") == undefined) {
-  localStorage.setItem("themeColor", "green");
+  localStorage.setItem("themeColor", "orange");
 }
 setColor(localStorage.getItem("themeColor"));
 function setColor(c) {
@@ -3965,7 +3965,7 @@ function setSakura() {
 
 // 樱花飘落效果：樱花or枫叶
 if (localStorage.getItem("sakuraItem") == undefined) {
-  localStorage.setItem("sakuraItem", "sakura");
+  localStorage.setItem("sakuraItem", "maple");
 }
 function setSakuraItem() {
   if (document.getElementById("sakuraItemSet").checked) {
