@@ -3451,12 +3451,12 @@ if (lunar["IMonthCn"] == "十二月" && lunar["IDayCn"] == "初八") {
 }
 
 // 切换主题提醒
-// if (y == 2022 && m == 12 && (dd >= 18 && dd <= 20)) {
-//     if (sessionStorage.getItem("isPopupWindow") != "1") {
-//         Swal.fire("网站换成冬日限定主题啦⛄");
-//         sessionStorage.setItem("isPopupWindow", "1");
-//     }
-// }
+if (y == 2025 && m == 1 && (dd >= 1 && dd <= 12)) {
+  if (sessionStorage.getItem("isPopupWindow") != "1") {
+      Swal.fire("网站换成冬日限定主题啦⛄");
+      sessionStorage.setItem("isPopupWindow", "1");
+  }
+}
 
 /* 节日弹窗 end */
 
@@ -3853,7 +3853,7 @@ function clearItem() {
 
 // 设置字体
 if (localStorage.getItem("font") == undefined) {
-  localStorage.setItem("font", "LXGW");
+  localStorage.setItem("font", "ZhuZiAWan");
 }
 setFont(localStorage.getItem("font"));
 function setFont(n) {
@@ -3890,7 +3890,7 @@ function setFontBorder() {
 
 // 设置主题色
 if (localStorage.getItem("themeColor") == undefined) {
-  localStorage.setItem("themeColor", "orange");
+  localStorage.setItem("themeColor", "darkblue");
 }
 setColor(localStorage.getItem("themeColor"));
 function setColor(c) {
@@ -3934,7 +3934,7 @@ function setUniverse() {
 
 // 雪花开关
 if (localStorage.getItem("snow") == undefined) {
-  localStorage.setItem("snow", "none");
+  localStorage.setItem("snow", "block");
 }
 document.getElementById("snow").style.display = localStorage.getItem("snow");
 function setSnow() {
@@ -3949,7 +3949,7 @@ function setSnow() {
 
 // 飘落效果开关
 if (localStorage.getItem("sakura") == undefined) {
-  localStorage.setItem("sakura", "block");
+  localStorage.setItem("sakura", "none");
 }
 document.getElementById("canvas_sakura").style.display =
   localStorage.getItem("sakura");
@@ -3965,7 +3965,7 @@ function setSakura() {
 
 // 樱花飘落效果：樱花or枫叶
 if (localStorage.getItem("sakuraItem") == undefined) {
-  localStorage.setItem("sakuraItem", "maple");
+  localStorage.setItem("sakuraItem", "sakura");
 }
 function setSakuraItem() {
   if (document.getElementById("sakuraItemSet").checked) {
