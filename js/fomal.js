@@ -3451,12 +3451,12 @@ if (lunar["IMonthCn"] == "十二月" && lunar["IDayCn"] == "初八") {
 }
 
 // 切换主题提醒
-if (y == 2025 && m == 1 && (dd >= 1 && dd <= 12)) {
-  if (sessionStorage.getItem("isPopupWindow") != "1") {
-      Swal.fire("网站换成冬日限定主题啦⛄");
-      sessionStorage.setItem("isPopupWindow", "1");
-  }
-}
+// if (y == 2025 && m == 1 && (dd >= 1 && dd <= 12)) {
+//   if (sessionStorage.getItem("isPopupWindow") != "1") {
+//       Swal.fire("网站换成冬日限定主题啦⛄");
+//       sessionStorage.setItem("isPopupWindow", "1");
+//   }
+// }
 
 /* 节日弹窗 end */
 
@@ -3806,6 +3806,34 @@ if (
 
 /* 美化模块 start */
 
+// 设置季节主题
+const seasonTheme = {
+  spring: {
+    themeColor: 'green',
+    sakura: 'block',
+    sakuraItem: 'sakura',
+    snow: 'none'
+  },
+  summer: {
+    themeColor: 'red',
+    sakura: 'none',
+    sakuraItem: 'sakura',
+    snow: 'none'
+  },
+  autumn: {
+    themeColor: 'orange',
+    sakura: 'block',
+    sakuraItem: 'maple',
+    snow: 'none'
+  },
+  winter: {
+    themeColor: 'darkblue',
+    sakura: 'none',
+    sakuraItem: 'sakura',
+    snow: 'block'
+  }
+}
+
 // 更新版本需要每个用户都恢复一次默认设置
 if (localStorage.getItem("reset_5") == undefined) {
   localStorage.setItem("reset_5", "1");
@@ -3890,7 +3918,7 @@ function setFontBorder() {
 
 // 设置主题色
 if (localStorage.getItem("themeColor") == undefined) {
-  localStorage.setItem("themeColor", "darkblue");
+  // localStorage.setItem("themeColor", "darkblue");
 }
 setColor(localStorage.getItem("themeColor"));
 function setColor(c) {
@@ -3929,6 +3957,51 @@ function setUniverse() {
     setUniverse2("block");
   } else {
     setUniverse2("none");
+  }
+}
+
+// 主题自动切换
+if (localStorage.getItem('themeAuto') == undefined) {
+  setThemeAuto();
+}
+handleCurTheme();
+function setThemeAuto() {
+  localStorage.setItem('themeAuto', localStorage.getItem('themeAuto') == 'true' ? false : true);
+  if (localStorage.getItem('themeAuto') == 'true') {
+    location.reload();
+  } else {
+    setThemeConfigStyle();
+  }
+}
+function handleCurTheme() {
+  if (localStorage.getItem('themeAuto') == 'true') {
+    const date = new Date();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    let curSeasonConfig;
+    if (month < 3 || month == 3 && day < 21) {
+      curSeasonConfig = seasonTheme.winter
+    } else if (month < 6 || month == 6 && day < 22) {
+      curSeasonConfig = seasonTheme.spring
+    } else if (month < 9 || month == 9 && day < 23) {
+      curSeasonConfig = seasonTheme.summer
+    } else if (month < 12 || month == 12 && day < 21) {
+      curSeasonConfig = seasonTheme.autumn
+    } else {
+      curSeasonConfig = seasonTheme.winter
+    }
+    setColor(curSeasonConfig.themeColor);
+    localStorage.setItem("sakura", curSeasonConfig.sakura);
+    localStorage.setItem("sakuraItem", curSeasonConfig.sakuraItem);
+    localStorage.setItem("snow", curSeasonConfig.snow);
+  }
+}
+function setThemeConfigStyle() {
+  const themeSetToggleList = document.getElementsByClassName("themeSetToggle");
+  if (localStorage.getItem('themeAuto') == 'true') {
+    for(let item of themeSetToggleList) {
+      item.classList.toggle("themeSetDisabled");
+    }
   }
 }
 
@@ -4394,7 +4467,6 @@ function createWinbox() {
   <p class="rang_width" id="rang_blur" style="width:${miniBlur}%"></p>
 </div>
 
-
 <div class="content" style="display:flex">
   <input type="checkbox" id="blur" onclick="setBlur()" style="min-width:37px">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 模糊效果（消耗性能）</div>
@@ -4408,19 +4480,6 @@ function createWinbox() {
 <div class="content" style="display:flex">
   <input type="checkbox" id="universeSet" onclick="setUniverse()" style="min-width:37px">
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 星空特效（夜间模式）</div>
-</div>
-
-<div class="content" style="display:flex">
-  <input type="checkbox" id="snowSet" onclick="setSnow()" style="min-width:37px">
-  <div class="content-text" style="font-weight:bold; padding-left:10px"> 雪花特效（白天模式）</div>
-</div>
-
-<div class="content" style="display:flex">
-  <input type="checkbox" id="sakuraSet" onclick="setSakura()" style="min-width:37px">
-  <div class="content-text" style="font-weight:bold; padding-left:10px"> 飘落特效 </div>
-  <div class="content-text" style="font-weight:bold; padding-left:20px"> 樱花 </div>
-  <input type="checkbox" id="sakuraItemSet" onclick="setSakuraItem();setSakura()" style="min-width:37px">
-  <div class="content-text" style="font-weight:bold"> 枫叶 </div>
 </div>
 
 <div class="content" style="display:flex">
@@ -4438,22 +4497,29 @@ function createWinbox() {
   <div class="content-text" style="font-weight:bold; padding-left:10px"> 天气显示（手机端不生效） </div>
 </div> -->
 
+<h2>二、主题设置</h2>
 
-<h2>二、字体设置（字体切换请稍等片刻！）</h2>
-<div class="note warning modern"><p>非商免字体未经授权只能个人使用。本站为完全非商业、非盈利性质的网站，平时用于个人学习交流，如有侵权请联系站长删除，谢谢！ —— 致版权方</p>
-</div>
-<p id="swfs">
-  <a class="swf" id="swf_default" href="javascript:;" rel="noopener external nofollow" style="font-family:-apple-system, IBM Plex Mono ,monosapce,'微软雅黑', sans-serif;!important;color:black" onclick="setFont('default')">系统默认</a>
-  <a class="swf" id="swf_LXGW" href="javascript:;" rel="noopener external nofollow" style="font-family:'LXGW'!important;color:black" onclick="setFont('LXGW')">霞鹜文楷</a>
-  <a class="swf" id="swf_ZhuZiAWan" href="javascript:;" rel="noopener external nofollow" style="font-family:'ZhuZiAWan'!important;color:black" onclick="setFont('ZhuZiAWan')">筑紫A丸</a>
-  <a class="swf" id="swf_MiSans" href="javascript:;" rel="noopener external nofollow" style="font-family:'MiSans'!important;color:black" onclick="setFont('MiSans')">MiSans</a>
-  <a class="swf" id="swf_HYTMR" href="javascript:;" rel="noopener external nofollow" style="font-family:'HYTMR'!important;color:black" onclick="setFont('HYTMR')">汉仪唐美人</a>
-  <a class="swf" id="swf_TTQHB" href="javascript:;" rel="noopener external nofollow" style="font-family:'TTQHB'!important;color:black" onclick="setFont('TTQHB')">甜甜圈海报</a>
-  <a class="swf" id="swf_YSHST" href="javascript:;" rel="noopener external nofollow" style="font-family:'YSHST'!important;color:black" onclick="setFont('YSHST')">优设好身体</a>
-</p>
-
-<h2>三、主题色设置</h2>
+<!-- 季节主题自动切换 -->
 <div class="content" style="display:flex">
+  <input type="checkbox" id="setThemeAuto" onclick="setThemeAuto()" style="min-width:37px">
+  <div class="content-text" style="font-weight:bold; padding-left:10px"> 主题自动切换（雪花、飘落特效、主题色） </div>
+</div>
+
+<div class="content themeSetToggle" style="display:flex">
+  <input type="checkbox" id="snowSet" onclick="setSnow()" style="min-width:37px">
+  <div class="content-text" style="font-weight:bold; padding-left:10px"> 雪花特效（白天模式）</div>
+</div>
+
+<div class="content themeSetToggle" style="display:flex">
+  <input type="checkbox" id="sakuraSet" onclick="setSakura()" style="min-width:37px">
+  <div class="content-text" style="font-weight:bold; padding-left:10px"> 飘落特效 </div>
+  <div class="content-text" style="font-weight:bold; padding-left:20px"> 樱花 </div>
+  <input type="checkbox" id="sakuraItemSet" onclick="setSakuraItem();setSakura()" style="min-width:37px">
+  <div class="content-text" style="font-weight:bold"> 枫叶 </div>
+</div>
+
+<div class="content themeSetToggle" style="display:flex; align-items:center">
+  <span class="content-text" style="font-weight:bold"> 主题色：</span>
   <input type="radio" id="red" name="colors" value=" " onclick="setColor('red')">
   <input type="radio" id="orange" name="colors" value=" " onclick="setColor('orange')">
   <input type="radio" id="yellow" name="colors" value=" " onclick="setColor('yellow')">
@@ -4466,6 +4532,29 @@ function createWinbox() {
   <input type="radio" id="black" name="colors" value=" " onclick="setColor('black')">
   <input type="radio" id="blackgray" name="colors" value=" " onclick="setColor('blackgray')">
 </div>
+
+<style>
+.themeSetDisabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.themeSetDisabled input {
+  cursor: not-allowed;
+}
+</style>
+
+<h2>三、字体设置（字体切换请稍等片刻！）</h2>
+<div class="note warning modern"><p>非商免字体未经授权只能个人使用。本站为完全非商业、非盈利性质的网站，平时用于个人学习交流，如有侵权请联系站长删除，谢谢！ —— 致版权方</p>
+</div>
+<p id="swfs">
+  <a class="swf" id="swf_default" href="javascript:;" rel="noopener external nofollow" style="font-family:-apple-system, IBM Plex Mono ,monosapce,'微软雅黑', sans-serif;!important;color:black" onclick="setFont('default')">系统默认</a>
+  <a class="swf" id="swf_LXGW" href="javascript:;" rel="noopener external nofollow" style="font-family:'LXGW'!important;color:black" onclick="setFont('LXGW')">霞鹜文楷</a>
+  <a class="swf" id="swf_ZhuZiAWan" href="javascript:;" rel="noopener external nofollow" style="font-family:'ZhuZiAWan'!important;color:black" onclick="setFont('ZhuZiAWan')">筑紫A丸</a>
+  <a class="swf" id="swf_MiSans" href="javascript:;" rel="noopener external nofollow" style="font-family:'MiSans'!important;color:black" onclick="setFont('MiSans')">MiSans</a>
+  <a class="swf" id="swf_HYTMR" href="javascript:;" rel="noopener external nofollow" style="font-family:'HYTMR'!important;color:black" onclick="setFont('HYTMR')">汉仪唐美人</a>
+  <a class="swf" id="swf_TTQHB" href="javascript:;" rel="noopener external nofollow" style="font-family:'TTQHB'!important;color:black" onclick="setFont('TTQHB')">甜甜圈海报</a>
+  <a class="swf" id="swf_YSHST" href="javascript:;" rel="noopener external nofollow" style="font-family:'YSHST'!important;color:black" onclick="setFont('YSHST')">优设好身体</a>
+</p>
 
 <h2>四、背景设置</h2>
 <center>
@@ -4597,6 +4686,8 @@ function createWinbox() {
   } else if (localStorage.getItem("snow") == "none") {
     document.getElementById("snowSet").checked = false;
   }
+  document.getElementById("setThemeAuto").checked = localStorage.getItem("themeAuto") == "true" ? true : false;
+  setThemeConfigStyle();
 }
 
 // 恢复默认背景
