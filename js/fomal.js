@@ -3916,33 +3916,6 @@ function setFontBorder() {
   );
 }
 
-// 设置主题色
-if (localStorage.getItem("themeColor") == undefined) {
-  // localStorage.setItem("themeColor", "darkblue");
-}
-setColor(localStorage.getItem("themeColor"));
-function setColor(c) {
-  document.getElementById("themeColor").innerText =
-    `:root{--theme-color:` + map.get(c) + ` !important}`;
-  localStorage.setItem("themeColor", c);
-  // 刷新鼠标颜色
-  CURSOR.refresh();
-  // 设置一个带有透明度的主题色，用于菜单栏的悬浮颜色
-  var theme_color = map.get(c);
-  var trans_theme_color =
-    "rgba" + theme_color.substring(3, theme_color.length - 1) + ", 0.7)";
-  var high_trans_color =
-    "rgba" + theme_color.substring(3, theme_color.length - 1) + ", 0.5)";
-  document.documentElement.style.setProperty(
-    "--text-bg-hover",
-    trans_theme_color
-  );
-  document.documentElement.style.setProperty(
-    "--high-trans-color",
-    high_trans_color
-  );
-}
-
 // 星空背景开关
 if (localStorage.getItem("universe") == undefined) {
   localStorage.setItem("universe", "block");
@@ -3990,7 +3963,7 @@ function handleCurTheme() {
     } else {
       curSeasonConfig = seasonTheme.winter
     }
-    setColor(curSeasonConfig.themeColor);
+    localStorage.setItem("themeColor", curSeasonConfig.themeColor);
     localStorage.setItem("sakura", curSeasonConfig.sakura);
     localStorage.setItem("sakuraItem", curSeasonConfig.sakuraItem);
     localStorage.setItem("snow", curSeasonConfig.snow);
@@ -4003,6 +3976,33 @@ function setThemeConfigStyle() {
       item.classList.toggle("themeSetDisabled");
     }
   }
+}
+
+// 设置主题色
+if (localStorage.getItem("themeColor") == undefined) {
+  localStorage.setItem("themeColor", "green");
+}
+setColor(localStorage.getItem("themeColor"));
+function setColor(c) {
+  document.getElementById("themeColor").innerText =
+    `:root{--theme-color:` + map.get(c) + ` !important}`;
+  localStorage.setItem("themeColor", c);
+  // 刷新鼠标颜色
+  CURSOR.refresh();
+  // 设置一个带有透明度的主题色，用于菜单栏的悬浮颜色
+  var theme_color = map.get(c);
+  var trans_theme_color =
+    "rgba" + theme_color.substring(3, theme_color.length - 1) + ", 0.7)";
+  var high_trans_color =
+    "rgba" + theme_color.substring(3, theme_color.length - 1) + ", 0.5)";
+  document.documentElement.style.setProperty(
+    "--text-bg-hover",
+    trans_theme_color
+  );
+  document.documentElement.style.setProperty(
+    "--high-trans-color",
+    high_trans_color
+  );
 }
 
 // 雪花开关
